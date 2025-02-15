@@ -1,0 +1,19 @@
+[2024-12-13 05:02:37] Start: Perplexity
+[2024-12-13 05:02:37] Perplexity - Edge process found, searching windows...
+[2024-12-13 05:02:37] Perplexity - Found window: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:02:37] Perplexity - Window Activated: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:04:48] Script started
+[2024-12-13 05:04:54] F3 pressed
+[2024-12-13 05:04:54] Start: Perplexity
+[2024-12-13 05:04:54] Perplexity - Edge process found, searching windows...
+[2024-12-13 05:04:54] Perplexity - Checking window: ChatGPT - AutoHotkey ÂsÄý¾¹§Ö±¶Áä
+[2024-12-13 05:04:54] Perplexity - Checking window: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:04:54] Perplexity - Found window: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:04:54] Perplexity - Window Activated: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:04:58] F3 pressed
+[2024-12-13 05:04:58] Start: Perplexity
+[2024-12-13 05:04:58] Perplexity - Edge process found, searching windows...
+[2024-12-13 05:04:58] Perplexity - Checking window: ChatGPT - AutoHotkey ÂsÄý¾¹§Ö±¶Áä
+[2024-12-13 05:04:58] Perplexity - Checking window: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:04:58] Perplexity - Found window: Perplexity - §x´b --- Perplexity
+[2024-12-13 05:04:58] Perplexity - Window Activated: Perplexity - §x´b --- Perplexity

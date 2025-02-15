@@ -1,0 +1,971 @@
+[0129/032339.588:ERROR:crashpad_client_win.cc(810)] not connected
+[0129/211420.637:ERROR:crashpad_client_win.cc(810)] not connected
+[0203/080854.034:ERROR:crashpad_client_win.cc(810)] not connected
+[0204/135504.859:ERROR:crashpad_client_win.cc(810)] not connected
+[0205/091419.314:ERROR:crashpad_client_win.cc(810)] not connected
+[0206/122202.355:ERROR:crashpad_client_win.cc(810)] not connected
+[0207/114841.192:ERROR:crashpad_client_win.cc(810)] not connected
+[0207/180838.632:ERROR:crashpad_client_win.cc(810)] not connected
+[0209/201052.712:ERROR:crashpad_client_win.cc(810)] not connected
+[0211/194158.114:ERROR:crashpad_client_win.cc(810)] not connected
+[0212/132210.539:ERROR:crashpad_client_win.cc(810)] not connected
+[0212/210144.337:ERROR:crashpad_client_win.cc(810)] not connected
+[0212/210144.535:ERROR:crashpad_client_win.cc(810)] not connected
+[0214/001620.963:ERROR:crashpad_client_win.cc(810)] not connected
+[0214/001621.164:ERROR:crashpad_client_win.cc(810)] not connected
+[2025-02-14 22:30:07.fff] Script ready for operation
+[2025-02-14 22:30:07.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:30:07.fff] Starting script initialization
+[2025-02-14 22:30:07.fff] ApplicationManager | Starting initialization
+[2025-02-14 22:31:20.fff] Script ready for operation
+[2025-02-14 22:31:21.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:31:21.fff] Starting script initialization
+[2025-02-14 22:31:21.fff] ApplicationManager | Starting initialization
+[2025-02-14 22:31:21.fff] ApplicationManager | Launching 10 applications
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching LINE: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching YouTube Music: This value of type "Object" has no property named "args".
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching Android Studio: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching VS Code Insiders: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching Cursor: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching Edge: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:21.fff] ApplicationManager | Error launching Notion: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:21.fff] ApplicationManager | Launched: Perplexity
+[2025-02-14 22:31:21.fff] ApplicationManager | Launched: googleTranslate
+[2025-02-14 22:31:21.fff] ApplicationManager | Launched: Gemini
+[2025-02-14 22:31:21.fff] ApplicationManager | Initialization completed
+[2025-02-14 22:31:21.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:31:27.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:31:27.fff] Script initialization completed
+[2025-02-14 22:31:32.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:31:42.fff] Script ready for operation
+[2025-02-14 22:31:42.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:31:42.fff] Starting script initialization
+[2025-02-14 22:31:42.fff] ApplicationManager | Starting initialization
+[2025-02-14 22:31:42.fff] ApplicationManager | Launching 10 applications
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching LINE: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching YouTube Music: This value of type "Object" has no property named "args".
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching Android Studio: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching VS Code Insiders: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching Cursor: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching Edge: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:42.fff] ApplicationManager | Error launching Notion: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:31:42.fff] ApplicationManager | Launched: Perplexity
+[2025-02-14 22:31:42.fff] ApplicationManager | Launched: googleTranslate
+[2025-02-14 22:31:43.fff] ApplicationManager | Launched: Gemini
+[2025-02-14 22:31:43.fff] ApplicationManager | Initialization completed
+[2025-02-14 22:31:43.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:31:48.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:31:48.fff] Script initialization completed
+[2025-02-14 22:31:53.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:33:49.fff] Script ready for operation
+[2025-02-14 22:33:50.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:33:50.fff] Starting script initialization
+[2025-02-14 22:33:50.fff] ApplicationManager | Starting initialization
+[2025-02-14 22:33:50.fff] ApplicationManager | Launching 7 applications
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching LINE: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching YouTube Music: This value of type "Object" has no property named "args".
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching Android Studio: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching VS Code Insiders: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching Cursor: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching Edge: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:33:50.fff] ApplicationManager | Error launching Notion: This value of type "Object" has no property named "isEdgeApp".
+[2025-02-14 22:33:50.fff] ApplicationManager | Regular apps initialization completed
+[2025-02-14 22:33:50.fff] ApplicationManager | Launching 3 applications
+[2025-02-14 22:33:50.fff] ApplicationManager | Launched: Perplexity
+[2025-02-14 22:33:50.fff] ApplicationManager | Launched: googleTranslate
+[2025-02-14 22:33:50.fff] ApplicationManager | Launched: Gemini
+[2025-02-14 22:33:52.fff] ApplicationManager | Productivity apps initialization completed
+[2025-02-14 22:33:54.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:33:59.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:33:59.fff] Script initialization completed
+[2025-02-14 22:34:04.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:38:33.fff] Script ready for operation
+[2025-02-14 22:38:33.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:38:33.fff] Starting script initialization
+[2025-02-14 22:38:33.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:38:38.fff] Script initialization completed
+[2025-02-14 22:41:27.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:41:27.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:43:02.fff] Script ready for operation
+[2025-02-14 22:43:03.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:43:03.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:43:03.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:43:03.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:43:03.fff] Starting script initialization
+[2025-02-14 22:43:03.fff] Script initialization completed
+[2025-02-14 22:43:05.fff] F8 | Hotkey triggered
+[2025-02-14 22:43:05.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:43:05.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:43:07.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:43:07.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:43:07.fff] F8 | Hotkey triggered
+[2025-02-14 22:43:07.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:43:07.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:43:24.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 22:43:24.fff] EDGE | Found matching window: YouTube Music
+[2025-02-14 22:43:26.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 22:43:26.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 22:43:35.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 22:43:35.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 22:43:37.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 22:43:37.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 22:43:40.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 22:43:40.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 22:43:43.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:43:43.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:43:44.fff] F8 | Hotkey triggered
+[2025-02-14 22:43:44.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:43:44.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:44:18.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:44:18.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:44:19.fff] F8 | Hotkey triggered
+[2025-02-14 22:44:19.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:44:19.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:44:26.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:44:26.fff] F8 | Hotkey triggered
+[2025-02-14 22:44:26.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:44:26.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:44:27.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:44:38.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:44:38.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:44:40.fff] F8 | Hotkey triggered
+[2025-02-14 22:44:40.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:44:40.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:44:52.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:44:52.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:44:58.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:44:58.fff] F7 | Found and activated main Edge window
+[2025-02-14 22:44:59.fff] F8 | Hotkey triggered
+[2025-02-14 22:44:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 22:44:59.fff] F8 | All windows exist, using quick activate
+[2025-02-14 22:47:00.fff] Script ready for operation
+[2025-02-14 22:47:01.fff] ProductivitySuite | Initializing layout
+[2025-02-14 22:47:01.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:47:01.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:47:01.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 22:47:01.fff] Starting script initialization
+[2025-02-14 22:47:01.fff] Script initialization completed
+[2025-02-14 22:52:03.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 22:52:03.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:17:39.fff] F8 | Hotkey triggered
+[2025-02-14 23:17:39.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:17:39.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:18:04.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:18:04.fff] EDGE | Found matching window: YouTube Music
+[2025-02-14 23:18:14.fff] F8 | Hotkey triggered
+[2025-02-14 23:18:14.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:18:14.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:20:01.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:20:01.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:20:37.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:37.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:38.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:38.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:41.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:41.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:44.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:20:44.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:20:46.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:20:46.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:20:48.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:48.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:49.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:49.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:49.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:49.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:49.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:49.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:49.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:49.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:50.fff] F8 | Hotkey triggered
+[2025-02-14 23:20:50.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:20:50.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:20:51.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:51.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:52.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:52.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:52.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:52.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:52.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:52.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:53.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:20:53.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:20:54.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:54.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:54.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:54.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:54.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:54.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:55.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:55.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:55.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:55.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:56.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:56.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:56.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:56.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:56.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:56.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:56.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:56.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:56.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:57.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:57.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:57.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:58.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:58.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:58.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:58.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:58.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:59.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:59.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:59.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:59.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:59.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:20:59.fff] EDGE | Entering function YouTubeMusic
+[2025-02-14 23:20:59.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:05.fff] Script ready for operation
+[2025-02-14 23:22:05.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:22:05.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:05.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:05.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:05.fff] Starting script initialization
+[2025-02-14 23:22:05.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:22:05.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:05.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:05.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:05.fff] Script initialization completed
+[2025-02-14 23:22:05.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:22:06.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:22:06.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:06.fff] EDGE | Found matching window: YouTube Music
+[2025-02-14 23:22:08.fff] F8 | Hotkey triggered
+[2025-02-14 23:22:08.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:22:08.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:22:08.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:08.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:09.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:09.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:09.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:09.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:09.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:10.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:10.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:10.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:10.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:10.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:10.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:11.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:11.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:22:11.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:22:12.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:12.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:12.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:12.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:12.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:12.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:12.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:12.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:12.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:13.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:13.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:13.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:13.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:13.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:13.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:13.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:13.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:13.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:21.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:22.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:23.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:23.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:23.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:23.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:28.fff] Script ready for operation
+[2025-02-14 23:22:28.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:22:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:28.fff] Starting script initialization
+[2025-02-14 23:22:28.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:22:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:29.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:29.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:22:29.fff] Script initialization completed
+[2025-02-14 23:22:29.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:29.fff] EDGE | Found matching window: YouTube Music
+[2025-02-14 23:22:31.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:22:31.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:22:32.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:32.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:32.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:32.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:32.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:32.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:22:33.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:22:33.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:23:25.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:23:25.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:23:26.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:23:26.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:23:26.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:23:26.fff] EDGE | Activating existing window: PID=6648
+[2025-02-14 23:24:30.fff] Script ready for operation
+[2025-02-14 23:24:31.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:24:31.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:24:31.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:24:31.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:24:31.fff] Starting script initialization
+[2025-02-14 23:24:31.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:24:31.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:24:31.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:24:31.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:24:31.fff] Script initialization completed
+[2025-02-14 23:24:32.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:24:32.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:24:32.fff] F8 | Hotkey triggered
+[2025-02-14 23:24:32.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:24:32.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:24:33.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:24:33.fff] EDGE | Checking window: Gemini
+[2025-02-14 23:24:33.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-14 23:24:33.fff] EDGE | Checking window: Perplexity - ?? ?mono ???
+[2025-02-14 23:24:33.fff] EDGE | Checking window: Settings and 38 more pages - Personal - Microsoft? Edge
+[2025-02-14 23:24:33.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:24:33.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:24:35.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:24:35.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:24:35.fff] F8 | Hotkey triggered
+[2025-02-14 23:24:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:24:35.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:24:36.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:24:36.fff] EDGE | Checking window: Gemini
+[2025-02-14 23:24:36.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-14 23:24:36.fff] EDGE | Checking window: Perplexity - ?? ?mono ???
+[2025-02-14 23:24:36.fff] EDGE | Checking window: Settings and 38 more pages - Personal - Microsoft? Edge
+[2025-02-14 23:24:36.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:24:36.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:25:27.fff] Script ready for operation
+[2025-02-14 23:25:28.fff] ProductivitySuite | Initializing layout
+[2025-02-14 23:25:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:25:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:25:28.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-14 23:25:28.fff] Starting script initialization
+[2025-02-14 23:25:28.fff] Script initialization completed
+[2025-02-14 23:25:28.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:25:28.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:25:28.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:25:29.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:25:29.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:25:29.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:25:30.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:30.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:31.fff] F8 | Hotkey triggered
+[2025-02-14 23:25:31.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:25:31.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:25:32.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:25:32.fff] EDGE | Checking window: Gemini
+[2025-02-14 23:25:32.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-14 23:25:32.fff] EDGE | Checking window: Perplexity - ?? ?mono ???
+[2025-02-14 23:25:32.fff] EDGE | Checking window: Settings and 38 more pages - Personal - Microsoft? Edge
+[2025-02-14 23:25:32.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:25:32.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:25:38.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:38.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:44.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:44.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:46.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:46.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:46.fff] F8 | Hotkey triggered
+[2025-02-14 23:25:46.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:25:46.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:25:47.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:47.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:48.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:48.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:49.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:49.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:50.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:25:50.fff] EDGE | Checking window: Settings and 38 more pages - Personal - Microsoft? Edge
+[2025-02-14 23:25:50.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:25:50.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:25:52.fff] EDGE | Entering function YouTube Music
+[2025-02-14 23:25:52.fff] EDGE | Checking window: YouTube Music
+[2025-02-14 23:25:52.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-14 23:25:53.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:54.fff] F7 | Found and activated main Edge window
+[2025-02-14 23:25:54.fff] F8 | Hotkey triggered
+[2025-02-14 23:25:54.fff] F8 | Layout already initialized, checking windows
+[2025-02-14 23:25:54.fff] F8 | All windows exist, using quick activate
+[2025-02-14 23:25:56.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-14 23:25:56.fff] F7 | Found and activated main Edge window
+[2025-02-15 00:21:09.fff] F8 | Hotkey triggered
+[2025-02-15 00:21:09.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:21:09.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:25:33.fff] F8 | Hotkey triggered
+[2025-02-15 00:25:33.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:25:33.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:32:26.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 00:32:27.fff] F7 | Found and activated main Edge window
+[2025-02-15 00:35:08.fff] F8 | Hotkey triggered
+[2025-02-15 00:35:08.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:35:08.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:40:30.fff] F8 | Hotkey triggered
+[2025-02-15 00:40:30.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:40:30.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:41:31.fff] F8 | Hotkey triggered
+[2025-02-15 00:41:31.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:41:31.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:42:27.fff] F8 | Hotkey triggered
+[2025-02-15 00:42:27.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:42:27.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:43:23.fff] F8 | Hotkey triggered
+[2025-02-15 00:43:23.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 00:43:23.fff] F8 | All windows exist, using quick activate
+[2025-02-15 00:48:37.fff] Script ready for operation
+[2025-02-15 00:48:37.fff] ProductivitySuite | Initializing layout
+[2025-02-15 00:48:37.fff] Starting script initialization
+[2025-02-15 00:48:37.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:02:16.fff] Script ready for operation
+[2025-02-15 01:02:16.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:02:16.fff] Starting script initialization
+[2025-02-15 01:02:16.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:02:23.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:02:23.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:02:58.fff] Script ready for operation
+[2025-02-15 01:02:58.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:02:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:02:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:02:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:02:58.fff] Starting script initialization
+[2025-02-15 01:02:58.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:02:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:02:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:02:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:02:59.fff] Script initialization completed
+[2025-02-15 01:03:01.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:01.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:02.fff] F8 | Hotkey triggered
+[2025-02-15 01:03:02.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:03:02.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:03:02.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:03.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:08.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:08.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:03:14.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:14.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:03:15.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:15.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:25.fff] F8 | Hotkey triggered
+[2025-02-15 01:03:25.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:03:25.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:03:27.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:27.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:03:28.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:28.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:28.fff] F8 | Hotkey triggered
+[2025-02-15 01:03:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:03:28.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:03:29.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:30.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:30.fff] F8 | Hotkey triggered
+[2025-02-15 01:03:30.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:03:30.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:03:31.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:32.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:32.fff] F8 | Hotkey triggered
+[2025-02-15 01:03:32.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:03:32.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:03:33.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:03:33.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:03:37.fff] F8 | Hotkey triggered
+[2025-02-15 01:03:37.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:03:37.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:04:36.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:04:36.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:04:37.fff] F8 | Hotkey triggered
+[2025-02-15 01:04:37.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:04:37.fff] F8 | Window missing for: Perplexity
+[2025-02-15 01:04:37.fff] F8 | Rearranging windows
+[2025-02-15 01:04:37.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:04:37.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:04:37.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:04:41.fff] F8 | Hotkey triggered
+[2025-02-15 01:04:41.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:04:41.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:04:42.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:04:42.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:04:43.fff] F8 | Hotkey triggered
+[2025-02-15 01:04:43.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:04:43.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:04:44.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:04:44.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:04:45.fff] F8 | Hotkey triggered
+[2025-02-15 01:04:45.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:04:45.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:04:47.fff] F8 | Hotkey triggered
+[2025-02-15 01:04:47.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:04:47.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:04:48.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:04:48.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:04:49.fff] F8 | Hotkey triggered
+[2025-02-15 01:04:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:04:49.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:04:50.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:04:50.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:05:57.fff] Script ready for operation
+[2025-02-15 01:05:58.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:05:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:05:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:05:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:05:58.fff] Starting script initialization
+[2025-02-15 01:05:58.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:05:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:05:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:05:58.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:05:58.fff] Script initialization completed
+[2025-02-15 01:06:08.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:08.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:06:09.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:10.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:10.fff] F8 | Hotkey triggered
+[2025-02-15 01:06:10.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:06:10.fff] F8 | Window missing for: Perplexity
+[2025-02-15 01:06:10.fff] F8 | Rearranging windows
+[2025-02-15 01:06:10.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:06:10.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:06:10.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:06:11.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:11.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:12.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:12.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:17.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:17.fff] F7 | No main Edge window found, launching new instance
+[2025-02-15 01:06:24.fff] F8 | Hotkey triggered
+[2025-02-15 01:06:24.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:06:24.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:06:25.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:25.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:26.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:26.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:26.fff] F8 | Hotkey triggered
+[2025-02-15 01:06:26.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:06:26.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:06:27.fff] EDGE | Entering function LocalFrontend
+[2025-02-15 01:06:27.fff] EDGE | Checking window: Gemini
+[2025-02-15 01:06:27.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 01:06:27.fff] EDGE | Checking window: Perplexity
+[2025-02-15 01:06:27.fff] EDGE | Checking window: ?? - Shioaji and 31 more pages - Personal - Microsoft? Edge
+[2025-02-15 01:06:27.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 01:06:27.fff] EDGE | No matching window found, launching: C:\Users\user\Desktop\LocalFrontend.lnk
+[2025-02-15 01:06:27.fff] EDGE | Error launching window: Failed attempt to launch program or document:
+Action: <  --force-device-scale-factor=1>
+Params: <>
+[2025-02-15 01:06:28.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:28.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:30.fff] EDGE | Entering function YouTube Music
+[2025-02-15 01:06:30.fff] EDGE | Checking window: ?? - Shioaji and 31 more pages - Personal - Microsoft? Edge
+[2025-02-15 01:06:30.fff] EDGE | Checking window: Gemini
+[2025-02-15 01:06:30.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 01:06:30.fff] EDGE | Checking window: Perplexity
+[2025-02-15 01:06:30.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 01:06:30.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 01:06:31.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:32.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:33.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:06:33.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:06:52.fff] F8 | Hotkey triggered
+[2025-02-15 01:06:52.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:06:52.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:07:01.fff] EDGE | Entering function YouTube Music
+[2025-02-15 01:07:01.fff] EDGE | Checking window: Perplexity
+[2025-02-15 01:07:01.fff] EDGE | Checking window: Gemini
+[2025-02-15 01:07:01.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 01:07:01.fff] EDGE | Checking window: ??? (370) - zanewnch@gmail.com - Gmail and 27 more pages - Personal - Microsoft? Edge
+[2025-02-15 01:07:01.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 01:07:01.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 01:07:01.fff] EDGE | Entering function YouTube Music
+[2025-02-15 01:07:01.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 01:07:01.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 01:07:02.fff] F8 | Hotkey triggered
+[2025-02-15 01:07:02.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:07:02.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:07:11.fff] F8 | Hotkey triggered
+[2025-02-15 01:07:11.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:07:11.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:09:59.fff] Script ready for operation
+[2025-02-15 01:10:00.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:10:00.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:10:00.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:10:00.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:10:00.fff] Starting script initialization
+[2025-02-15 01:10:00.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:10:00.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:10:00.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:10:00.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:10:00.fff] Script initialization completed
+[2025-02-15 01:10:06.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:10:06.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:10:07.fff] F8 | Hotkey triggered
+[2025-02-15 01:10:07.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:10:07.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:10:12.fff] F8 | Hotkey triggered
+[2025-02-15 01:10:12.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:10:12.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:10:17.fff] F8 | Hotkey triggered
+[2025-02-15 01:10:17.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:10:17.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:13:08.fff] Script ready for operation
+[2025-02-15 01:13:09.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:13:09.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:13:09.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:13:09.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:13:09.fff] Starting script initialization
+[2025-02-15 01:13:09.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:13:09.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:13:09.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:13:09.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:13:09.fff] Script initialization completed
+[2025-02-15 01:13:14.fff] F8 | Hotkey triggered
+[2025-02-15 01:13:14.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:13:15.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:14:13.fff] Script ready for operation
+[2025-02-15 01:14:14.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:14:14.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:14:14.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:14:14.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:14:14.fff] Starting script initialization
+[2025-02-15 01:14:14.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:14:14.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:14:14.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:14:14.fff] ProductivitySuite | Error moving window: Target window not found.
+[2025-02-15 01:14:14.fff] Script initialization completed
+[2025-02-15 01:14:17.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:14:17.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:15:57.fff] Script ready for operation
+[2025-02-15 01:15:57.fff] ProductivitySuite | Initializing layout
+[2025-02-15 01:15:57.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-15 01:15:57.fff] Starting script initialization
+[2025-02-15 01:15:57.fff] Script initialization completed
+[2025-02-15 01:15:59.fff] F8 | Hotkey triggered
+[2025-02-15 01:15:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:15:59.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:01.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:02.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:16:02.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:02.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:02.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:07.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:08.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:16:09.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:09.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:09.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:16.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:16.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:16.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:19.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:19.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:16:19.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:19.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:19.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:22.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:22.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:16:23.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:23.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:23.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:28.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:28.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:16:28.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:28.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:36.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:36.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:41.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:41.fff] F7 | Found and activated main Edge window
+[2025-02-15 01:16:41.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:41.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:41.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:46.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:46.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:46.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:47.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:47.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:47.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:49.fff] F8 | Hotkey triggered
+[2025-02-15 01:16:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 01:16:49.fff] F8 | All windows exist, using quick activate
+[2025-02-15 01:16:51.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 01:16:51.fff] F7 | Found and activated main Edge window
+[2025-02-15 11:25:07.fff] F8 | Hotkey triggered
+[2025-02-15 11:25:07.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 11:25:07.fff] F8 | All windows exist, using quick activate
+[2025-02-15 11:27:06.fff] EDGE | Entering function YouTube Music
+[2025-02-15 11:27:06.fff] EDGE | Checking window: Perplexity - gre ???
+[2025-02-15 11:27:06.fff] EDGE | Checking window: Gemini
+[2025-02-15 11:27:06.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 11:27:06.fff] EDGE | Checking window: ??? ?? - Google ?? and 28 more pages - Personal - Microsoft? Edge
+[2025-02-15 11:27:06.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 11:27:06.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 11:27:10.fff] F8 | Hotkey triggered
+[2025-02-15 11:27:10.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 11:27:10.fff] F8 | All windows exist, using quick activate
+[2025-02-15 11:27:23.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 11:27:23.fff] F7 | Found and activated main Edge window
+[2025-02-15 11:27:39.fff] EDGE | Entering function YouTube Music
+[2025-02-15 11:27:39.fff] EDGE | Checking window: steven ?? dcard - Google ?? and 28 more pages - Personal - Microsoft? Edge
+[2025-02-15 11:27:39.fff] EDGE | Checking window: Perplexity - gre ???
+[2025-02-15 11:27:39.fff] EDGE | Checking window: Gemini
+[2025-02-15 11:27:39.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 11:27:39.fff] EDGE | Checking window: YouTube Music - ??? ?? (Hidden Track) - YouTube Music
+[2025-02-15 11:27:39.fff] EDGE | Activated existing window: YouTube Music - ??? ?? (Hidden Track) - YouTube Music
+[2025-02-15 11:27:44.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 11:27:45.fff] F7 | Found and activated main Edge window
+[2025-02-15 11:55:36.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 11:55:36.fff] F7 | Found and activated main Edge window
+[2025-02-15 12:04:53.fff] F8 | Hotkey triggered
+[2025-02-15 12:04:53.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 12:04:53.fff] F8 | All windows exist, using quick activate
+[2025-02-15 12:05:21.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 12:05:21.fff] F7 | Found and activated main Edge window
+[2025-02-15 12:07:58.fff] F8 | Hotkey triggered
+[2025-02-15 12:07:58.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 12:07:58.fff] F8 | All windows exist, using quick activate
+[2025-02-15 12:08:03.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 12:08:03.fff] F7 | Found and activated main Edge window
+[2025-02-15 12:25:32.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 12:25:32.fff] F7 | Found and activated main Edge window
+[2025-02-15 12:52:27.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 12:52:28.fff] F7 | Found and activated main Edge window
+[2025-02-15 13:03:45.fff] EDGE | Entering function YouTube Music
+[2025-02-15 13:03:45.fff] EDGE | Checking window: 
+[2025-02-15 13:03:45.fff] EDGE | Checking window: YouTube and 32 more pages - Personal - Microsoft? Edge
+[2025-02-15 13:03:45.fff] EDGE | Checking window: YouTube Music - ?? - YouTube Music
+[2025-02-15 13:03:45.fff] EDGE | Activated existing window: YouTube Music - ?? - YouTube Music
+[2025-02-15 18:00:42.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 18:00:42.fff] F7 | Found and activated main Edge window
+[2025-02-15 18:00:51.fff] F8 | Hotkey triggered
+[2025-02-15 18:00:51.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 18:00:51.fff] F8 | All windows exist, using quick activate
+[2025-02-15 18:01:06.fff] F8 | Hotkey triggered
+[2025-02-15 18:01:06.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 18:01:06.fff] F8 | All windows exist, using quick activate
+[2025-02-15 18:03:56.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 18:03:56.fff] F7 | Found and activated main Edge window
+[2025-02-15 18:38:35.fff] F8 | Hotkey triggered
+[2025-02-15 18:38:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 18:38:35.fff] F8 | All windows exist, using quick activate
+[2025-02-15 18:43:51.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 18:43:51.fff] F7 | Found and activated main Edge window
+[2025-02-15 19:39:53.fff] EDGE | Entering function YouTube Music
+[2025-02-15 19:39:53.fff] EDGE | Checking window: YouTube and 32 more pages - Personal - Microsoft? Edge
+[2025-02-15 19:39:53.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 19:39:53.fff] EDGE | Checking window: Perplexity - I know toeic only has reading and listening, but if I get 425 and 425 in toeic, ????ielts ?reading and listening ????
+[2025-02-15 19:39:53.fff] EDGE | Checking window: Gemini
+[2025-02-15 19:39:53.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 19:39:53.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 19:39:55.fff] F8 | Hotkey triggered
+[2025-02-15 19:39:55.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 19:39:55.fff] F8 | All windows exist, using quick activate
+[2025-02-15 19:48:42.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 19:48:42.fff] F7 | Found and activated main Edge window
+[2025-02-15 19:48:59.fff] EDGE | Entering function YouTube Music
+[2025-02-15 19:48:59.fff] EDGE | Checking window: 
+[2025-02-15 19:48:59.fff] EDGE | Checking window: 
+[2025-02-15 19:48:59.fff] EDGE | Checking window: YouTube and 32 more pages - Personal - Microsoft? Edge
+[2025-02-15 19:48:59.fff] EDGE | Checking window: Perplexity - English Tutorial
+[2025-02-15 19:48:59.fff] EDGE | Checking window: Gemini
+[2025-02-15 19:48:59.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 19:48:59.fff] EDGE | Checking window: YouTube Music - ???? - YouTube Music
+[2025-02-15 19:48:59.fff] EDGE | Activated existing window: YouTube Music - ???? - YouTube Music
+[2025-02-15 19:49:14.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 19:49:15.fff] F7 | Found and activated main Edge window
+[2025-02-15 19:49:15.fff] F8 | Hotkey triggered
+[2025-02-15 19:49:15.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 19:49:15.fff] F8 | All windows exist, using quick activate
+[2025-02-15 19:51:55.fff] EDGE | Entering function YouTube Music
+[2025-02-15 19:51:55.fff] EDGE | Checking window: Gemini
+[2025-02-15 19:51:55.fff] EDGE | Checking window: Perplexity - how does native speaker learning new vocabulary
+[2025-02-15 19:51:55.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 19:51:55.fff] EDGE | Checking window: YouTube Music - ???? - YouTube Music
+[2025-02-15 19:51:55.fff] EDGE | Activated existing window: YouTube Music - ???? - YouTube Music
+[2025-02-15 19:52:06.fff] F8 | Hotkey triggered
+[2025-02-15 19:52:06.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 19:52:06.fff] F8 | All windows exist, using quick activate
+[2025-02-15 19:56:17.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 19:56:17.fff] F7 | Found and activated main Edge window
+[2025-02-15 20:24:25.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 20:24:25.fff] F7 | Found and activated main Edge window
+[2025-02-15 20:29:56.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 20:29:56.fff] F7 | Found and activated main Edge window
+[2025-02-15 21:07:33.fff] F8 | Hotkey triggered
+[2025-02-15 21:07:33.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 21:07:33.fff] F8 | All windows exist, using quick activate
+[2025-02-15 21:28:12.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 21:28:12.fff] F7 | Found and activated main Edge window
+[2025-02-15 22:54:27.fff] F8 | Hotkey triggered
+[2025-02-15 22:54:27.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 22:54:27.fff] F8 | All windows exist, using quick activate
+[2025-02-15 22:54:59.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 22:54:59.fff] F7 | Found and activated main Edge window
+[2025-02-15 22:55:47.fff] F8 | Hotkey triggered
+[2025-02-15 22:55:47.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 22:55:47.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:00:03.fff] EDGE | Entering function YouTube Music
+[2025-02-15 23:00:03.fff] EDGE | Checking window: Perplexity - ?????????????? ???????????? ?????????????? ???????????? ????????? ?????????? ?????????????????? ????? ????? ??????????? ??????????? ?????????? ?????????
+[2025-02-15 23:00:03.fff] EDGE | Checking window: Gemini
+[2025-02-15 23:00:03.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 23:00:03.fff] EDGE | Checking window: ?????<?????>x VOGUE Demo?Wendy Wander's dreamy performance of "Angel Angel"|Vogue Hong Kong - YouTube and 43 more pages - Personal - Microsoft? Edge
+[2025-02-15 23:00:03.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 23:00:03.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 23:00:08.fff] F8 | Hotkey triggered
+[2025-02-15 23:00:08.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:00:08.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:02:22.fff] EDGE | Entering function YouTube Music
+[2025-02-15 23:02:22.fff] EDGE | Checking window: Perplexity - ?????????????? ???????????? ?????????????? ???????????? ????????? ?????????? ?????????????????? ????? ????? ??????????? ??????????? ?????????? ?????????
+[2025-02-15 23:02:22.fff] EDGE | Checking window: Gemini
+[2025-02-15 23:02:22.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 23:02:22.fff] EDGE | Checking window: YouTube Music - ???? - YouTube Music
+[2025-02-15 23:02:22.fff] EDGE | Activated existing window: YouTube Music - ???? - YouTube Music
+[2025-02-15 23:02:32.fff] F8 | Hotkey triggered
+[2025-02-15 23:02:32.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:02:32.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:06:16.fff] EDGE | Entering function YouTube Music
+[2025-02-15 23:06:16.fff] EDGE | Checking window: Perplexity
+[2025-02-15 23:06:16.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 23:06:16.fff] EDGE | Checking window: Gemini
+[2025-02-15 23:06:16.fff] EDGE | Checking window: YouTube Music - Am I Loss - YouTube Music
+[2025-02-15 23:06:16.fff] EDGE | Activated existing window: YouTube Music - Am I Loss - YouTube Music
+[2025-02-15 23:06:19.fff] F8 | Hotkey triggered
+[2025-02-15 23:06:19.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:06:19.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:08:49.fff] F8 | Hotkey triggered
+[2025-02-15 23:08:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:08:49.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:09:37.fff] F8 | Hotkey triggered
+[2025-02-15 23:09:37.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:09:37.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:10:20.fff] F8 | Hotkey triggered
+[2025-02-15 23:10:20.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:10:20.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:10:34.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:10:34.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:15:32.fff] Script ready for operation
+[2025-02-15 23:15:32.fff] ProductivitySuite | Initializing layout
+[2025-02-15 23:15:32.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-15 23:15:32.fff] Starting script initialization
+[2025-02-15 23:15:32.fff] Script initialization completed
+[2025-02-15 23:15:35.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:15:35.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:15:45.fff] F8 | Hotkey triggered
+[2025-02-15 23:15:45.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:15:45.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:20:46.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:20:47.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:22:47.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:22:47.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:22:48.fff] F8 | Hotkey triggered
+[2025-02-15 23:22:48.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:22:48.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:22:53.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:22:53.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:25:39.fff] F8 | Hotkey triggered
+[2025-02-15 23:25:39.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:25:39.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:25:55.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:25:55.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:34:33.fff] F8 | Hotkey triggered
+[2025-02-15 23:34:33.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:34:33.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:39:59.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:39:59.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:40:19.fff] F8 | Hotkey triggered
+[2025-02-15 23:40:19.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:40:19.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:40:30.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:40:30.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:46:42.fff] F8 | Hotkey triggered
+[2025-02-15 23:46:42.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:46:42.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:51:34.fff] EDGE | Entering function YouTube Music
+[2025-02-15 23:51:34.fff] EDGE | Checking window: Perplexity - how to say the medical to help to sleep
+[2025-02-15 23:51:34.fff] EDGE | Checking window: Gemini
+[2025-02-15 23:51:34.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 23:51:34.fff] EDGE | Checking window: LBJ?Tatum?PG13???????????Steph Curry??????!??????|??????!???????! - YouTube and 43 more pages - Personal - Microsoft? Edge
+[2025-02-15 23:51:34.fff] EDGE | Checking window: YouTube Music
+[2025-02-15 23:51:35.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-15 23:51:42.fff] F8 | Hotkey triggered
+[2025-02-15 23:51:42.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:51:42.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:52:54.fff] EDGE | Entering function YouTube Music
+[2025-02-15 23:52:54.fff] EDGE | Checking window: Perplexity - how to say the medical to help to sleep
+[2025-02-15 23:52:54.fff] EDGE | Checking window: Gemini
+[2025-02-15 23:52:54.fff] EDGE | Checking window: GoogleTranslate - Google ??
+[2025-02-15 23:52:54.fff] EDGE | Checking window: YouTube Music - QUE LOVE - YouTube Music
+[2025-02-15 23:52:54.fff] EDGE | Activated existing window: YouTube Music - QUE LOVE - YouTube Music
+[2025-02-15 23:53:05.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:53:05.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:53:43.fff] F8 | Hotkey triggered
+[2025-02-15 23:53:43.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:53:43.fff] F8 | All windows exist, using quick activate
+[2025-02-15 23:55:07.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-15 23:55:08.fff] F7 | Found and activated main Edge window
+[2025-02-15 23:57:24.fff] F8 | Hotkey triggered
+[2025-02-15 23:57:24.fff] F8 | Layout already initialized, checking windows
+[2025-02-15 23:57:24.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:09:18.fff] F8 | Hotkey triggered
+[2025-02-16 00:09:18.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:09:18.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:09:21.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 00:09:21.fff] F7 | Found and activated main Edge window
+[2025-02-16 00:09:22.fff] F8 | Hotkey triggered
+[2025-02-16 00:09:22.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:09:22.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:09:28.fff] Script ready for operation
+[2025-02-16 00:09:28.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-16 00:09:28.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-16 00:09:28.fff] Starting script initialization
+[2025-02-16 00:09:28.fff] Script initialization completed
+[2025-02-16 00:09:29.fff] F8 | Hotkey triggered
+[2025-02-16 00:09:29.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:09:29.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:09:56.fff] Script ready for operation
+[2025-02-16 00:09:57.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-16 00:09:57.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-16 00:09:57.fff] Starting script initialization
+[2025-02-16 00:09:57.fff] Script initialization completed
+[2025-02-16 00:09:57.fff] F8 | Hotkey triggered
+[2025-02-16 00:09:57.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:09:57.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:10:24.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 00:10:24.fff] F7 | Found and activated main Edge window
+[2025-02-16 00:10:25.fff] F8 | Hotkey triggered
+[2025-02-16 00:10:25.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:10:25.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:10:30.fff] F8 | Hotkey triggered
+[2025-02-16 00:10:30.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:10:30.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:10:32.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 00:10:32.fff] F7 | Found and activated main Edge window
+[2025-02-16 00:16:18.fff] EDGE | Entering function YouTube Music
+[2025-02-16 00:16:18.fff] EDGE | Checking window: 
+[2025-02-16 00:16:18.fff] EDGE | Checking window: ?????????? ???????????????? ??????????????? ?TODAY ???|??????? - YouTube and 40 more pages - Personal - Microsoft? Edge
+[2025-02-16 00:16:19.fff] EDGE | Checking window: Perplexity
+[2025-02-16 00:16:19.fff] EDGE | Checking window: Gemini
+[2025-02-16 00:16:19.fff] EDGE | Checking window: YouTube Music
+[2025-02-16 00:16:19.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-16 00:16:29.fff] F8 | Hotkey triggered
+[2025-02-16 00:16:29.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 00:16:29.fff] F8 | All windows exist, using quick activate
+[2025-02-16 00:24:50.fff] EDGE | Entering function YouTube Music
+[2025-02-16 00:24:50.fff] EDGE | Checking window: Perplexity - how to say the medical to help to sleep
+[2025-02-16 00:24:50.fff] EDGE | Checking window: Gemini
+[2025-02-16 00:24:50.fff] EDGE | Checking window: YouTube Music - ????? - YouTube Music
+[2025-02-16 00:24:50.fff] EDGE | Activated existing window: YouTube Music - ????? - YouTube Music
+[2025-02-16 02:28:06.fff] F8 | Hotkey triggered
+[2025-02-16 02:28:06.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 02:28:06.fff] F8 | All windows exist, using quick activate
+[2025-02-16 02:42:27.fff] F8 | Hotkey triggered
+[2025-02-16 02:42:27.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 02:42:27.fff] F8 | All windows exist, using quick activate
