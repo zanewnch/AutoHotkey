@@ -969,3 +969,865 @@ Params: <>
 [2025-02-16 02:42:27.fff] F8 | Hotkey triggered
 [2025-02-16 02:42:27.fff] F8 | Layout already initialized, checking windows
 [2025-02-16 02:42:27.fff] F8 | All windows exist, using quick activate
+[2025-02-16 02:46:38.fff] F8 | Hotkey triggered
+[2025-02-16 02:46:38.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 02:46:38.fff] F8 | All windows exist, using quick activate
+[2025-02-16 02:55:59.fff] F8 | Hotkey triggered
+[2025-02-16 02:55:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 02:55:59.fff] F8 | All windows exist, using quick activate
+[2025-02-16 03:09:07.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 03:09:08.fff] F7 | Found and activated main Edge window
+[2025-02-16 17:24:39.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 17:24:39.fff] F7 | Found and activated main Edge window
+[2025-02-16 17:43:34.fff] EDGE | Entering function YouTube Music
+[2025-02-16 17:43:34.fff] EDGE | Checking window: ???!«???2»???????? ???????????|????? SETN.com - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-16 17:43:34.fff] EDGE | Checking window: Perplexity - ???? rust ???????
+[2025-02-16 17:43:34.fff] EDGE | Checking window: Gemini
+[2025-02-16 17:43:34.fff] EDGE | Checking window: YouTube Music
+[2025-02-16 17:43:34.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-16 17:44:57.fff] EDGE | Entering function YouTube Music
+[2025-02-16 17:44:57.fff] EDGE | Checking window: YouTube Music - ????? - YouTube Music
+[2025-02-16 17:44:57.fff] EDGE | Activated existing window: YouTube Music - ????? - YouTube Music
+[2025-02-16 17:46:00.fff] F8 | Hotkey triggered
+[2025-02-16 17:46:00.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 17:46:00.fff] F8 | All windows exist, using quick activate
+[2025-02-16 17:47:54.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 17:47:54.fff] F7 | Found and activated main Edge window
+[2025-02-16 17:48:02.fff] EDGE | Entering function YouTube Music
+[2025-02-16 17:48:02.fff] EDGE | Checking window: ???!«???2»???????? ???????????|????? SETN.com - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-16 17:48:02.fff] EDGE | Checking window: Perplexity - ???? rust ???????
+[2025-02-16 17:48:02.fff] EDGE | Checking window: Gemini
+[2025-02-16 17:48:02.fff] EDGE | Checking window: YouTube Music - ??? (????:??E.SO) - YouTube Music
+[2025-02-16 17:48:02.fff] EDGE | Activated existing window: YouTube Music - ??? (????:??E.SO) - YouTube Music
+[2025-02-16 17:48:03.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 17:48:03.fff] F7 | Found and activated main Edge window
+[2025-02-16 17:48:36.fff] F8 | Hotkey triggered
+[2025-02-16 17:48:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 17:48:37.fff] F8 | All windows exist, using quick activate
+[2025-02-16 17:53:55.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 17:53:55.fff] F7 | Found and activated main Edge window
+[2025-02-16 17:54:18.fff] F8 | Hotkey triggered
+[2025-02-16 17:54:18.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 17:54:18.fff] F8 | All windows exist, using quick activate
+[2025-02-16 17:59:53.fff] EDGE | Entering function YouTube Music
+[2025-02-16 17:59:53.fff] EDGE | Checking window: Perplexity
+[2025-02-16 17:59:53.fff] EDGE | Checking window: Gemini
+[2025-02-16 17:59:54.fff] EDGE | Checking window: Learn Rust Programming - Complete Course ?? - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-16 17:59:54.fff] EDGE | Checking window: YouTube Music
+[2025-02-16 17:59:54.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-16 18:02:47.fff] F8 | Hotkey triggered
+[2025-02-16 18:02:47.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:02:47.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:17:34.fff] EDGE | Entering function YouTube Music
+[2025-02-16 18:17:34.fff] EDGE | Checking window: Perplexity - ??????? ????? training and apply ai model, rust management, firmware design, investment and quantitative investment, web development
+[2025-02-16 18:17:34.fff] EDGE | Checking window: Gemini
+[2025-02-16 18:17:34.fff] EDGE | Checking window: YouTube Music - Follow - YouTube Music
+[2025-02-16 18:17:34.fff] EDGE | Activated existing window: YouTube Music - Follow - YouTube Music
+[2025-02-16 18:17:56.fff] F8 | Hotkey triggered
+[2025-02-16 18:17:56.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:17:56.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:19:32.fff] EDGE | Entering function YouTube Music
+[2025-02-16 18:19:32.fff] EDGE | Checking window: Perplexity
+[2025-02-16 18:19:32.fff] EDGE | Checking window: Gemini
+[2025-02-16 18:19:32.fff] EDGE | Checking window: YouTube Music - Follow - YouTube Music
+[2025-02-16 18:19:32.fff] EDGE | Activated existing window: YouTube Music - Follow - YouTube Music
+[2025-02-16 18:19:34.fff] F8 | Hotkey triggered
+[2025-02-16 18:19:34.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:19:34.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:20:32.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 18:20:32.fff] F7 | Found and activated main Edge window
+[2025-02-16 18:21:28.fff] F8 | Hotkey triggered
+[2025-02-16 18:21:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:21:28.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:25:12.fff] F8 | Hotkey triggered
+[2025-02-16 18:25:12.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:25:12.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:34:55.fff] F8 | Hotkey triggered
+[2025-02-16 18:34:55.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:34:55.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:37:46.fff] EDGE | Entering function YouTube Music
+[2025-02-16 18:37:46.fff] EDGE | Checking window: Gemini
+[2025-02-16 18:37:46.fff] EDGE | Checking window: Perplexity - ????
+[2025-02-16 18:37:46.fff] EDGE | Checking window: Learn Rust Programming - Complete Course ?? - YouTube and 26 more pages - Personal - Microsoft? Edge
+[2025-02-16 18:37:46.fff] EDGE | Checking window: YouTube Music - ?????? - YouTube Music
+[2025-02-16 18:37:46.fff] EDGE | Activated existing window: YouTube Music - ?????? - YouTube Music
+[2025-02-16 18:37:51.fff] F8 | Hotkey triggered
+[2025-02-16 18:37:51.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:37:51.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:45:24.fff] F8 | Hotkey triggered
+[2025-02-16 18:45:24.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 18:45:24.fff] F8 | All windows exist, using quick activate
+[2025-02-16 18:49:20.fff] EDGE | Entering function YouTube Music
+[2025-02-16 18:49:20.fff] EDGE | Checking window: Perplexity - ????
+[2025-02-16 18:49:20.fff] EDGE | Checking window: Gemini
+[2025-02-16 18:49:20.fff] EDGE | Checking window: YouTube Music - ???56??? - YouTube Music
+[2025-02-16 18:49:20.fff] EDGE | Activated existing window: YouTube Music - ???56??? - YouTube Music
+[2025-02-16 18:49:20.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 18:49:21.fff] F7 | Found and activated main Edge window
+[2025-02-16 18:49:23.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 18:49:23.fff] F7 | Found and activated main Edge window
+[2025-02-16 20:56:41.fff] F8 | Hotkey triggered
+[2025-02-16 20:56:41.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 20:56:41.fff] F8 | All windows exist, using quick activate
+[2025-02-16 20:59:46.fff] F8 | Hotkey triggered
+[2025-02-16 20:59:46.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 20:59:47.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:01:35.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:01:35.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:43:47.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:43:47.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:44:55.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:44:55.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:45:22.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:45:22.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:49:28.fff] F8 | Hotkey triggered
+[2025-02-16 21:49:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:49:28.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:51:35.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:51:35.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:52:05.fff] F8 | Hotkey triggered
+[2025-02-16 21:52:05.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:52:05.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:52:47.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:52:47.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:52:48.fff] F8 | Hotkey triggered
+[2025-02-16 21:52:48.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:52:48.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:52:49.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:52:49.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:52:53.fff] F8 | Hotkey triggered
+[2025-02-16 21:52:53.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:52:53.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:52:57.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:52:57.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:53:07.fff] F8 | Hotkey triggered
+[2025-02-16 21:53:07.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:53:07.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:53:09.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:53:09.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:54:19.fff] EDGE | Entering function YouTube Music
+[2025-02-16 21:54:19.fff] EDGE | Checking window: Our Product Portfolio | CHCNAV and 31 more pages - Personal - Microsoft? Edge
+[2025-02-16 21:54:19.fff] EDGE | Checking window: Perplexity - what is the differenece between the chcnav and chcnav.vv
+[2025-02-16 21:54:19.fff] EDGE | Checking window: Gemini
+[2025-02-16 21:54:19.fff] EDGE | Checking window: YouTube Music - Tyla - Sensational water ft. Chris Brown (prod. by wza) - YouTube Music
+[2025-02-16 21:54:20.fff] EDGE | Activated existing window: YouTube Music - Tyla - Sensational water ft. Chris Brown (prod. by wza) - YouTube Music
+[2025-02-16 21:54:20.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:54:20.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:55:22.fff] F8 | Hotkey triggered
+[2025-02-16 21:55:22.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:55:22.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:55:35.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:55:35.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:55:38.fff] F8 | Hotkey triggered
+[2025-02-16 21:55:38.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:55:38.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:55:43.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:55:43.fff] F7 | Found and activated main Edge window
+[2025-02-16 21:55:47.fff] EDGE | Entering function YouTube Music
+[2025-02-16 21:55:47.fff] EDGE | Checking window: ??? - ??????????,????+ ?????????? and 30 more pages - Personal - Microsoft? Edge
+[2025-02-16 21:55:47.fff] EDGE | Checking window: Perplexity - what is the differenece between the chcnav and chcnav.vv
+[2025-02-16 21:55:47.fff] EDGE | Checking window: Gemini
+[2025-02-16 21:55:47.fff] EDGE | Checking window: YouTube Music
+[2025-02-16 21:55:47.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-16 21:55:49.fff] F8 | Hotkey triggered
+[2025-02-16 21:55:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 21:55:49.fff] F8 | All windows exist, using quick activate
+[2025-02-16 21:56:52.fff] EDGE | Entering function YouTube Music
+[2025-02-16 21:56:52.fff] EDGE | Checking window: Perplexity - what is the differenece between the chcnav and chcnav.vv
+[2025-02-16 21:56:52.fff] EDGE | Checking window: Gemini
+[2025-02-16 21:56:52.fff] EDGE | Checking window: YouTube Music - Tyla - Sensational water ft. Chris Brown (prod. by wza) - YouTube Music
+[2025-02-16 21:56:52.fff] EDGE | Activated existing window: YouTube Music - Tyla - Sensational water ft. Chris Brown (prod. by wza) - YouTube Music
+[2025-02-16 21:57:10.fff] EDGE | Entering function YouTube Music
+[2025-02-16 21:57:10.fff] EDGE | Checking window: YouTube Music - Tyla - Sensational water ft. Chris Brown (prod. by wza) - YouTube Music
+[2025-02-16 21:57:10.fff] EDGE | Activated existing window: YouTube Music - Tyla - Sensational water ft. Chris Brown (prod. by wza) - YouTube Music
+[2025-02-16 21:57:12.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 21:57:12.fff] F7 | Found and activated main Edge window
+[2025-02-16 22:01:44.fff] F8 | Hotkey triggered
+[2025-02-16 22:01:44.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:01:44.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:05:17.fff] EDGE | Entering function YouTube Music
+[2025-02-16 22:05:17.fff] EDGE | Checking window: Perplexity - from docx import Document from docx.shared import Inches, Pt from docx.enum.text import WD_ALIGN_PARAGRAPH def create_sample_document(): # Create a new Document doc = Document() # Add a title title = doc.add_heading('Sample Document', 0) title.alignment = WD_ALIGN_PARAGRAPH.CENTER # Add a paragraph with some text p = doc.add_paragraph('This is a simple example of using ') p.add_run('python-docx').bold = True p.add_run(' to create Word documents.') # Add a heading level 1 doc.add_heading('Section 1', level=1) # Add paragraph with different formatting paragraph = doc.add_paragraph() paragraph.add_run('This text is normal. ') paragraph.add_run('This text is bold.').bold = True paragraph.add_run(' This text is italic.').italic = True # Add a bullet list doc.add_paragraph('Bullet points:', style='List Bullet') doc.add_paragraph('First item', style='List Bullet') doc.add_paragraph('Second item', style='List Bullet') doc.add_paragraph('Third item', style='List Bullet') # Add a table table = doc.add_table(rows=3, cols=3) for row in range(3): for col in range(3): cell = table.cell(row, col) cell.text = f'Cell ({row+1},{col+1})' # Save the document doc.save('sample_document.docx') if __name__ == '__main__': create_sample_document() print("Document has been created successfully!") does this script can use in rust
+[2025-02-16 22:05:17.fff] EDGE | Checking window: Gemini
+[2025-02-16 22:05:17.fff] EDGE | Checking window: ???NEWS|????????vs??????????,????OpenAI?????,???????? - YouTube and 30 more pages - Personal - Microsoft? Edge
+[2025-02-16 22:05:17.fff] EDGE | Checking window: YouTube Music
+[2025-02-16 22:05:17.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-16 22:05:37.fff] F8 | Hotkey triggered
+[2025-02-16 22:05:37.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:05:37.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:07:50.fff] Script ready for operation
+[2025-02-16 22:07:50.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-16 22:07:50.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-16 22:07:50.fff] Starting script initialization
+[2025-02-16 22:07:50.fff] Script initialization completed
+[2025-02-16 22:08:00.fff] F8 | Hotkey triggered
+[2025-02-16 22:08:00.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:08:00.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:09:01.fff] Script ready for operation
+[2025-02-16 22:09:01.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-16 22:09:01.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-16 22:09:01.fff] Starting script initialization
+[2025-02-16 22:09:01.fff] Script initialization completed
+[2025-02-16 22:09:12.fff] F8 | Hotkey triggered
+[2025-02-16 22:09:12.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:09:12.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:21:12.fff] F8 | Hotkey triggered
+[2025-02-16 22:21:12.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:21:12.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:27:21.fff] F8 | Hotkey triggered
+[2025-02-16 22:27:21.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:27:21.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:27:59.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 22:27:59.fff] F7 | Found and activated main Edge window
+[2025-02-16 22:29:38.fff] F8 | Hotkey triggered
+[2025-02-16 22:29:38.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 22:29:38.fff] F8 | All windows exist, using quick activate
+[2025-02-16 22:40:27.fff] EDGE | Entering function YouTube Music
+[2025-02-16 22:40:27.fff] EDGE | Checking window: Our Product Portfolio | CHCNAV and 30 more pages - Personal - Microsoft? Edge
+[2025-02-16 22:40:27.fff] EDGE | Checking window: Perplexity - from docx import Document from docx.shared import Inches, Pt from docx.enum.text import WD_ALIGN_PARAGRAPH def create_sample_document(): # Create a new Document doc = Document() # Add a title title = doc.add_heading('Sample Document', 0) title.alignment = WD_ALIGN_PARAGRAPH.CENTER # Add a paragraph with some text p = doc.add_paragraph('This is a simple example of using ') p.add_run('python-docx').bold = True p.add_run(' to create Word documents.') # Add a heading level 1 doc.add_heading('Section 1', level=1) # Add paragraph with different formatting paragraph = doc.add_paragraph() paragraph.add_run('This text is normal. ') paragraph.add_run('This text is bold.').bold = True paragraph.add_run(' This text is italic.').italic = True # Add a bullet list doc.add_paragraph('Bullet points:', style='List Bullet') doc.add_paragraph('First item', style='List Bullet') doc.add_paragraph('Second item', style='List Bullet') doc.add_paragraph('Third item', style='List Bullet') # Add a table table = doc.add_table(rows=3, cols=3) for row in range(3): for col in range(3): cell = table.cell(row, col) cell.text = f'Cell ({row+1},{col+1})' # Save the document doc.save('sample_document.docx') if __name__ == '__main__': create_sample_document() print("Document has been created successfully!") does this script can use in rust
+[2025-02-16 22:40:27.fff] EDGE | Checking window: Gemini
+[2025-02-16 22:40:27.fff] EDGE | Checking window: YouTube Music - Maykhana - YouTube Music
+[2025-02-16 22:40:27.fff] EDGE | Activated existing window: YouTube Music - Maykhana - YouTube Music
+[2025-02-16 23:02:43.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 23:02:43.fff] F7 | Found and activated main Edge window
+[2025-02-16 23:03:34.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 23:03:34.fff] F7 | Found and activated main Edge window
+[2025-02-16 23:04:56.fff] F8 | Hotkey triggered
+[2025-02-16 23:04:56.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 23:04:56.fff] F8 | All windows exist, using quick activate
+[2025-02-16 23:05:14.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 23:05:14.fff] F7 | Found and activated main Edge window
+[2025-02-16 23:05:15.fff] F8 | Hotkey triggered
+[2025-02-16 23:05:15.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 23:05:15.fff] F8 | All windows exist, using quick activate
+[2025-02-16 23:05:24.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-16 23:05:24.fff] F7 | Found and activated main Edge window
+[2025-02-16 23:32:23.fff] F8 | Hotkey triggered
+[2025-02-16 23:32:23.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 23:32:23.fff] F8 | All windows exist, using quick activate
+[2025-02-16 23:34:23.fff] EDGE | Entering function YouTube Music
+[2025-02-16 23:34:23.fff] EDGE | Checking window: Perplexity - from docx import Document from docx.shared import Inches, Pt from docx.enum.text import WD_ALIGN_PARAGRAPH def create_sample_document(): # Create a new Document doc = Document() # Add a title title = doc.add_heading('Sample Document', 0) title.alignment = WD_ALIGN_PARAGRAPH.CENTER # Add a paragraph with some text p = doc.add_paragraph('This is a simple example of using ') p.add_run('python-docx').bold = True p.add_run(' to create Word documents.') # Add a heading level 1 doc.add_heading('Section 1', level=1) # Add paragraph with different formatting paragraph = doc.add_paragraph() paragraph.add_run('This text is normal. ') paragraph.add_run('This text is bold.').bold = True paragraph.add_run(' This text is italic.').italic = True # Add a bullet list doc.add_paragraph('Bullet points:', style='List Bullet') doc.add_paragraph('First item', style='List Bullet') doc.add_paragraph('Second item', style='List Bullet') doc.add_paragraph('Third item', style='List Bullet') # Add a table table = doc.add_table(rows=3, cols=3) for row in range(3): for col in range(3): cell = table.cell(row, col) cell.text = f'Cell ({row+1},{col+1})' # Save the document doc.save('sample_document.docx') if __name__ == '__main__': create_sample_document() print("Document has been created successfully!") does this script can use in rust
+[2025-02-16 23:34:24.fff] EDGE | Checking window: Gemini
+[2025-02-16 23:34:24.fff] EDGE | Checking window: ????????? - YouTube and 30 more pages - Personal - Microsoft? Edge
+[2025-02-16 23:34:24.fff] EDGE | Checking window: YouTube Music
+[2025-02-16 23:34:24.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-16 23:34:38.fff] F8 | Hotkey triggered
+[2025-02-16 23:34:38.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 23:34:38.fff] F8 | All windows exist, using quick activate
+[2025-02-16 23:35:32.fff] F8 | Hotkey triggered
+[2025-02-16 23:35:32.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 23:35:32.fff] F8 | All windows exist, using quick activate
+[2025-02-16 23:39:55.fff] F8 | Hotkey triggered
+[2025-02-16 23:39:55.fff] F8 | Layout already initialized, checking windows
+[2025-02-16 23:39:55.fff] F8 | All windows exist, using quick activate
+[2025-02-16 23:45:28.fff] EDGE | Entering function YouTube Music
+[2025-02-16 23:45:28.fff] EDGE | Checking window: Perplexity - use docx_rs::{Docx, Paragraph, Run}; pub fn convert_notion_html_to_docx(html_content: &str, output_path: &str) { // TODO: Parse html_content to extract text, formatting, etc. let doc = Docx::new() .add_paragraph( Paragraph::new().add_run(Run::new().add_text("...converted text from html_content...")), ) .build(); doc.save(output_path).expect("Failed to save docx file"); } ??????????
+[2025-02-16 23:45:28.fff] EDGE | Checking window: Gemini
+[2025-02-16 23:45:28.fff] EDGE | Checking window: YouTube Music - trust me - YouTube Music
+[2025-02-16 23:45:28.fff] EDGE | Activated existing window: YouTube Music - trust me - YouTube Music
+[2025-02-17 00:31:55.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 00:31:55.fff] F7 | Found and activated main Edge window
+[2025-02-17 00:32:21.fff] F8 | Hotkey triggered
+[2025-02-17 00:32:21.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 00:32:21.fff] F8 | All windows exist, using quick activate
+[2025-02-17 00:34:40.fff] F8 | Hotkey triggered
+[2025-02-17 00:34:40.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 00:34:41.fff] F8 | All windows exist, using quick activate
+[2025-02-17 00:47:23.fff] F8 | Hotkey triggered
+[2025-02-17 00:47:23.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 00:47:23.fff] F8 | All windows exist, using quick activate
+[2025-02-17 00:55:47.fff] Script ready for operation
+[2025-02-17 00:55:48.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 00:55:48.fff] Starting script initialization
+[2025-02-17 00:55:48.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 00:55:53.fff] Script initialization completed
+[2025-02-17 12:46:33.fff] Script ready for operation
+[2025-02-17 12:46:34.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 12:46:34.fff] Starting script initialization
+[2025-02-17 12:46:34.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 12:46:39.fff] Script initialization completed
+[2025-02-17 12:47:24.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:24.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:24.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:33.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 12:47:33.fff] F7 | Found and activated main Edge window
+[2025-02-17 12:47:34.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:34.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:34.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:34.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:34.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:35.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:35.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:35.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:36.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:36.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:36.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:36.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:36.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:36.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:36.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:36.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:36.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:36.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:37.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 12:47:37.fff] F7 | Found and activated main Edge window
+[2025-02-17 12:47:37.fff] F8 | Hotkey triggered
+[2025-02-17 12:47:37.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:47:37.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:47:39.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 12:47:39.fff] F7 | Found and activated main Edge window
+[2025-02-17 12:47:54.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 12:47:54.fff] F7 | Found and activated main Edge window
+[2025-02-17 12:48:03.fff] F8 | Hotkey triggered
+[2025-02-17 12:48:03.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:48:03.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:57:46.fff] F8 | Hotkey triggered
+[2025-02-17 12:57:46.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 12:57:46.fff] F8 | All windows exist, using quick activate
+[2025-02-17 12:57:47.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 12:57:47.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:00:19.fff] F8 | Hotkey triggered
+[2025-02-17 13:00:19.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:00:19.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:00:22.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:00:22.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:01:12.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:01:12.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:02:04.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:02:05.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:03:07.fff] F8 | Hotkey triggered
+[2025-02-17 13:03:07.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:03:07.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:03:07.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:03:07.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:03:13.fff] F8 | Hotkey triggered
+[2025-02-17 13:03:13.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:03:13.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:03:13.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:03:14.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:04:05.fff] F8 | Hotkey triggered
+[2025-02-17 13:04:05.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:04:05.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:04:06.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:04:06.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:06:44.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:06:44.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:15:35.fff] F8 | Hotkey triggered
+[2025-02-17 13:15:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:15:35.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:16:25.fff] F8 | Hotkey triggered
+[2025-02-17 13:16:25.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:16:25.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:16:25.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:16:25.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:31:34.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:31:34.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:31:35.fff] F8 | Hotkey triggered
+[2025-02-17 13:31:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 13:31:35.fff] F8 | All windows exist, using quick activate
+[2025-02-17 13:32:47.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:32:47.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:34:03.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:34:03.fff] F7 | Found and activated main Edge window
+[2025-02-17 13:34:45.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 13:34:46.fff] F7 | Found and activated main Edge window
+[2025-02-17 15:38:48.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 15:38:48.fff] F7 | Found and activated main Edge window
+[2025-02-17 16:07:41.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 16:07:41.fff] F7 | Found and activated main Edge window
+[2025-02-17 16:55:20.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 16:55:20.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:02:55.fff] F8 | Hotkey triggered
+[2025-02-17 17:02:55.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:02:55.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:06:25.fff] EDGE | Entering function YouTube Music
+[2025-02-17 17:06:25.fff] EDGE | Checking window: 
+[2025-02-17 17:06:25.fff] EDGE | Checking window: ????AI???????????| ???????? | ??????????? | ????? | AI?????? | AI?????? | ???AI?? | ???? | ????? - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-17 17:06:25.fff] EDGE | Checking window: Perplexity - ?? ???? ????? ?????? i73+ - 60°???? - ??????? IP67 + 2??? ??????????? i76 - ????AR?? - ?????? IP68 + 2??? ????????????? i83 - ???IMU - ????? IP67 + 2??? ????????????? i89 - ?????? - VPT™???? IP68 + 2??? ?????????????? i93 - 200Hz??IMU - 3D???? IP67 + 2??? ????????????? give me table of english version
+[2025-02-17 17:06:25.fff] EDGE | Checking window: Gemini
+[2025-02-17 17:06:25.fff] EDGE | Checking window: YouTube Music
+[2025-02-17 17:06:25.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-17 17:06:34.fff] F8 | Hotkey triggered
+[2025-02-17 17:06:34.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:06:34.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:07:23.fff] Script ready for operation
+[2025-02-17 17:07:24.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 17:07:24.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-17 17:07:24.fff] Starting script initialization
+[2025-02-17 17:07:24.fff] Script initialization completed
+[2025-02-17 17:07:25.fff] F8 | Hotkey triggered
+[2025-02-17 17:07:25.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:07:25.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:07:26.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:07:26.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:07:27.fff] F8 | Hotkey triggered
+[2025-02-17 17:07:27.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:07:27.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:07:28.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:07:28.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:07:35.fff] F8 | Hotkey triggered
+[2025-02-17 17:07:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:07:35.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:07:37.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:07:37.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:07:44.fff] F8 | Hotkey triggered
+[2025-02-17 17:07:44.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:07:44.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:08:22.fff] EDGE | Entering function YouTube Music
+[2025-02-17 17:08:22.fff] EDGE | Checking window: Perplexity - ?? ???? ????? ?????? i73+ - 60°???? - ??????? IP67 + 2??? ??????????? i76 - ????AR?? - ?????? IP68 + 2??? ????????????? i83 - ???IMU - ????? IP67 + 2??? ????????????? i89 - ?????? - VPT™???? IP68 + 2??? ?????????????? i93 - 200Hz??IMU - 3D???? IP67 + 2??? ????????????? give me table of english version
+[2025-02-17 17:08:22.fff] EDGE | Checking window: Gemini
+[2025-02-17 17:08:22.fff] EDGE | Checking window: YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-17 17:08:22.fff] EDGE | Checking window: YouTube Music - ??? - YouTube Music
+[2025-02-17 17:08:22.fff] EDGE | Activated existing window: YouTube Music - ??? - YouTube Music
+[2025-02-17 17:08:30.fff] F8 | Hotkey triggered
+[2025-02-17 17:08:30.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:08:30.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:08:31.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:08:31.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:13:26.fff] F8 | Hotkey triggered
+[2025-02-17 17:13:26.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:13:26.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:18:05.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:18:05.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:20:27.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:20:28.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:20:28.fff] F8 | Hotkey triggered
+[2025-02-17 17:20:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:20:28.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:20:28.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:20:28.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:20:56.fff] EDGE | Entering function YouTube Music
+[2025-02-17 17:20:56.fff] EDGE | Checking window: 
+[2025-02-17 17:20:56.fff] EDGE | Checking window: ???????????????????? - YouTube and 26 more pages - Personal - Microsoft? Edge
+[2025-02-17 17:20:56.fff] EDGE | Checking window: Perplexity - if I want to say using ... to do something, how to say
+[2025-02-17 17:20:56.fff] EDGE | Checking window: Gemini
+[2025-02-17 17:20:56.fff] EDGE | Checking window: YouTube Music
+[2025-02-17 17:20:56.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-17 17:21:34.fff] EDGE | Entering function YouTube Music
+[2025-02-17 17:21:34.fff] EDGE | Checking window: YouTube Music - Dear Omer - YouTube Music
+[2025-02-17 17:21:34.fff] EDGE | Activated existing window: YouTube Music - Dear Omer - YouTube Music
+[2025-02-17 17:21:42.fff] F8 | Hotkey triggered
+[2025-02-17 17:21:42.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:21:42.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:30:59.fff] F8 | Hotkey triggered
+[2025-02-17 17:30:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 17:30:59.fff] F8 | All windows exist, using quick activate
+[2025-02-17 17:34:27.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:34:27.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:39:03.fff] EDGE | Entering function YouTube Music
+[2025-02-17 17:39:03.fff] EDGE | Checking window: ?Joeman?1500????????220??????!«Joe????S2»Ep159 @linda-egg - YouTube and 26 more pages - Personal - Microsoft? Edge
+[2025-02-17 17:39:03.fff] EDGE | Checking window: Perplexity - if I want to say using ... to do something, how to say
+[2025-02-17 17:39:03.fff] EDGE | Checking window: Gemini
+[2025-02-17 17:39:03.fff] EDGE | Checking window: YouTube Music - Controlla - YouTube Music
+[2025-02-17 17:39:04.fff] EDGE | Activated existing window: YouTube Music - Controlla - YouTube Music
+[2025-02-17 17:39:05.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:39:06.fff] F7 | Found and activated main Edge window
+[2025-02-17 17:39:10.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 17:39:10.fff] F7 | Found and activated main Edge window
+[2025-02-17 18:22:45.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 18:22:45.fff] F7 | Found and activated main Edge window
+[2025-02-17 18:22:49.fff] F8 | Hotkey triggered
+[2025-02-17 18:22:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 18:22:49.fff] F8 | All windows exist, using quick activate
+[2025-02-17 18:34:45.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 18:34:45.fff] F7 | Found and activated main Edge window
+[2025-02-17 18:50:56.fff] EDGE | Entering function YouTube Music
+[2025-02-17 18:50:56.fff] EDGE | Checking window: ???? - VoiceTube ?????? and 26 more pages - Personal - Microsoft? Edge
+[2025-02-17 18:50:56.fff] EDGE | Checking window: Perplexity - if I want to say using ... to do something, how to say
+[2025-02-17 18:50:56.fff] EDGE | Checking window: Gemini
+[2025-02-17 18:50:56.fff] EDGE | Checking window: YouTube Music
+[2025-02-17 18:50:57.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-17 18:50:59.fff] F8 | Hotkey triggered
+[2025-02-17 18:50:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 18:50:59.fff] F8 | All windows exist, using quick activate
+[2025-02-17 18:56:21.fff] F8 | Hotkey triggered
+[2025-02-17 18:56:21.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 18:56:21.fff] F8 | All windows exist, using quick activate
+[2025-02-17 19:11:47.fff] F8 | Hotkey triggered
+[2025-02-17 19:11:47.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 19:11:47.fff] F8 | All windows exist, using quick activate
+[2025-02-17 19:14:11.fff] EDGE | Entering function YouTube Music
+[2025-02-17 19:14:11.fff] EDGE | Checking window: 
+[2025-02-17 19:14:11.fff] EDGE | Checking window: ??????????!????????????????????????? ?? ?? ?? ????? ?? ?? ??? - YouTube and 26 more pages - Personal - Microsoft? Edge
+[2025-02-17 19:14:11.fff] EDGE | Checking window: Perplexity - does it is possible to compile kotlin project in vscode
+[2025-02-17 19:14:11.fff] EDGE | Checking window: Gemini
+[2025-02-17 19:14:11.fff] EDGE | Checking window: YouTube Music - for when it’s warmer - YouTube Music
+[2025-02-17 19:14:11.fff] EDGE | Activated existing window: YouTube Music - for when it’s warmer - YouTube Music
+[2025-02-17 19:14:12.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 19:14:12.fff] F7 | Found and activated main Edge window
+[2025-02-17 19:14:14.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 19:14:14.fff] F7 | Found and activated main Edge window
+[2025-02-17 19:14:15.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 19:14:15.fff] F7 | Found and activated main Edge window
+[2025-02-17 19:22:22.fff] F8 | Hotkey triggered
+[2025-02-17 19:22:22.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 19:22:22.fff] F8 | All windows exist, using quick activate
+[2025-02-17 19:36:03.fff] F8 | Hotkey triggered
+[2025-02-17 19:36:03.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 19:36:03.fff] F8 | All windows exist, using quick activate
+[2025-02-17 19:45:15.fff] F8 | Hotkey triggered
+[2025-02-17 19:45:15.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 19:45:15.fff] F8 | All windows exist, using quick activate
+[2025-02-17 19:51:35.fff] F8 | Hotkey triggered
+[2025-02-17 19:51:35.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 19:51:35.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:15:08.fff] F8 | Hotkey triggered
+[2025-02-17 20:15:08.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:15:08.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:19:13.fff] EDGE | Entering function YouTube Music
+[2025-02-17 20:19:13.fff] EDGE | Checking window: Gemini
+[2025-02-17 20:19:13.fff] EDGE | Checking window: Perplexity - in rust, & is borrow, :: is relate operator, right
+[2025-02-17 20:19:13.fff] EDGE | Checking window: Team Shaq vs. Team Chuck All-Star Championship FULL GAME Highlights | Feb 16 | 2025 NBA Highlights - YouTube and 26 more pages - Personal - Microsoft? Edge
+[2025-02-17 20:19:13.fff] EDGE | Checking window: YouTube Music
+[2025-02-17 20:19:13.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-17 20:19:18.fff] F8 | Hotkey triggered
+[2025-02-17 20:19:18.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:19:18.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:29:21.fff] F8 | Hotkey triggered
+[2025-02-17 20:29:21.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:29:21.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:31:00.fff] Script ready for operation
+[2025-02-17 20:31:01.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 20:31:01.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-17 20:31:01.fff] Starting script initialization
+[2025-02-17 20:31:01.fff] Script initialization completed
+[2025-02-17 20:41:11.fff] F8 | Hotkey triggered
+[2025-02-17 20:41:11.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:41:11.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:43:28.fff] F8 | Hotkey triggered
+[2025-02-17 20:43:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:43:28.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:46:07.fff] F8 | Hotkey triggered
+[2025-02-17 20:46:07.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:46:07.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:47:51.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 20:47:52.fff] F7 | Found and activated main Edge window
+[2025-02-17 20:50:46.fff] F8 | Hotkey triggered
+[2025-02-17 20:50:46.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:50:46.fff] F8 | All windows exist, using quick activate
+[2025-02-17 20:50:57.fff] F8 | Hotkey triggered
+[2025-02-17 20:50:57.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 20:50:57.fff] F8 | All windows exist, using quick activate
+[2025-02-17 21:14:14.fff] F8 | Hotkey triggered
+[2025-02-17 21:14:14.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 21:14:14.fff] F8 | All windows exist, using quick activate
+[2025-02-17 21:19:25.fff] F8 | Hotkey triggered
+[2025-02-17 21:19:25.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 21:19:25.fff] F8 | All windows exist, using quick activate
+[2025-02-17 21:26:49.fff] EDGE | Entering function YouTube Music
+[2025-02-17 21:26:49.fff] EDGE | Checking window: Perplexity - ok, what is dereferencing
+[2025-02-17 21:26:49.fff] EDGE | Checking window: Gemini
+[2025-02-17 21:26:49.fff] EDGE | Checking window: Google ?? and 27 more pages - Personal - Microsoft? Edge
+[2025-02-17 21:26:49.fff] EDGE | Checking window: YouTube Music - Le Sud - YouTube Music
+[2025-02-17 21:26:49.fff] EDGE | Activated existing window: YouTube Music - Le Sud - YouTube Music
+[2025-02-17 21:27:03.fff] F8 | Hotkey triggered
+[2025-02-17 21:27:03.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 21:27:03.fff] F8 | All windows exist, using quick activate
+[2025-02-17 21:29:49.fff] F8 | Hotkey triggered
+[2025-02-17 21:29:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 21:29:49.fff] F8 | All windows exist, using quick activate
+[2025-02-17 22:01:48.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 22:01:48.fff] F7 | Found and activated main Edge window
+[2025-02-17 22:03:44.fff] F8 | Hotkey triggered
+[2025-02-17 22:03:44.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 22:03:44.fff] F8 | All windows exist, using quick activate
+[2025-02-17 22:13:26.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 22:13:26.fff] F7 | Found and activated main Edge window
+[2025-02-17 22:13:28.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-17 22:13:28.fff] F7 | Found and activated main Edge window
+[2025-02-17 22:18:21.fff] F8 | Hotkey triggered
+[2025-02-17 22:18:21.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 22:18:21.fff] F8 | All windows exist, using quick activate
+[2025-02-17 23:26:22.fff] EDGE | Entering function YouTube Music
+[2025-02-17 23:26:22.fff] EDGE | Checking window: Perplexity
+[2025-02-17 23:26:22.fff] EDGE | Checking window: ?????????Hash Table??????? | ?????????????40???? | ???? | ???? | ???? | ??????? - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-17 23:26:22.fff] EDGE | Checking window: Gemini
+[2025-02-17 23:26:22.fff] EDGE | Checking window: YouTube Music
+[2025-02-17 23:26:22.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-17 23:26:26.fff] F8 | Hotkey triggered
+[2025-02-17 23:26:26.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 23:26:26.fff] F8 | All windows exist, using quick activate
+[2025-02-17 23:36:36.fff] EDGE | Entering function YouTube Music
+[2025-02-17 23:36:36.fff] EDGE | Checking window: 
+[2025-02-17 23:36:36.fff] EDGE | Checking window: ??????????/2025????|????#1510 - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-17 23:36:36.fff] EDGE | Checking window: Perplexity - ???c ??????????? ?????exception
+[2025-02-17 23:36:36.fff] EDGE | Checking window: Gemini
+[2025-02-17 23:36:36.fff] EDGE | Checking window: YouTube Music - Jordans - YouTube Music
+[2025-02-17 23:36:36.fff] EDGE | Activated existing window: YouTube Music - Jordans - YouTube Music
+[2025-02-17 23:40:14.fff] F8 | Hotkey triggered
+[2025-02-17 23:40:14.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 23:40:14.fff] F8 | All windows exist, using quick activate
+[2025-02-17 23:41:23.fff] Script ready for operation
+[2025-02-17 23:41:23.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-17 23:41:23.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-17 23:41:23.fff] Starting script initialization
+[2025-02-17 23:41:23.fff] Script initialization completed
+[2025-02-17 23:43:59.fff] F8 | Hotkey triggered
+[2025-02-17 23:43:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-17 23:43:59.fff] F8 | All windows exist, using quick activate
+[2025-02-18 00:30:17.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 00:30:17.fff] F7 | Found and activated main Edge window
+[2025-02-18 15:59:31.fff] Script ready for operation
+[2025-02-18 15:59:31.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-18 15:59:31.fff] Starting script initialization
+[2025-02-18 15:59:31.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-18 15:59:36.fff] Script initialization completed
+[2025-02-18 15:59:51.fff] Script ready for operation
+[2025-02-18 15:59:52.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-18 15:59:52.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-18 15:59:52.fff] Starting script initialization
+[2025-02-18 15:59:52.fff] Script initialization completed
+[2025-02-18 15:59:53.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 15:59:53.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:00:04.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:00:04.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:02:19.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:02:19.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:03:41.fff] EDGE | Entering function YouTube Music
+[2025-02-18 16:03:41.fff] EDGE | Checking window: 
+[2025-02-18 16:03:41.fff] EDGE | Checking window: ?#???EP162 | ????????????? ft. ??? - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-18 16:03:41.fff] EDGE | Checking window: Gemini
+[2025-02-18 16:03:41.fff] EDGE | Checking window: Perplexity
+[2025-02-18 16:03:41.fff] EDGE | Checking window: YouTube Music
+[2025-02-18 16:03:41.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-18 16:04:33.fff] EDGE | Entering function YouTube Music
+[2025-02-18 16:04:33.fff] EDGE | Checking window: YouTube Music - Jordans - YouTube Music
+[2025-02-18 16:04:33.fff] EDGE | Activated existing window: YouTube Music - Jordans - YouTube Music
+[2025-02-18 16:04:38.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:04:38.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:07:40.fff] F8 | Hotkey triggered
+[2025-02-18 16:07:40.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:07:40.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:11:38.fff] F8 | Hotkey triggered
+[2025-02-18 16:11:38.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:11:38.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:13:24.fff] EDGE | Entering function YouTube Music
+[2025-02-18 16:13:24.fff] EDGE | Checking window: Perplexity - *.md; *.txt; *.rst; *.adoc give me the string like this including kt java xmal ymal toml
+[2025-02-18 16:13:24.fff] EDGE | Checking window: Gemini
+[2025-02-18 16:13:24.fff] EDGE | Checking window: ?#???EP162 | ????????????? ft. ??? - YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-18 16:13:24.fff] EDGE | Checking window: YouTube Music - All My Life - YouTube Music
+[2025-02-18 16:13:24.fff] EDGE | Activated existing window: YouTube Music - All My Life - YouTube Music
+[2025-02-18 16:13:26.fff] F8 | Hotkey triggered
+[2025-02-18 16:13:26.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:13:26.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:17:03.fff] EDGE | Entering function YouTube Music
+[2025-02-18 16:17:03.fff] EDGE | Checking window: Perplexity - *.md; *.txt; *.rst; *.adoc give me the string like this including kt java xmal ymal toml
+[2025-02-18 16:17:03.fff] EDGE | Checking window: Gemini
+[2025-02-18 16:17:03.fff] EDGE | Checking window: YouTube Music
+[2025-02-18 16:17:03.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-18 16:17:05.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:17:05.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:17:06.fff] F8 | Hotkey triggered
+[2025-02-18 16:17:06.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:17:06.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:21:42.fff] F8 | Hotkey triggered
+[2025-02-18 16:21:42.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:21:42.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:22:27.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:22:27.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:29:03.fff] F8 | Hotkey triggered
+[2025-02-18 16:29:03.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:29:03.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:34:45.fff] F8 | Hotkey triggered
+[2025-02-18 16:34:45.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:34:45.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:38:23.fff] F8 | Hotkey triggered
+[2025-02-18 16:38:23.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:38:23.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:40:31.fff] F8 | Hotkey triggered
+[2025-02-18 16:40:31.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:40:31.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:49:25.fff] F8 | Hotkey triggered
+[2025-02-18 16:49:25.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:49:25.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:51:51.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:51:51.fff] F7 | Found and activated main Edge window
+[2025-02-18 16:52:21.fff] F8 | Hotkey triggered
+[2025-02-18 16:52:21.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 16:52:21.fff] F8 | All windows exist, using quick activate
+[2025-02-18 16:55:39.fff] EDGE | Entering function YouTube Music
+[2025-02-18 16:55:39.fff] EDGE | Checking window: Perplexity - I remember that there is open company develop the system to let LLM continuous write the code, and I remember its main service is deploy website and provide sandbox
+[2025-02-18 16:55:39.fff] EDGE | Checking window: Gemini
+[2025-02-18 16:55:39.fff] EDGE | Checking window: sandbox - Google ?? and 28 more pages - Personal - Microsoft? Edge
+[2025-02-18 16:55:39.fff] EDGE | Checking window: YouTube Music - martians - YouTube Music
+[2025-02-18 16:55:39.fff] EDGE | Activated existing window: YouTube Music - martians - YouTube Music
+[2025-02-18 16:59:13.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 16:59:13.fff] F7 | Found and activated main Edge window
+[2025-02-18 18:11:09.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 18:11:10.fff] F7 | Found and activated main Edge window
+[2025-02-18 18:16:01.fff] EDGE | Entering function YouTube Music
+[2025-02-18 18:16:01.fff] EDGE | Checking window: 
+[2025-02-18 18:16:01.fff] EDGE | Checking window: YouTube and 27 more pages - Personal - Microsoft? Edge
+[2025-02-18 18:16:01.fff] EDGE | Checking window: YouTube Music
+[2025-02-18 18:16:01.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-18 18:36:01.fff] F8 | Hotkey triggered
+[2025-02-18 18:36:01.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:36:01.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:39:24.fff] EDGE | Entering function YouTube Music
+[2025-02-18 18:39:24.fff] EDGE | Checking window: Perplexity - I have written many lauguage, but only java spring boot and kotin jpa continuous occur config issue, which is not can instant fix, need to try 10 ~ 20 times to fix one config issue, fuck it, python, rust, ts do not generate question like it, it is fucking annoying
+[2025-02-18 18:39:24.fff] EDGE | Checking window: Gemini
+[2025-02-18 18:39:24.fff] EDGE | Checking window: 235????????? ? ??? - Google ?? and 28 more pages - Personal - Microsoft? Edge
+[2025-02-18 18:39:24.fff] EDGE | Checking window: YouTube Music - ??A1J Ðào T? - ???? Peachievous ???? Full Album - YouTube Music
+[2025-02-18 18:39:24.fff] EDGE | Activated existing window: YouTube Music - ??A1J Ðào T? - ???? Peachievous ???? Full Album - YouTube Music
+[2025-02-18 18:39:28.fff] F8 | Hotkey triggered
+[2025-02-18 18:39:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:39:28.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:44:34.fff] F8 | Hotkey triggered
+[2025-02-18 18:44:34.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:44:34.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:46:04.fff] EDGE | Entering function YouTube Music
+[2025-02-18 18:46:04.fff] EDGE | Checking window: Perplexity
+[2025-02-18 18:46:04.fff] EDGE | Checking window: Gemini
+[2025-02-18 18:46:04.fff] EDGE | Checking window: YouTube Music - ???????? - YouTube Music
+[2025-02-18 18:46:04.fff] EDGE | Activated existing window: YouTube Music - ???????? - YouTube Music
+[2025-02-18 18:46:10.fff] F8 | Hotkey triggered
+[2025-02-18 18:46:10.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:46:10.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:47:42.fff] EDGE | Entering function YouTube Music
+[2025-02-18 18:47:42.fff] EDGE | Checking window: Perplexity
+[2025-02-18 18:47:42.fff] EDGE | Checking window: Gemini
+[2025-02-18 18:47:42.fff] EDGE | Checking window: YouTube Music
+[2025-02-18 18:47:42.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-18 18:47:44.fff] F8 | Hotkey triggered
+[2025-02-18 18:47:44.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:47:44.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:49:05.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 18:49:05.fff] F7 | Found and activated main Edge window
+[2025-02-18 18:49:17.fff] EDGE | Entering function YouTube Music
+[2025-02-18 18:49:17.fff] EDGE | Checking window: 235????????? ? ??? - Google ?? and 28 more pages - Personal - Microsoft? Edge
+[2025-02-18 18:49:17.fff] EDGE | Checking window: Perplexity - ?????? ??????????? ?????????? ?????? ???????? ????????????????
+[2025-02-18 18:49:17.fff] EDGE | Checking window: Gemini
+[2025-02-18 18:49:17.fff] EDGE | Checking window: YouTube Music - ???????? - YouTube Music
+[2025-02-18 18:49:17.fff] EDGE | Activated existing window: YouTube Music - ???????? - YouTube Music
+[2025-02-18 18:49:27.fff] F8 | Hotkey triggered
+[2025-02-18 18:49:27.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:49:27.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:51:15.fff] EDGE | Entering function YouTube Music
+[2025-02-18 18:51:15.fff] EDGE | Checking window: Perplexity - ?????? ??????????? ?????????? ?????? ???????? ????????????????
+[2025-02-18 18:51:15.fff] EDGE | Checking window: Gemini
+[2025-02-18 18:51:15.fff] EDGE | Checking window: YouTube Music
+[2025-02-18 18:51:16.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-18 18:51:18.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 18:51:18.fff] F7 | Found and activated main Edge window
+[2025-02-18 18:52:49.fff] F8 | Hotkey triggered
+[2025-02-18 18:52:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:52:49.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:53:05.fff] F8 | Hotkey triggered
+[2025-02-18 18:53:05.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:53:05.fff] F8 | All windows exist, using quick activate
+[2025-02-18 18:56:54.fff] F8 | Hotkey triggered
+[2025-02-18 18:56:54.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 18:56:54.fff] F8 | All windows exist, using quick activate
+[2025-02-18 19:01:28.fff] F8 | Hotkey triggered
+[2025-02-18 19:01:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 19:01:28.fff] F8 | All windows exist, using quick activate
+[2025-02-18 19:03:33.fff] F8 | Hotkey triggered
+[2025-02-18 19:03:33.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 19:03:33.fff] F8 | All windows exist, using quick activate
+[2025-02-18 22:12:09.fff] Script ready for operation
+[2025-02-18 22:12:09.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-18 22:12:09.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-18 22:12:09.fff] Starting script initialization
+[2025-02-18 22:12:09.fff] Script initialization completed
+[2025-02-18 22:12:12.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 22:12:12.fff] F7 | Found and activated main Edge window
+[2025-02-18 22:12:12.fff] F8 | Hotkey triggered
+[2025-02-18 22:12:12.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 22:12:12.fff] F8 | All windows exist, using quick activate
+[2025-02-18 22:14:58.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 22:14:58.fff] F7 | Found and activated main Edge window
+[2025-02-18 23:27:18.fff] Script ready for operation
+[2025-02-18 23:27:18.fff] ProductivitySuite | Initializing layout (GoogleTranslate disabled, 7:3 ratio)
+[2025-02-18 23:27:18.fff] ProductivitySuite | All windows exist, skipping arrangement
+[2025-02-18 23:27:18.fff] Starting script initialization
+[2025-02-18 23:27:18.fff] Script initialization completed
+[2025-02-18 23:33:36.fff] F8 | Hotkey triggered
+[2025-02-18 23:33:36.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 23:33:36.fff] F8 | All windows exist, using quick activate
+[2025-02-18 23:35:29.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 23:35:29.fff] F7 | Found and activated main Edge window
+[2025-02-18 23:36:08.fff] F8 | Hotkey triggered
+[2025-02-18 23:36:08.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 23:36:08.fff] F8 | All windows exist, using quick activate
+[2025-02-18 23:45:49.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-18 23:45:49.fff] F7 | Found and activated main Edge window
+[2025-02-18 23:49:02.fff] F8 | Hotkey triggered
+[2025-02-18 23:49:02.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 23:49:02.fff] F8 | All windows exist, using quick activate
+[2025-02-18 23:59:46.fff] F8 | Hotkey triggered
+[2025-02-18 23:59:46.fff] F8 | Layout already initialized, checking windows
+[2025-02-18 23:59:46.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:01:06.fff] F8 | Hotkey triggered
+[2025-02-19 00:01:06.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:01:06.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:01:33.fff] F8 | Hotkey triggered
+[2025-02-19 00:01:33.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:01:33.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:05:38.fff] EDGE | Entering function YouTube Music
+[2025-02-19 00:05:38.fff] EDGE | Checking window: Perplexity - ??????????
+[2025-02-19 00:05:38.fff] EDGE | Checking window: Gemini
+[2025-02-19 00:05:38.fff] EDGE | Checking window: Google ?? and 27 more pages - Personal - Microsoft? Edge
+[2025-02-19 00:05:38.fff] EDGE | Checking window: YouTube Music
+[2025-02-19 00:05:38.fff] EDGE | Activated existing window: YouTube Music
+[2025-02-19 00:05:49.fff] F8 | Hotkey triggered
+[2025-02-19 00:05:49.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:05:49.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:13:47.fff] F8 | Hotkey triggered
+[2025-02-19 00:13:47.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:13:47.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:15:10.fff] F8 | Hotkey triggered
+[2025-02-19 00:15:10.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:15:10.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:17:42.fff] F8 | Hotkey triggered
+[2025-02-19 00:17:42.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:17:42.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:23:56.fff] EDGE | Entering function YouTube Music
+[2025-02-19 00:23:56.fff] EDGE | Checking window: Gemini
+[2025-02-19 00:23:56.fff] EDGE | Checking window: Perplexity - the continuous issue of kotlin jpa manifest make me want to give up, consider using other platform, does it is common
+[2025-02-19 00:23:56.fff] EDGE | Checking window: YouTube Music - ???? - YouTube Music
+[2025-02-19 00:23:56.fff] EDGE | Activated existing window: YouTube Music - ???? - YouTube Music
+[2025-02-19 00:23:59.fff] F8 | Hotkey triggered
+[2025-02-19 00:23:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:23:59.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:26:08.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-19 00:26:09.fff] F7 | Found and activated main Edge window
+[2025-02-19 00:28:28.fff] F8 | Hotkey triggered
+[2025-02-19 00:28:28.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:28:28.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:29:59.fff] F8 | Hotkey triggered
+[2025-02-19 00:29:59.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:29:59.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:33:09.fff] F8 | Hotkey triggered
+[2025-02-19 00:33:09.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:33:09.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:34:57.fff] F8 | Hotkey triggered
+[2025-02-19 00:34:57.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:34:57.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:36:51.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-19 00:36:51.fff] F7 | Found and activated main Edge window
+[2025-02-19 00:47:17.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-19 00:47:17.fff] F7 | Found and activated main Edge window
+[2025-02-19 00:47:17.fff] F8 | Hotkey triggered
+[2025-02-19 00:47:17.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 00:47:17.fff] F8 | All windows exist, using quick activate
+[2025-02-19 00:48:20.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-19 00:48:20.fff] F7 | Found and activated main Edge window
+[2025-02-19 00:48:36.fff] EDGE | Entering function YouTube Music
+[2025-02-19 00:48:36.fff] EDGE | Checking window: 
+[2025-02-19 00:48:36.fff] EDGE | Checking window: ?????????????????????,?????????? (????) - YouTube and 28 more pages - Personal - Microsoft? Edge
+[2025-02-19 00:48:36.fff] EDGE | Checking window: Perplexity - I remember there is a type of video using chart to show the usage of each programming language in different years and month
+[2025-02-19 00:48:36.fff] EDGE | Checking window: Gemini
+[2025-02-19 00:48:36.fff] EDGE | Checking window: YouTube Music - ??? (????:????) - YouTube Music
+[2025-02-19 00:48:36.fff] EDGE | Activated existing window: YouTube Music - ??? (????:????) - YouTube Music
+[2025-02-19 00:48:37.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-19 00:48:37.fff] F7 | Found and activated main Edge window
+[2025-02-19 01:22:55.fff] F8 | Hotkey triggered
+[2025-02-19 01:22:55.fff] F8 | Layout already initialized, checking windows
+[2025-02-19 01:22:55.fff] F8 | All windows exist, using quick activate
+[2025-02-19 01:23:21.fff] F7 | Launching Microsoft Edge Main Browser
+[2025-02-19 01:23:21.fff] F7 | Found and activated main Edge window

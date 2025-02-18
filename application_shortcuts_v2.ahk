@@ -744,12 +744,17 @@ F13:: {
 !w::Send("^w")  ; Alt+W = Close Tab
 !t::Send("^t")  ; Alt+T = New Tab
 !r::Send("^r")  ; Alt+R = Refresh
+!z::Send("^z")  ; Alt+Z = Undo
 
 ; Navigation Shortcuts
 !Left::Send("{Home}")    ; Alt+Left = Move to line start
 !Right::Send("{End}")    ; Alt+Right = Move to line end
 !Up::Send("{Home}")      ; Alt+Up = Move to line start
 !Down::Send("{End}")     ; Alt+Down = Move to line end
+
+; Selection Shortcuts
+!+Left::Send("+{Home}")    ; Alt+Shift+Left = Select all text to the left of the cursor
+!+Right::Send("+{End}")    ; Alt+Shift+Right = Select all text to the right of the cursor
 
 ; ======================================
 ; Script Initialization
