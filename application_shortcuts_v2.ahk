@@ -248,6 +248,12 @@ class ProductivitySuite {
          exe: "msedge.exe",
          args: "--app=https://gemini.google.com",
          title: "Gemini"
+        },
+        {name: "Brave",
+        path: "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe",
+        exe: "brave.exe",
+        args: "",
+        title: "Brave"
         }
     ]
 
@@ -345,20 +351,18 @@ class ProductivitySuite {
         ; Sort commands to ensure Perplexity is first, Gemini second, and GoogleTranslate third
         sortedCommands := []
 
-        ; First add Perplexity if it exists
         for cmd in commands {
-            if (cmd.name = "Perplexity") {
-                sortedCommands.Push(cmd)
-                break
-            }
+        if (cmd.name = "Perplexity") {
+            sortedCommands.Push(cmd)
+            break
+        }
         }
 
-        ; Then add Gemini if it exists
         for cmd in commands {
-            if (cmd.name = "Gemini") {
-                sortedCommands.Push(cmd)
-                break
-            }
+        if (cmd.name = "Brave") {
+            sortedCommands.Push(cmd)
+            break
+        }
         }
 
         ; Finally add remaining commands
@@ -417,95 +421,64 @@ class ProductivitySuite {
     }
 
     static UpdateWindowHandles() {
-        ; Clear invalid handles first
-        for appName, hwnd in this.windowHandles {
-            if !WinExist("ahk_id " hwnd) {
-                this.windowHandles.Delete(appName)
-            }
-        }
-
-        ; Find missing windows
-        windows := WinGetList("ahk_exe msedge.exe")
-        for hwnd in windows {
-            title := WinGetTitle(hwnd)
-            for app in this.apps {
-                if (!isGoogleTranslate && app.name = "googleTranslate")
-                    continue
-                if !this.windowHandles.Has(app.name) {
-                    if ((app.name = "Perplexity" && InStr(title, "Perplexity"))
-                        || (app.name = "googleTranslate" && InStr(title, "GoogleTranslate"))
-                        || (app.name = "Gemini" && InStr(title, "Gemini"))) {
-                        this.windowHandles[app.name] := hwnd
-                    }
-                }
-            }
+    for appName, hwnd in this.windowHandles {
+        if !WinExist("ahk_id " hwnd) {
+            this.windowHandles.Delete(appName)
         }
     }
+
+    windows := WinGetList("ahk_exe msedge.exe")
+    for hwnd in windows {
+        title := WinGetTitle(hwnd)
+        if !this.windowHandles.Has("Perplexity") && InStr(title, "Perplexity") {
+            this.windowHandles["Perplexity"] := hwnd
+        }
+    }
+
+    if !this.windowHandles.Has("Brave") {
+        brave_hwnd := WinExist("ahk_exe brave.exe")
+        if brave_hwnd {
+            this.windowHandles["Brave"] := brave_hwnd
+        }
+    }
+    }
+
 
     static PositionWindows() {
-        ; Use cached layout configuration
-        cfg := this.layoutConfig
+    cfg := this.layoutConfig
 
-        ; Position all windows in a single pass
-        for appName, hwnd in this.windowHandles {
-            try {
-                if WinExist("ahk_id " hwnd) {
-                    if (!isGoogleTranslate) {
-                        switch appName {
-                            case "Perplexity":
-                                WinMove(hwnd,, cfg.left, cfg.top, cfg.perpWidth, cfg.height)
-                                WinSetAlwaysOnTop(true, hwnd)
-                            case "Gemini":
-                                WinMove(hwnd,, cfg.left + cfg.perpWidth, cfg.top, cfg.geminiWidth, cfg.height)
-                        }
-                    } else {
-                        switch appName {
-                            case "Perplexity":
-                                WinMove(hwnd,, cfg.left, cfg.top, cfg.perpWidth, cfg.height)
-                                WinSetAlwaysOnTop(true, hwnd)
-                            case "googleTranslate":
-                                WinMove(hwnd,, cfg.left + cfg.perpWidth, cfg.top, cfg.transWidth, cfg.height)
-                            case "Gemini":
-                                WinMove(hwnd,, cfg.left + cfg.perpWidth + cfg.transWidth, cfg.top, cfg.geminiWidth, cfg.height)
-                        }
-                    }
+    for appName, hwnd in this.windowHandles {
+        try {
+            if WinExist("ahk_id " hwnd) {
+                switch appName {
+                    case "Perplexity":
+                        WinMove(hwnd,, cfg.left, cfg.top, cfg.perpWidth, cfg.height)
+                        WinSetAlwaysOnTop(true, hwnd)
+                    case "Brave":
+                        WinMove(hwnd,, cfg.left + cfg.perpWidth, cfg.top, cfg.geminiWidth, cfg.height)
                 }
-            } catch as err {
-                DebugLog("ProductivitySuite | Error moving window: " err.Message)
             }
+        } catch as err {
+            DebugLog("ProductivitySuite | Error moving window: " err.Message)
         }
     }
+}
+
 
     static QuickActivate() {
-        ; Activate windows in original order
-        if (!isGoogleTranslate) {
-            for appName in ["Perplexity", "Gemini"] {
-                if this.windowHandles.Has(appName) {
-                    WinActivate("ahk_id " this.windowHandles[appName])
-                    Sleep(20)  ; Small delay between activations
-                }
-            }
-
-            ; Extra activation of Perplexity at the end to ensure it's the current window
-            if this.windowHandles.Has("Perplexity") {
-                Sleep(100)  ; Slightly longer delay before final activation
-                WinActivate("ahk_id " this.windowHandles["Perplexity"])
-            }
-        } else {
-            for appName in ["Perplexity", "googleTranslate", "Gemini"] {
-                if this.windowHandles.Has(appName) {
-                    WinActivate("ahk_id " this.windowHandles[appName])
-                    Sleep(20)  ; Small delay between activations
-                }
-            }
-
-            ; Extra activation of Perplexity at the end to ensure it's the current window
-            if this.windowHandles.Has("Perplexity") {
-                Sleep(100)  ; Slightly longer delay before final activation
-                WinActivate("ahk_id " this.windowHandles["Perplexity"])
-            }
+    for appName in ["Perplexity", "Brave"] {
+        if this.windowHandles.Has(appName) {
+            WinActivate("ahk_id " this.windowHandles[appName])
+            Sleep(20)
         }
     }
+
+    if this.windowHandles.Has("Perplexity") {
+        Sleep(100)
+        WinActivate("ahk_id " this.windowHandles["Perplexity"])
+    }
+}
+
 }
 
 ; Initialize layout when script starts
@@ -601,39 +574,12 @@ F7:: {
 }
 
 F8:: {
-    DebugLog("F8 | Hotkey triggered")
+    DebugLog("F8 | Launching Brave Browser")
 
-    if (!ENABLE_PRODUCTIVITY) {
-        DebugLog("F8 | Productivity suite disabled")
-        return
-    }
-
-    try {
-        if (!ProductivitySuite.isLayoutInitialized) {
-            DebugLog("F8 | Initializing layout for the first time")
-            ProductivitySuite.InitializeLayout()
-        } else {
-            DebugLog("F8 | Layout already initialized, checking windows")
-            ; Quick check if any window is missing
-            needsRearrange := false
-            for appName, hwnd in ProductivitySuite.windowHandles {
-                if !WinExist("ahk_id " hwnd) {
-                    DebugLog("F8 | Window missing for: " appName)
-                    needsRearrange := true
-                    break
-                }
-            }
-
-            if (needsRearrange) {
-                DebugLog("F8 | Rearranging windows")
-                ProductivitySuite.ArrangeWindows(false)
-            } else {
-                DebugLog("F8 | All windows exist, using quick activate")
-                ProductivitySuite.QuickActivate()
-            }
-        }
-    } catch as err {
-        DebugLog("F8 | Error: " err.Message)
+    if WinExist("ahk_exe brave.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
     }
 }
 
@@ -668,8 +614,8 @@ F3:: {
     ActivateEdgeWindow("YouTube Music", "YouTube Music", "", "C:\Users\user\Desktop\YouTubeMusic.lnk")
 }
 
-; F4: Android Studio
-F4:: {
+; F5: Android Studio
+F5:: {
     if WinExist("ahk_exe studio64.exe") {
         WinActivate()
     } else {
@@ -678,13 +624,27 @@ F4:: {
 }
 
 ; F5: VS Code Insiders
-F5:: {
-    if WinExist("ahk_exe Code - Insiders.exe") {
-        WinActivate()
-    } else {
-        Run("C:\Users\user\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe")
-    }
-}
+;F5:: {
+;    if WinExist("ahk_exe Code - Insiders.exe") {
+;        WinActivate()
+;    } else {
+;        Run("C:\Users\user\AppData\Local\Programs\Microsoft VS Code Insiders\Code - Insiders.exe")
+;    }
+;}
+
+; C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.3\bin\idea.bat
+; Run("C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.3\bin\idea64.exe")
+
+;F5:: {
+;    if WinExist("ahk_exe idea64.exe") {
+;        WinActivate()
+;    } else {
+;        Run("C:\Program Files\JetBrains\IntelliJ IDEA 2024.3.3\bin\idea64.exe")
+;    }
+;}
+
+
+
 
 ; F6: Cursor
 F6:: {
