@@ -56,8 +56,15 @@ F6:: {
     }
 }
 
-; F7: Microsoft Edge
 F7:: {
+    if WinExist("ahk_exe brave.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+    }
+}
+
+F8:: {
     if WinExist("ahk_exe msedge.exe") {
         WinActivate()
     } else {
@@ -65,14 +72,7 @@ F7:: {
     }
 }
 
-; F8: Brave Browser
-F8:: {
-    if WinExist("ahk_exe brave.exe") {
-        WinActivate()
-    } else {
-        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
-    }
-}
+
 
 ; F9: LocalFrontend
 F9:: {
@@ -110,6 +110,50 @@ F12:: {
     }
 }
 
+PgUp:: {
+    if WinExist("ahk_exe msedge.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+    }
+}
+
+
+
+; PgDn: Cursor
+PgDn:: {
+    if WinExist("ahk_exe cursor.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+    }
+}
+
+Home:: {
+    if WinExist("ahk_exe brave.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+    }
+}
+
+End:: {
+    if WinExist("ahk_exe msedge.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+    }
+}
+
+; Insert: Cursor
+Ins:: {
+    if WinExist("ahk_exe cursor.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+    }
+}
+
 ; ======================================
 ; Keymap Enhancements
 ; ======================================
@@ -138,3 +182,25 @@ F12:: {
 ; Selection Shortcuts
 !+Left::Send("+{Home}")    ; Alt+Shift+Left = Select all text to the left of the cursor
 !+Right::Send("+{End}")    ; Alt+Shift+Right = Select all text to the right of the cursor
+
+; ======================================
+; Right Alt and Right Control Specific Shortcuts
+; ======================================
+
+; Right Alt opens Brave browser
+RAlt:: {
+    if WinExist("ahk_exe msedge.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+    }
+}
+
+; Right Control opens Cursor
+RCtrl:: {
+    if WinExist("ahk_exe cursor.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+    }
+}
