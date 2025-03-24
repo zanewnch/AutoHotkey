@@ -72,8 +72,6 @@ F8:: {
     }
 }
 
-
-
 ; F9: LocalFrontend
 F9:: {
     if WinExist("LocalFrontend ahk_exe msedge.exe") {
@@ -117,8 +115,6 @@ PgUp:: {
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     }
 }
-
-
 
 ; PgDn: Cursor
 PgDn:: {
