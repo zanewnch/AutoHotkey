@@ -38,12 +38,21 @@ F3:: {
     }
 }
 
-; F5: Android Studio
-F5:: {
+; F4: Android Studio
+F4:: {
     if WinExist("ahk_exe studio64.exe") {
         WinActivate()
     } else {
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio\Android Studio.lnk")
+    }
+}
+
+; F5: Windsurf
+F5:: {
+    if WinExist("ahk_exe windsurf.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
     }
 }
 
