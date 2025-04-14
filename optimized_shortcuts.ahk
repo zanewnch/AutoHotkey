@@ -1,5 +1,7 @@
 #Requires AutoHotkey v2.0+
 
+#UseHook  ; 確保 AutoHotkey 使用鍵盤鉤子來覆蓋系統預設快捷鍵
+
 ; ======================================
 ; Core Configuration
 ; ======================================
@@ -209,3 +211,119 @@ RCtrl:: {
         Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
     }
 }
+
+; ======================================
+; Additional Ctrl Shortcuts
+; ======================================
+
+^-:: {
+    if WinExist("ahk_exe cursor.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+    }
+}
+
+^=:: {
+    if WinExist("ahk_exe windsurf.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
+    }
+}
+
+^Backspace:: {
+    if WinExist("ahk_exe studio64.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio\Android Studio.lnk")
+    }
+}
+
+; ======================================
+; Windows Key Shortcuts (Changed to Ctrl)
+; ======================================
+
+; Ctrl+Left: Cursor
+^Left:: {
+    if WinExist("ahk_exe cursor.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+    }
+    Send("{Blind}{vkFF}")  ; 防止系統處理視窗移動
+    Return  ; 防止系統預設行為
+}
+
+; Ctrl+Right: Microsoft Edge
+^Right:: {
+    if WinExist("ahk_exe msedge.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+    }
+    Send("{Blind}{vkFF}")  ; 防止系統處理視窗移動
+    Return  ; 防止系統預設行為
+}
+
+; Ctrl+Up: Android Studio
+^Up:: {
+    if WinExist("ahk_exe studio64.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio\Android Studio.lnk")
+    }
+    Return  ; 防止系統預設行為
+}
+
+; Ctrl+Down: Brave Browser
+^Down:: {
+    if WinExist("ahk_exe brave.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+    }
+    Return  ; 防止系統預設行為
+}
+
+; Ctrl+Shift+Left: Windsurf IDE
+^+Left:: {
+    if WinExist("ahk_exe windsurf.exe") {
+        WinActivate()
+    } else {
+        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
+    }
+    Return  ; 防止系統預設行為
+}
+
+; Ctrl+Shift+Down: Windows Copilot
+^+Down:: {
+    Run("ms-copilot:")  ; 嘗試使用 ms-copilot: 協議來開啟 Copilot
+    Return  ; 防止系統預設行為
+}
+
+; ======================================
+; Mouse Simulation Shortcuts
+; ======================================
+
+; Disable Caps Lock default functionality
+SetCapsLockState("AlwaysOff")  ; 完全禁用 Caps Lock 的預設大小寫切換功能，保持關閉狀態
+CapsLock::Return  ; 單獨按下 Caps Lock 時不執行任何操作
+
+; Scroll Up
+CapsLock & Up::Send("{WheelUp}")  ; Caps Lock + Up = Scroll Up (滾輪幅度根據 Windows OS 預設滑鼠設定)
+
+; Scroll Down
+CapsLock & Down::Send("{WheelDown}")  ; Caps Lock + Down = Scroll Down (滾輪幅度根據 Windows OS 預設滑鼠設定)
+
+; Scroll Left
+CapsLock & Left::Send("{WheelLeft}")  ; Caps Lock + Left = Scroll Left (滾輪幅度根據 Windows OS 預設滑鼠設定)
+
+; Scroll Right
+CapsLock & Right::Send("{WheelRight}")  ; Caps Lock + Right = Scroll Right (滾輪幅度根據 Windows OS 預設滑鼠設定)
+
+; Mouse Click (Left Click)
+!Enter::Click  ; Alt + Enter = Left Click
+
+; Mouse Click (Right Click)
+!Backspace::Click("Right")  ; Alt + Backspace = Right Click
