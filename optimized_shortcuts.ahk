@@ -9,6 +9,36 @@ SendMode("Input")
 SetTitleMatchMode(2)
 SetWorkingDir(A_ScriptDir)
 
+; Initialize screen dimensions at script startup
+SysGet, screenWidth, 78  ; 獲取螢幕寬度，一次性計算
+SysGet, screenHeight, 79  ; 獲取螢幕高度，一次性計算
+
+; Initialize percentage values as variables
+cursor_workbench_x_axis := 25  ; 預設 X 軸百分比為 25%，用於 Cursor IDE 工作區
+global_y_axis := 50  ; 預設 Y 軸百分比為 50%，通用設置
+
+; Initialize default cursor positions as global variables (for Cursor IDE)
+defaultXPos := screenWidth * (cursor_workbench_x_axis / 100)  ; 預設 X 軸位置
+defaultYPos := screenHeight * (global_y_axis / 100)  ; 預設 Y 軸位置
+
+; ======================================
+; Utility Functions
+; ======================================
+
+; Function to move mouse cursor to a percentage position on the screen
+MoveCursorWorkbenchToPercentage(xPercent := cursor_workbench_x_axis, yPercent := global_y_axis) {
+    global defaultXPos, defaultYPos  ; 使用預存的預設位置
+    if (xPercent = cursor_workbench_x_axis && yPercent = global_y_axis) {
+        MouseMove(defaultXPos, defaultYPos, 0)  ; 移動滑鼠游標到預設位置
+    } else {
+        global screenWidth, screenHeight
+        xPos := screenWidth * (xPercent / 100)
+        yPos := screenHeight * (yPercent / 100)
+        MouseMove(xPos, yPos, 0)  ; 移動滑鼠游標到指定位置
+    }
+    Return
+}
+
 ; ======================================
 ; Application Shortcuts (F1-F12)
 ; ======================================
@@ -65,6 +95,7 @@ F6:: {
     } else {
         Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
     }
+    MoveCursorWorkbenchToPercentage()  ; 移動滑鼠游標到 X:25%, Y:50% 的位置
 }
 
 F7:: {
