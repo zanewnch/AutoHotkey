@@ -1,5 +1,10 @@
 #Requires AutoHotkey v2.0+
 
+; Script-wide settings
+SendMode("Input")
+SetTitleMatchMode(2)
+SetWorkingDir(A_ScriptDir)
+
 ; Screen dimensions
 global screenWidth := A_ScreenWidth
 global screenHeight := A_ScreenHeight
