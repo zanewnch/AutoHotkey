@@ -6,7 +6,7 @@
 
 #HotIf WinActive("ahk_exe cursor.exe")
 ^L:: {
-    MoveCursorWorkbenchToPercentage(75, global_y_axis)  ; 移動滑鼠游標到 X:75%, Y:50% 的位置
+    MoveCursorWorkbenchToPercentage(75, 83)  ; 移動滑鼠游標到 X:75%, Y:80% 的位置
     Return
 }
 #HotIf 
