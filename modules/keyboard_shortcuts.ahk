@@ -24,6 +24,13 @@
 !Up::Send("{Home}")  ; Alt+Up = Move to line start
 !Down::Send("{End}")  ; Alt+Down = Move to line end
 
+; Mouse Click (Left Click)
+CapsLock & Enter::Click  ; Caps Lock + Enter = Left Click
+!Enter::Click  ; Alt + Enter = Left Click
+
+; Mouse Click (Right Click)
+!Backspace::Click("Right")  ; Alt + Backspace = Right Click
+
 ; Selection Shortcuts
 !+Left::Send("+{Home}")  ; Alt+Shift+Left = Select all text to the left of the cursor
 !+Right::Send("+{End}")  ; Alt+Shift+Right = Select all text to the right of the cursor

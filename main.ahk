@@ -36,10 +36,6 @@ CapsLock & Down::Send("{WheelDown}")
 CapsLock & Left::Send("{WheelLeft}")
 CapsLock & Right::Send("{WheelRight}")
 
-; Mouse clicks
-!Enter::Click
-!Backspace::Click("Right")
-
 ; Tab + Arrow Keys for Mouse Movement
 Tab::Return
 Tab & Up::MouseMove(0, -mouseMoveStep, 0, "R")
