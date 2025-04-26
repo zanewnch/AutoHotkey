@@ -37,7 +37,7 @@ CapsLock & Left::Send("{WheelLeft}")
 CapsLock & Right::Send("{WheelRight}")
 
 ; Tab + Arrow Keys for Mouse Movement
-Tab::Return
+~Tab::Return  ; Use prefix tilde (~) to allow Tab's normal function to pass through
 Tab & Up::MouseMove(0, -mouseMoveStep, 0, "R")
 Tab & Down::MouseMove(0, mouseMoveStep, 0, "R")
 Tab & Left::MouseMove(-mouseMoveStep, 0, 0, "R")
