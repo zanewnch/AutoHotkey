@@ -91,10 +91,11 @@ RCtrl:: {
 }
 
 ^Right:: {
-    if WinExist("ahk_exe msedge.exe") {
+    ; Check if ChatGPT is running (window title or exe)
+    if WinExist("ahk_exe ChatGPT.exe") {
         WinActivate()
     } else {
-        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+        Run("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
     }
     Send("{Blind}{vkFF}")
     Return

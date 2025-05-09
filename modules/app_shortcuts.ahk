@@ -64,12 +64,13 @@ F7:: {
     }
 }
 
-; F8: Microsoft Edge
-F8:: {
-    if WinExist("ahk_exe msedge.exe") {
+; F8: ChatGPT
+F8::{
+    ; Check if ChatGPT is running (window title or exe)
+    if WinExist("ahk_exe ChatGPT.exe") {
         WinActivate()
     } else {
-        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+        Run("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
     }
 }
 
@@ -110,22 +111,22 @@ F12:: {
 }
 
 ; PgUp: Microsoft Edge
-PgUp:: {
-    if WinExist("ahk_exe msedge.exe") {
-        WinActivate()
-    } else {
-        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
-    }
-}
+; PgUp:: {
+;     if WinExist("ahk_exe msedge.exe") {
+;         WinActivate()
+;     } else {
+;         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
+;     }
+; }
 
 ; PgDn: Cursor
-PgDn:: {
-    if WinExist("ahk_exe cursor.exe") {
-        WinActivate()
-    } else {
-        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
-    }
-}
+; PgDn:: {
+;     if WinExist("ahk_exe cursor.exe") {
+;         WinActivate()
+;     } else {
+;         Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+;     }
+; }
 
 ; Home: Brave Browser
 Home:: {
