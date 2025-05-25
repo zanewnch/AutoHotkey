@@ -87,27 +87,44 @@ RCtrl:: {
 
 ; Windows Key Shortcuts (Changed to Ctrl)
 ^Left:: {
-     if WinExist("ahk_exe idea64.exe") {
+    if WinExist("ahk_exe cursor.exe") {
         WinActivate()
     } else {
-        Run("C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\bin\\idea64.exe")
+        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
     }
     MoveCursorWorkbenchToPercentage()
     Send("{Blind}{vkFF}")
     Return
 }
 
+;^Left:: {
+;     if WinExist("ahk_exe idea64.exe") {
+;        WinActivate()
+;    } else {
+;        Run("C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\bin\\idea64.exe")
+;    }
+;    MoveCursorWorkbenchToPercentage()
+;    Send("{Blind}{vkFF}")
+;    Return
+;}
 
+;^Right:: {
+;    ; Check if ChatGPT is running (window title or exe)
+;    if WinExist("ahk_exe ChatGPT.exe") {
+;        WinActivate()
+;    } else {
+;        Run("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
+;    }
+;    Send("{Blind}{vkFF}")
+;    Return
+;}
 
 ^Right:: {
-    ; Check if ChatGPT is running (window title or exe)
-    if WinExist("ahk_exe ChatGPT.exe") {
+    if WinExist("ahk_exe msedge.exe") {
         WinActivate()
     } else {
-        Run("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     }
-    Send("{Blind}{vkFF}")
-    Return
 }
 
 ^Up:: {
