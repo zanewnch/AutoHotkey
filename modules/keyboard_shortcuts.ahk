@@ -136,11 +136,12 @@ RCtrl:: {
     Return
 }
 
+
 ^Down:: {
-    if WinExist("ahk_exe brave.exe") {
+    if WinExist("ahk_exe Arc.exe") {
         WinActivate()
     } else {
-        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+        Run("C:\Users\user\AppData\Local\Microsoft\WindowsApps\Arc.exe")
     }
     Return
 }
