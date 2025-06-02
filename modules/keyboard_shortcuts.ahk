@@ -150,7 +150,7 @@ RCtrl:: {
     if WinExist("ahk_exe windsurf.exe") {
         WinActivate()
     } else {
-        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
+        Run("C:\Users\user\AppData\Local\Programs\Windsurf\bin\windsurf.cmd")
     }
     Return
 }

@@ -41,7 +41,7 @@ F5:: {
     if WinExist("ahk_exe windsurf.exe") {
         WinActivate()
     } else {
-        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
+        Run("C:\Users\user\AppData\Local\Programs\Windsurf\bin\windsurf.cmd")
     }
 }
 
@@ -56,23 +56,43 @@ F6:: {
 }
 
 ; F7: Brave Browser
-F7:: {
-    if WinExist("ahk_exe brave.exe") {
+;F7:: {
+;    if WinExist("ahk_exe brave.exe") {
+;        WinActivate()
+;    } else {
+;        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+;    }
+;}
+
+
+F7::{
+    if WinExist("ahk_exe Arc.exe") {
         WinActivate()
     } else {
-        Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
+        Run("C:\Users\user\AppData\Local\Microsoft\WindowsApps\Arc.exe")
+    }
+    Return
+}
+
+
+
+F8::{
+    if WinExist("ahk_exe msedge.exe") {
+        WinActivate()
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     }
 }
 
 ; F8: ChatGPT
-F8::{
-    ; Check if ChatGPT is running (window title or exe)
-    if WinExist("ahk_exe ChatGPT.exe") {
-        WinActivate()
-    } else {
-        Run("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
-    }
-}
+;F8::{
+;    ; Check if ChatGPT is running ;(window title or exe)
+;    if WinExist("ahk_exe ChatGPT.exe") {
+;        WinActivate()
+;    } else {
+;        Run;("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
+;    }
+;}
 
 ; F9: LocalFrontend
 F9:: {
