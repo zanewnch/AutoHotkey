@@ -137,14 +137,23 @@ RCtrl:: {
 }
 
 
-^Down:: {
-    if WinExist("ahk_exe Arc.exe") {
+^Down::{
+    if WinExist("ahk_exe Chrome.exe") {
         WinActivate()
     } else {
-        Run("C:\Users\user\AppData\Local\Microsoft\WindowsApps\Arc.exe")
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk")
     }
     Return
 }
+
+;^Down:: {
+;    if WinExist("ahk_exe Arc.exe") {
+;        WinActivate()
+;    } else {
+;        Run("C:\Users\user\AppData\Local\Microsoft\WindowsApps\Arc.exe")
+;    }
+;    Return
+;}
 
 ^+Left:: {
     if WinExist("ahk_exe windsurf.exe") {
