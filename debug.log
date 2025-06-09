@@ -5554,3 +5554,4 @@ Source:	WshShell.CreateShortcut
 [2025-03-07 00:29:40.fff] ProductivitySuite | Error moving window: Target window not found.
 [2025-03-07 00:29:40.fff] Script initialization completed
 [2025-03-07 00:29:45.fff] ProductivitySuite | Error moving window: Target window not found.
+[0602/214212.801:ERROR:third_party\crashpad\crashpad\client\crashpad_client_win.cc:811] not connected
