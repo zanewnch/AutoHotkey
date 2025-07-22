@@ -120,8 +120,20 @@ RCtrl:: {
 ;}
 
 ^Right:: {
+    ; Check if Edge exists but exclude YouTube Music windows
     if WinExist("ahk_exe msedge.exe") {
-        WinActivate()
+        ; Get all Edge windows
+        EdgeWindows := WinGetList("ahk_exe msedge.exe")
+        for hwnd in EdgeWindows {
+            WinTitle := WinGetTitle(hwnd)
+            ; Skip if this is YouTube Music
+            if !InStr(WinTitle, "YouTube Music") {
+                WinActivate(hwnd)
+                return
+            }
+        }
+        ; If all Edge windows are YouTube Music, open a new Edge window
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     } else {
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     }
