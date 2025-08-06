@@ -168,10 +168,10 @@ RCtrl:: {
 ;}
 
 ^+Left:: {
-    if WinExist("ahk_exe windsurf.exe") {
+    if WinExist("ahk_exe webstorm64.exe") {
         WinActivate()
     } else {
-        Run("C:\Users\user\AppData\Local\Programs\Windsurf\bin\windsurf.cmd")
+        Run("webstorm")
     }
     Return
 }
