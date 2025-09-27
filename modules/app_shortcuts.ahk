@@ -65,14 +65,6 @@ F6:: {
 ;}
 
 
-;F7::{
-;    if WinExist("ahk_exe Arc.exe") {
-;        WinActivate()
-;    } else {
-;        Run;("C:\Users\user\AppData\Local\Microsoft\WindowsApps\Arc.exe")
-;    }
-;    Return
-;}
 
 F7::{
     if WinExist("ahk_exe Chrome.exe") {

@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(where webstorm)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(tasklist:*)",
+      "Bash(wmic:*)"
     ],
     "deny": []
   }

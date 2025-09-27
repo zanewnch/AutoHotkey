@@ -158,20 +158,13 @@ RCtrl:: {
     Return
 }
 
-;^Down:: {
-;    if WinExist("ahk_exe Arc.exe") {
-;        WinActivate()
-;    } else {
-;        Run("C:\Users\user\AppData\Local\Microsoft\WindowsApps\Arc.exe")
-;    }
-;    Return
-;}
+
 
 ^+Left:: {
-    if WinExist("ahk_exe webstorm64.exe") {
+    if WinExist("ahk_exe WebStorm.exe") {
         WinActivate()
     } else {
-        Run("webstorm")
+        Run("C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\JetBrains Toolbox\WebStorm.lnk")
     }
     Return
 }
