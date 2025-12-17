@@ -1,21 +1,69 @@
-#Requires AutoHotkey v2.0+
+#Requires AutoHotkey v2.0+  ; 指定需要 AutoHotkey v2.0 或更高版本才能執行此腳本
 
-; Script-wide settings
+; ============================================================
+; 全域設定模組 - 定義腳本的基本設定和全域變數
+; ============================================================
+
+; ============================================================
+; 腳本運行設定
+; ============================================================
+; SendMode("Input") - 設定按鍵發送模式為 "Input"
+; Input 模式是最快速、最可靠的按鍵模擬方式
+; 比起 Event 或 Play 模式，Input 模式更不容易被遊戲或應用程式偵測到
 SendMode("Input")
+
+; SetTitleMatchMode(2) - 設定視窗標題匹配模式為 2（部分匹配）
+; 模式 1：標題必須從開頭完全匹配
+; 模式 2：標題中任何位置包含指定文字即可匹配（較寬鬆）
+; 模式 3：標題必須完全相同
+; 使用模式 2 可以讓 WinExist() 等函數更容易找到視窗
 SetTitleMatchMode(2)
+
+; SetWorkingDir(A_ScriptDir) - 設定腳本的工作目錄為腳本所在的資料夾
+; A_ScriptDir 是內建變數，代表腳本檔案所在的目錄路徑
+; 這確保相對路徑的檔案操作都是基於腳本位置
 SetWorkingDir(A_ScriptDir)
 
-; Screen dimensions
-global screenWidth := A_ScreenWidth
-global screenHeight := A_ScreenHeight
+; ============================================================
+; 螢幕尺寸設定
+; ============================================================
+; A_ScreenWidth 和 A_ScreenHeight 是 AHK 內建變數
+; 自動取得主螢幕的寬度和高度（以像素為單位）
+; 宣告為 global 讓其他模組也能使用這些變數
+global screenWidth := A_ScreenWidth    ; 螢幕寬度（例如：1920, 2560, 3840 等）
+global screenHeight := A_ScreenHeight  ; 螢幕高度（例如：1080, 1440, 2160 等）
 
-; Cursor position percentages
+; ============================================================
+; 滑鼠游標百分比位置設定
+; ============================================================
+; 這些設定用於 MoveCursorWorkbenchToPercentage() 函數
+; 定義滑鼠預設要移動到的螢幕百分比位置
+
+; cursor_workbench_x_axis = 25 表示 X 軸位於螢幕左邊 25% 的位置
+; 這個位置通常對應到 IDE 編輯器的程式碼工作區（左側面板之後）
 global cursor_workbench_x_axis := 25
+
+; global_y_axis = 50 表示 Y 軸位於螢幕垂直中間 50% 的位置
 global global_y_axis := 50
 
-; Default cursor positions
+; ============================================================
+; 預設游標座標（預先計算好的像素位置）
+; ============================================================
+; 為了提升效能，預先將百分比轉換為實際像素座標
+; 這樣在頻繁呼叫 MoveCursorWorkbenchToPercentage() 時不需要重複計算
+
+; 預設 X 座標 = 螢幕寬度 × (25 / 100)
+; 例如：1920 × 0.25 = 480 像素
 global defaultXPos := screenWidth * (cursor_workbench_x_axis / 100)
+
+; 預設 Y 座標 = 螢幕高度 × (50 / 100)
+; 例如：1080 × 0.50 = 540 像素
 global defaultYPos := screenHeight * (global_y_axis / 100)
 
-; Mouse movement settings
-global mouseMoveStep := 70 
+; ============================================================
+; 滑鼠移動設定
+; ============================================================
+; mouseMoveStep 定義每次滑鼠移動的像素步進值
+; 用於鍵盤控制滑鼠移動時，每按一次移動多少像素
+; 數值越大移動越快，數值越小移動越精細
+global mouseMoveStep := 70  ; 每次移動 70 像素

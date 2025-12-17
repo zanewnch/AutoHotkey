@@ -1,61 +1,100 @@
-#Requires AutoHotkey v2.0+
+#Requires AutoHotkey v2.0+  ; 指定需要 AutoHotkey v2.0 或更高版本才能執行此腳本
 
-; F1: LINE
+; ============================================================
+; 應用程式快捷啟動模組
+; ============================================================
+; 這個模組使用 F1-F12 功能鍵和其他按鍵來快速啟動/切換應用程式
+; 每個快捷鍵的邏輯都是：
+;   1. 檢查應用程式是否已經在執行
+;   2. 如果是 → 切換到該視窗（WinActivate）
+;   3. 如果否 → 啟動該應用程式（Run）
+; ============================================================
+
+; ============================================================
+; F1 - 開啟/切換到 LINE 通訊軟體
+; ============================================================
 F1:: {
+    ; ahk_exe LINE.exe 透過執行檔名稱識別 LINE 視窗
     if WinExist("ahk_exe LINE.exe") {
-        WinActivate()
+        WinActivate()  ; LINE 已開啟，切換到該視窗
     } else {
+        ; LINE 未開啟，從開始選單捷徑啟動
         Run("C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\LINE\LINE.lnk")
     }
 }
 
-; F2: File Explorer
+; ============================================================
+; F2 - 開啟/切換到檔案總管（File Explorer）
+; ============================================================
 F2:: {
+    ; ahk_class CabinetWClass 是檔案總管視窗的類別名稱
+    ; 使用 class 而非 exe 是因為 explorer.exe 同時也是桌面和工作列的程序
     if WinExist("ahk_class CabinetWClass") {
-        WinActivate()
+        WinActivate()  ; 檔案總管已開啟，切換到該視窗
     } else {
+        ; 開啟新的檔案總管視窗
         Run("explorer.exe")
     }
 }
 
-; F3: YouTube Music
+; ============================================================
+; F3 - 開啟/切換到 YouTube Music（Edge PWA 應用程式）
+; ============================================================
 F3:: {
+    ; 同時匹配視窗標題包含 "YouTube Music" 且執行檔為 msedge.exe
+    ; 這是因為 YouTube Music 是 Edge 的 PWA（漸進式網頁應用程式）
     if WinExist("YouTube Music ahk_exe msedge.exe") {
-        WinActivate()
+        WinActivate()  ; YouTube Music 已開啟，切換到該視窗
     } else {
+        ; 從桌面捷徑啟動 YouTube Music PWA
         Run("C:\Users\user\Desktop\YouTubeMusic.lnk")
     }
 }
 
-; F4: Android Studio
+; ============================================================
+; F4 - 開啟/切換到 Android Studio
+; ============================================================
 F4:: {
+    ; studio64.exe 是 Android Studio 的 64 位元執行檔
     if WinExist("ahk_exe studio64.exe") {
-        WinActivate()
+        WinActivate()  ; Android Studio 已開啟，切換到該視窗
     } else {
+        ; 從開始選單捷徑啟動 Android Studio
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Android Studio\Android Studio.lnk")
     }
 }
 
-; F5: Windsurf
+; ============================================================
+; F5 - 開啟/切換到 Windsurf 編輯器
+; ============================================================
 F5:: {
+    ; windsurf.exe 是 Windsurf 編輯器的執行檔
     if WinExist("ahk_exe windsurf.exe") {
-        WinActivate()
+        WinActivate()  ; Windsurf 已開啟，切換到該視窗
     } else {
+        ; 透過 cmd 批次檔啟動 Windsurf
         Run("C:\Users\user\AppData\Local\Programs\Windsurf\bin\windsurf.cmd")
     }
 }
 
-; F6: Cursor
+; ============================================================
+; F6 - 開啟/切換到 Cursor 編輯器
+; ============================================================
 F6:: {
+    ; cursor.exe 是 Cursor AI 編輯器的執行檔
     if WinExist("ahk_exe cursor.exe") {
-        WinActivate()
+        WinActivate()  ; Cursor 已開啟，切換到該視窗
     } else {
+        ; 啟動 Cursor 編輯器
         Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
     }
+    ; 切換後自動將滑鼠移動到工作區預設位置（使用 utils.ahk 中的函數）
     MoveCursorWorkbenchToPercentage()
 }
 
-; F7: Brave Browser
+; ============================================================
+; 已註解掉：F7 - Brave 瀏覽器（已改用下方的 Chrome）
+; ============================================================
 ;F7:: {
 ;    if WinExist("ahk_exe brave.exe") {
 ;        WinActivate()
@@ -64,77 +103,102 @@ F6:: {
 ;    }
 ;}
 
-
-
+; ============================================================
+; F7 - 開啟/切換到 Google Chrome
+; ============================================================
 F7::{
+    ; Chrome.exe 是 Google Chrome 瀏覽器的執行檔
     if WinExist("ahk_exe Chrome.exe") {
-        WinActivate()
+        WinActivate()  ; Chrome 已開啟，切換到該視窗
     } else {
+        ; 從開始選單捷徑啟動 Chrome
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk")
     }
     Return
 }
 
-
-
-
-
-
+; ============================================================
+; F8 - 開啟/切換到 Microsoft Edge
+; ============================================================
 F8::{
+    ; msedge.exe 是 Microsoft Edge 瀏覽器的執行檔
     if WinExist("ahk_exe msedge.exe") {
-        WinActivate()
+        WinActivate()  ; Edge 已開啟，切換到該視窗
     } else {
+        ; 從開始選單捷徑啟動 Edge
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     }
 }
 
-; F8: ChatGPT
+; ============================================================
+; 已註解掉：F8 - ChatGPT 桌面應用程式
+; ============================================================
 ;F8::{
-;    ; Check if ChatGPT is running ;(window title or exe)
+;    ; 檢查 ChatGPT 桌面應用程式是否在執行
 ;    if WinExist("ahk_exe ChatGPT.exe") {
 ;        WinActivate()
 ;    } else {
-;        Run;("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
+;        ; 透過 Windows Store 應用程式 ID 啟動 ChatGPT
+;        Run("shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT")
 ;    }
 ;}
 
-; F9: LocalFrontend
+; ============================================================
+; F9 - 開啟/切換到 LocalFrontend（本地前端開發伺服器 - Edge PWA）
+; ============================================================
 F9:: {
+    ; 匹配標題包含 "LocalFrontend" 且執行檔為 msedge.exe 的視窗
+    ; 這是一個 Edge PWA 應用程式，可能是本地開發伺服器的介面
     if WinExist("LocalFrontend ahk_exe msedge.exe") {
-        WinActivate()
+        WinActivate()  ; LocalFrontend 已開啟，切換到該視窗
     } else {
+        ; 從桌面捷徑啟動 LocalFrontend PWA
         Run("C:\Users\user\Desktop\LocalFrontend.lnk")
     }
 }
 
-; F10: Notion
+; ============================================================
+; F10 - 開啟/切換到 Notion 筆記軟體
+; ============================================================
 F10:: {
+    ; notion.exe 是 Notion 桌面應用程式的執行檔
     if WinExist("ahk_exe notion.exe") {
-        WinActivate()
+        WinActivate()  ; Notion 已開啟，切換到該視窗
     } else {
+        ; 啟動 Notion 桌面應用程式
         Run("C:\Users\user\AppData\Local\Programs\Notion\Notion.exe")
     }
 }
 
-; F11: Visual Studio
+; ============================================================
+; F11 - 開啟/切換到 Visual Studio 2022
+; ============================================================
 F11:: {
+    ; devenv.exe 是 Visual Studio 的主要執行檔
     if WinExist("ahk_exe devenv.exe") {
-        WinActivate()
+        WinActivate()  ; Visual Studio 已開啟，切換到該視窗
     } else {
+        ; 啟動 Visual Studio 2022 Community 版本
         Run("C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe")
     }
 }
 
-; F12: PyCharm
+; ============================================================
+; F12 - 開啟/切換到 PyCharm Python IDE
+; ============================================================
 F12:: {
+    ; pycharm64.exe 是 PyCharm 的 64 位元執行檔
     if WinExist("ahk_exe pycharm64.exe") {
-        WinActivate()
+        WinActivate()  ; PyCharm 已開啟，切換到該視窗
     } else {
+        ; 從開始選單捷徑啟動 PyCharm
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\JetBrains\PyCharm 2024.1.4.lnk")
     }
 }
 
-; PgUp: Microsoft Edge
+; ============================================================
+; 已註解掉：PgUp - Microsoft Edge
+; ============================================================
 ; PgUp:: {
 ;     if WinExist("ahk_exe msedge.exe") {
 ;         WinActivate()
@@ -143,7 +207,9 @@ F12:: {
 ;     }
 ; }
 
-; PgDn: Cursor
+; ============================================================
+; 已註解掉：PgDn - Cursor 編輯器
+; ============================================================
 ; PgDn:: {
 ;     if WinExist("ahk_exe cursor.exe") {
 ;         WinActivate()
@@ -152,31 +218,45 @@ F12:: {
 ;     }
 ; }
 
-; Home: Brave Browser
+; ============================================================
+; Home 鍵 - 開啟/切換到 Brave 瀏覽器
+; ============================================================
 Home:: {
+    ; brave.exe 是 Brave 瀏覽器的執行檔
     if WinExist("ahk_exe brave.exe") {
-        WinActivate()
+        WinActivate()  ; Brave 已開啟，切換到該視窗
     } else {
+        ; 啟動 Brave 瀏覽器
         Run("C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe")
     }
 }
 
-; End: Microsoft Edge
+; ============================================================
+; End 鍵 - 開啟/切換到 Microsoft Edge
+; ============================================================
 End:: {
+    ; msedge.exe 是 Microsoft Edge 的執行檔
     if WinExist("ahk_exe msedge.exe") {
-        WinActivate()
+        WinActivate()  ; Edge 已開啟，切換到該視窗
     } else {
+        ; 從開始選單捷徑啟動 Edge
         Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk")
     }
 }
 
-; Insert: Cursor
+; ============================================================
+; Insert 鍵 - 開啟/切換到 Cursor 編輯器
+; ============================================================
 Ins:: {
+    ; cursor.exe 是 Cursor AI 編輯器的執行檔
     if WinExist("ahk_exe cursor.exe") {
-        WinActivate()
+        WinActivate()  ; Cursor 已開啟，切換到該視窗
     } else {
+        ; 啟動 Cursor 編輯器
         Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
     }
 }
 
-; Add other function key shortcuts here... 
+; ============================================================
+; 在此處新增其他功能鍵快捷鍵...
+; ============================================================
