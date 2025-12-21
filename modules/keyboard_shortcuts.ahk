@@ -87,32 +87,32 @@ RCtrl:: {
 }
 
 ; ============================================================
-; Ctrl+減號 開啟/切換到 Cursor 編輯器
+; 已註解掉：Ctrl+減號 開啟/切換到 Cursor 編輯器
 ; ============================================================
-^-:: {
-    ; 檢查 Cursor 是否已經在執行
-    if WinExist("ahk_exe cursor.exe") {
-        WinActivate()  ; 如果已開啟，切換到 Cursor 視窗
-    } else {
-        ; 如果沒開啟，執行 Cursor 編輯器
-        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
-    }
-    ; 呼叫函數將 Cursor 視窗移動到指定位置（定義在其他模組）
-    MoveCursorWorkbenchToPercentage()
-}
+;^-:: {
+;    ; 檢查 Cursor 是否已經在執行
+;    if WinExist("ahk_exe cursor.exe") {
+;        WinActivate()  ; 如果已開啟，切換到 Cursor 視窗
+;    } else {
+;        ; 如果沒開啟，執行 Cursor 編輯器
+;        Run("C:\Users\user\AppData\Local\Programs\cursor\Cursor.exe")
+;    }
+;    ; 呼叫函數將 Cursor 視窗移動到指定位置（定義在其他模組）
+;    MoveCursorWorkbenchToPercentage()
+;}
 
 ; ============================================================
-; Ctrl+等號 開啟/切換到 Windsurf 編輯器
+; 已註解掉：Ctrl+等號 開啟/切換到 Windsurf 編輯器
 ; ============================================================
-^=:: {
-    ; 檢查 Windsurf 是否已經在執行
-    if WinExist("ahk_exe windsurf.exe") {
-        WinActivate()  ; 如果已開啟，切換到 Windsurf 視窗
-    } else {
-        ; 如果沒開啟，執行 Windsurf 編輯器
-        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
-    }
-}
+;^=:: {
+;    ; 檢查 Windsurf 是否已經在執行
+;    if WinExist("ahk_exe windsurf.exe") {
+;        WinActivate()  ; 如果已開啟，切換到 Windsurf 視窗
+;    } else {
+;        ; 如果沒開啟，執行 Windsurf 編輯器
+;        Run("C:\Users\user\OneDrive\桌面\Windsurf.lnk")
+;    }
+;}
 
 ; ============================================================
 ; Ctrl+Backspace 開啟/切換到 Android Studio
