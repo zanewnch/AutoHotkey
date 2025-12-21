@@ -44,8 +44,9 @@ SetWorkingDir(A_ScriptDir)
 
 #Include modules/config.ahk           ; 全域設定（螢幕尺寸、滑鼠位置等變數）
 #Include modules/utils.ahk            ; 工具函數（MoveCursorWorkbenchToPercentage 等）
-#Include modules/app_shortcuts.ahk    ; 應用程式快捷啟動（F1-F12 功能鍵）
-#Include modules/keyboard_shortcuts.ahk  ; 鍵盤快捷鍵（Alt 映射、方向鍵導航等）
+#Include modules/app_launcher.ahk     ; 應用程式快捷啟動（啟動/切換各種程式）
+#Include modules/key_remapping.ahk    ; 按鍵重映射（Alt→Ctrl、導航鍵等）
+#Include modules/mouse_simulation.ahk ; 滑鼠模擬（點擊、滾輪控制）
 #Include modules/app_specific.ahk     ; 應用程式專屬快捷鍵（僅在特定程式中生效）
 
 ; ============================================================
@@ -79,36 +80,3 @@ SetCapsLockState("AlwaysOff")
 ; CapsLock::Return - 單獨按下 Caps Lock 時什麼都不做
 ; 這防止了 Caps Lock 的原本功能（切換大小寫）
 CapsLock::Return
-
-; ============================================================
-; 滾輪控制（Scroll Controls）
-; ============================================================
-; 使用 Caps Lock + 方向鍵 來模擬滑鼠滾輪
-; 這樣不需要滑鼠也能捲動頁面
-
-CapsLock & Up::Send("{WheelUp}")      ; Caps Lock + 上 = 滾輪向上捲動
-CapsLock & Down::Send("{WheelDown}")  ; Caps Lock + 下 = 滾輪向下捲動
-CapsLock & Left::Send("{WheelLeft}")  ; Caps Lock + 左 = 滾輪向左捲動（水平捲動）
-CapsLock & Right::Send("{WheelRight}") ; Caps Lock + 右 = 滾輪向右捲動（水平捲動）
-
-; ============================================================
-; 已註解掉：Tab + 方向鍵 控制滑鼠移動
-; ============================================================
-; 這些快捷鍵原本用來用鍵盤控制滑鼠游標移動
-; 但可能會干擾 Tab 鍵的正常功能（如表單切換焦點），所以被註解掉了
-
-;~Tab::Return  ; ~ 前綴讓 Tab 的正常功能穿透
-;Tab & Up::MouseMove(0, -mouseMoveStep, 0, "R")     ; Tab + 上 = 滑鼠向上移動
-;Tab & Down::MouseMove(0, mouseMoveStep, 0, "R")    ; Tab + 下 = 滑鼠向下移動
-;Tab & Left::MouseMove(-mouseMoveStep, 0, 0, "R")   ; Tab + 左 = 滑鼠向左移動
-;Tab & Right::MouseMove(mouseMoveStep, 0, 0, "R")   ; Tab + 右 = 滑鼠向右移動
-;Tab & Enter::Click                                  ; Tab + Enter = 滑鼠左鍵點擊
-;Tab & Backspace::Click("Right")                     ; Tab + Backspace = 滑鼠右鍵點擊
-
-; ============================================================
-; MouseMove 參數說明：
-;   MouseMove(X, Y, Speed, "R")
-;   - X, Y: 移動的像素距離
-;   - Speed: 移動速度（0 = 瞬間移動）
-;   - "R": 相對移動模式（相對於目前位置）
-; ============================================================
