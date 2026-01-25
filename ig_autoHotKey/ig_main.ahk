@@ -13,7 +13,7 @@ SendMode("Input")
 global doubleClickThreshold := 300
 global lastSpaceTime := 0
 
-Space:: {
+~Space:: {
     global lastSpaceTime
     currentTime := A_TickCount
 
