@@ -4,7 +4,9 @@
       "Bash(where webstorm)",
       "Bash(powershell:*)",
       "Bash(tasklist:*)",
-      "Bash(wmic:*)"
+      "Bash(wmic:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)"
     ],
     "deny": []
   }
