@@ -37,6 +37,11 @@ SetTitleMatchMode(2)
 SetWorkingDir(A_ScriptDir)
 
 ; ============================================================
+; 開機檢查（Startup Checks）
+; ============================================================
+CheckHypervisorPlatform()
+
+; ============================================================
 ; 載入功能模組（Include Modules）
 ; ============================================================
 ; 使用 #Include 指令載入其他 .ahk 檔案
@@ -80,3 +85,33 @@ SetCapsLockState("AlwaysOff")
 ; CapsLock::Return - 單獨按下 Caps Lock 時什麼都不做
 ; 這防止了 Caps Lock 的原本功能（切換大小寫）
 CapsLock::Return
+
+; ============================================================
+; 開機檢查函數（Startup Check Functions）
+; ============================================================
+
+CheckHypervisorPlatform() {
+    try {
+        shell := ComObject("WScript.Shell")
+        exec := shell.Exec('powershell -NoProfile -NonInteractive -Command "(Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform).State"')
+        state := Trim(exec.StdOut.ReadAll())
+
+        ; Feature 不存在（某些 Windows 版本）或 PowerShell 回傳錯誤 → 靜默跳過
+        if (state = "" || InStr(state, "Error") || InStr(state, "Exception"))
+            return
+
+        if (state = "Disabled") {
+            result := MsgBox("HypervisorPlatform 被關閉了`n(通常是 BattlEye / anti-cheat 造成的)`n`n要重新啟用嗎？(需要重開機)", "HypervisorPlatform 檢查", "YesNo Icon!")
+            if (result = "Yes")
+                Run('powershell -ExecutionPolicy Bypass -Command "Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform -NoRestart"', , "RunAs")
+
+        } else if (state = "EnablePending") {
+            ; 已啟用但還沒重開機 → 提醒重開機
+            MsgBox("HypervisorPlatform 已設定啟用，請重開機完成設定。", "HypervisorPlatform 提醒", "OK Icon!")
+        }
+        ; "Enabled" / "DisablePending" / 其他 → 靜默通過
+
+    } catch {
+        ; 任何錯誤都不中斷 AHK 啟動
+    }
+}
