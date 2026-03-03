@@ -467,7 +467,11 @@ RCtrl:: {
 ; ============================================================
 !Space:: {
     if WinExist("ahk_exe Copilot.exe") {
-        WinActivate()
+        if WinActive("ahk_exe Copilot.exe") {
+            WinMinimize()
+        } else {
+            WinActivate()
+        }
     } else {
         Run("ms-copilot:")
     }
