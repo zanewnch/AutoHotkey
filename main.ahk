@@ -80,11 +80,11 @@ CheckHypervisorPlatform()
 
 ; SetCapsLockState("AlwaysOff") - 強制關閉 Caps Lock 燈號
 ; 這樣可以把 Caps Lock 鍵重新利用為修飾鍵，而不會影響大小寫切換
-SetCapsLockState("AlwaysOff")
+; SetCapsLockState("AlwaysOff")
 
 ; CapsLock::Return - 單獨按下 Caps Lock 時什麼都不做
 ; 這防止了 Caps Lock 的原本功能（切換大小寫）
-CapsLock::Return
+; CapsLock::Return
 
 ; ============================================================
 ; 開機檢查函數（Startup Check Functions）

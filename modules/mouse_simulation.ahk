@@ -12,7 +12,7 @@
 ; ============================================================
 ; 滑鼠點擊模擬
 ; ============================================================
-CapsLock & Enter::Click         ; Caps Lock + Enter = 滑鼠左鍵點擊
+; CapsLock & Enter::Click         ; Caps Lock + Enter = 滑鼠左鍵點擊
 <!Enter::Click                  ; 左Alt + Enter = 滑鼠左鍵點擊
 <!Backspace::Click("Right")     ; 左Alt + Backspace = 滑鼠右鍵點擊
 
@@ -22,10 +22,10 @@ CapsLock & Enter::Click         ; Caps Lock + Enter = 滑鼠左鍵點擊
 ; 使用 Caps Lock + 方向鍵 來模擬滑鼠滾輪
 ; 這樣不需要滑鼠也能捲動頁面
 
-CapsLock & Up::Send("{WheelUp}")      ; Caps Lock + 上 = 滾輪向上捲動
-CapsLock & Down::Send("{WheelDown}")  ; Caps Lock + 下 = 滾輪向下捲動
-CapsLock & Left::Send("{WheelLeft}")  ; Caps Lock + 左 = 滾輪向左捲動（水平捲動）
-CapsLock & Right::Send("{WheelRight}") ; Caps Lock + 右 = 滾輪向右捲動（水平捲動）
+; CapsLock & Up::Send("{WheelUp}")      ; Caps Lock + 上 = 滾輪向上捲動
+; CapsLock & Down::Send("{WheelDown}")  ; Caps Lock + 下 = 滾輪向下捲動
+; CapsLock & Left::Send("{WheelLeft}")  ; Caps Lock + 左 = 滾輪向左捲動（水平捲動）
+; CapsLock & Right::Send("{WheelRight}") ; Caps Lock + 右 = 滾輪向右捲動（水平捲動）
 
 ; ============================================================
 ; 已註解掉：Tab + 方向鍵 控制滑鼠移動
