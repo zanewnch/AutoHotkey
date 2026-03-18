@@ -53,6 +53,7 @@ CheckHypervisorPlatform()
 #Include modules/key_remapping.ahk    ; 按鍵重映射（Alt→Ctrl、導航鍵等）
 #Include modules/mouse_simulation.ahk ; 滑鼠模擬（點擊、滾輪控制）
 #Include modules/app_specific.ahk     ; 應用程式專屬快捷鍵（僅在特定程式中生效）
+#Include modules/startup.ahk          ; 開機程序（自動啟動常用應用程式）
 
 ; ============================================================
 ; 修復標準 Ctrl 組合鍵（Fix for Standard Ctrl Key Combinations）

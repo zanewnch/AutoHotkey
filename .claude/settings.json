@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/zanew/AppData/Local/Programs//**)",
+      "Read(//c/Users/zanew/AppData/Local//**)",
+      "Read(//c/Users/zanew/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/**)",
+      "Read(//c/ProgramData/Microsoft/Windows/Start Menu/Programs/**)",
+      "Read(//c/Users/zanew/AppData/Local/**)",
+      "Read(//c/Users/zanew/AppData/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/zanew/Desktop/**)",
+      "Bash(find /c/Users/zanew/AppData/Local -maxdepth 4 -name *.exe)",
+      "Bash(powershell.exe -Command \"Get-AppxPackage -Name ''''*claude*'''' | Select-Object Name,PackageFamilyName,InstallLocation\")",
+      "Bash(powershell.exe -Command \"\\(Get-AppxPackage -Name ''*claude*''\\).PackageFamilyName\")",
+      "Bash(powershell.exe -Command \"Get-StartApps | Where-Object { $_.Name -match ''claude'' }\")"
+    ]
+  }
+}
