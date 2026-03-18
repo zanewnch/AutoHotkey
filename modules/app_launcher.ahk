@@ -286,15 +286,58 @@ Ins:: {
 ;}
 
 ; ============================================================
-; 右 Ctrl 鍵快捷啟動（按一下 RCtrl 開啟/切換到 IntelliJ IDEA）
+; 已註解掉：右 Ctrl 開啟 IntelliJ IDEA（已改用 RCtrl + 方向鍵組合）
 ; ============================================================
-RCtrl:: {
-    ; 檢查 IntelliJ IDEA 是否已經在執行
-    if WinExist("ahk_exe idea64.exe") {
-        WinActivate()  ; 如果已開啟，切換到 IDEA 視窗
+;RCtrl:: {
+;    ; 檢查 IntelliJ IDEA 是否已經在執行
+;    if WinExist("ahk_exe idea64.exe") {
+;        WinActivate()  ; 如果已開啟，切換到 IDEA 視窗
+;    } else {
+;        ; 如果沒開啟，執行 IntelliJ IDEA
+;        Run("C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\bin\\idea64.exe")
+;    }
+;}
+
+; ============================================================
+; RCtrl + Left 開啟/切換到 Visual Studio Code
+; ============================================================
+RCtrl & Left:: {
+    if WinExist("ahk_exe Code.exe") {
+        WinActivate()
     } else {
-        ; 如果沒開啟，執行 IntelliJ IDEA
-        Run("C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\bin\\idea64.exe")
+        Run("C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk")
+    }
+}
+
+; ============================================================
+; RCtrl + Up 開啟/切換到 Google Chrome（排除 PWA 視窗）
+; ============================================================
+RCtrl & Up:: {
+    if WinExist("ahk_exe Chrome.exe") {
+        ChromeWindows := WinGetList("ahk_exe Chrome.exe")
+        for hwnd in ChromeWindows {
+            WinTitle := WinGetTitle(hwnd)
+            ; 排除 Chrome PWA 視窗（Google Chat、Google 日曆等）
+            if !InStr(WinTitle, "Google Chat") && !InStr(WinTitle, "Google 日曆") {
+                WinActivate(hwnd)
+                return
+            }
+        }
+        ; 所有視窗都是 PWA，開啟新的 Chrome
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk")
+    } else {
+        Run("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk")
+    }
+}
+
+; ============================================================
+; RCtrl + Down 開啟/切換到 Claude
+; ============================================================
+RCtrl & Down:: {
+    if WinExist("ahk_exe Claude.exe") {
+        WinActivate()
+    } else {
+        Run("shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude")
     }
 }
 
