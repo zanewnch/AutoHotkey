@@ -39,7 +39,8 @@ SetWorkingDir(A_ScriptDir)
 ; ============================================================
 ; 開機檢查（Startup Checks）
 ; ============================================================
-CheckHypervisorPlatform()
+; 延遲執行，避免冷開機時 PowerShell 阻塞 auto-execute 導致 keyboard hook 被 Windows 移除
+SetTimer(CheckHypervisorPlatform, -5000)
 
 ; ============================================================
 ; 載入功能模組（Include Modules）

@@ -94,6 +94,11 @@ LaunchDevelopmentMode() {
 
     ; Google Chat (Chrome PWA - 用標題判斷是否已開啟)
     LaunchPWA("Google Chat", "Google Chat", "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk")
+
+    ; 強制重新安裝 keyboard hook
+    ; 開機啟動大量 app 時，Windows 可能因 LowLevelHooksTimeout 靜默移除 hook
+    ; 導致所有依賴 hook 的 hotkeys（<!、RCtrl &、#UseHook 等）失效
+    InstallKeybdHook(true, true)
 }
 
 ; ============================================================
