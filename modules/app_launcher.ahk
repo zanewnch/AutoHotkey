@@ -305,7 +305,7 @@ RCtrl & Left:: {
     if WinExist("ahk_exe Code.exe") {
         WinActivate()
     } else {
-        Run("C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk")
+        Run(A_AppData "\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk")
     }
 }
 

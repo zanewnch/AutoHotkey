@@ -71,16 +71,16 @@ LaunchDevelopmentMode() {
     apps.Push({name: "Microsoft Edge", exe: "msedge.exe", path: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk", checkPath: true})
 
     ; VSCode
-    apps.Push({name: "Visual Studio Code", exe: "Code.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk", checkPath: true})
+    apps.Push({name: "Visual Studio Code", exe: "Code.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk", checkPath: true})
 
     ; Claude (Store app，不需驗證路徑)
     apps.Push({name: "Claude", exe: "Claude.exe", path: "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude", checkPath: false})
 
     ; LINE
-    apps.Push({name: "LINE", exe: "LINE.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\LINE\LINE.lnk", checkPath: true})
+    apps.Push({name: "LINE", exe: "LINE.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\LINE\LINE.lnk", checkPath: true})
 
     ; Notion
-    apps.Push({name: "Notion", exe: "Notion.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk", checkPath: true})
+    apps.Push({name: "Notion", exe: "Notion.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Notion.lnk", checkPath: true})
 
     ; 啟動獨立 exe 的 app
     for app in apps {
@@ -89,11 +89,11 @@ LaunchDevelopmentMode() {
     }
 
     ; Google Calendar (Chrome PWA - 用標題判斷是否已開啟)
-    LaunchPWA("Google 日曆", "Google 日曆", "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk")
+    LaunchPWA("Google 日曆", "Google 日曆", A_AppData "\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk")
     Sleep(1500)
 
     ; Google Chat (Chrome PWA - 用標題判斷是否已開啟)
-    LaunchPWA("Google Chat", "Google Chat", "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk")
+    LaunchPWA("Google Chat", "Google Chat", A_AppData "\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk")
 
     ; 強制重新安裝 keyboard hook
     ; 開機啟動大量 app 時，Windows 可能因 LowLevelHooksTimeout 靜默移除 hook
