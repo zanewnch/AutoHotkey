@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>AutoHotkeyPy</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ambient">
+  <div class="orb orb-indigo"></div>
+  <div class="orb orb-purple"></div>
+  <div class="orb orb-blue"></div>
+</div>
+
+<main class="container">
+
+  <header class="card header-card">
+    <div>
+      <h1>AutoHotkeyPy</h1>
+      <p class="subtitle">背景執行中・此視窗僅為狀態顯示</p>
+    </div>
+    <div class="pill">
+      <span class="dot"></span>
+      <span>Running</span>
+    </div>
+  </header>
+
+  <section class="card section-card">
+    <div class="section-header">
+      <h2><span class="badge badge-ok">✓</span> Registered</h2>
+      <span class="count" id="regCount">0</span>
+    </div>
+    <ul class="list" id="registered"></ul>
+  </section>
+
+  <section class="card section-card">
+    <div class="section-header">
+      <h2><span class="badge badge-warn">!</span> Skipped</h2>
+      <span class="count count-warn" id="skipCount">0</span>
+    </div>
+    <ul class="list list-muted" id="skipped"></ul>
+    <p class="empty-hint" id="skipEmpty" hidden>沒有跳過的項目</p>
+  </section>
+
+  <section class="card hotkey-hint-card">
+    <div class="hotkey-hint">
+      <span class="hint-label">重新開啟視窗</span>
+      <span class="hk hk-hint" id="showHint">—</span>
+    </div>
+    <div class="hotkey-hint">
+      <span class="hint-label">徹底結束 app</span>
+      <span class="hk hk-hint hk-danger" id="quitHint">—</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <button class="btn btn-close" onclick="pywebview.api.close_window()">
+      關閉視窗（app 繼續在背景執行）
+    </button>
+    <button class="btn btn-quit" onclick="pywebview.api.quit_app()">
+      結束 app
+    </button>
+  </footer>
+
+</main>
+
+<script>
+  async function init() {
+    const data = await pywebview.api.get_data();
+
+    document.getElementById('showHint').textContent = data.show_hotkey;
+    document.getElementById('quitHint').textContent = data.quit_hotkey;
+
+    const reg = document.getElementById('registered');
+    document.getElementById('regCount').textContent = data.registered.length;
+    data.registered.forEach(e => {
+      const li = document.createElement('li');
+      li.innerHTML = `<span class="hk">${e.hotkey}</span><span class="name">${e.name}</span>`;
+      reg.appendChild(li);
+    });
+
+    const skip = document.getElementById('skipped');
+    document.getElementById('skipCount').textContent = data.skipped.length;
+    if (data.skipped.length === 0) {
+      document.getElementById('skipEmpty').hidden = false;
+    } else {
+      data.skipped.forEach(e => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="hk">${e.hotkey}</span><span class="name">${e.name}</span><span class="reason">${e.reason || ''}</span>`;
+        skip.appendChild(li);
+      });
+    }
+  }
+
+  window.addEventListener('pywebviewready', init);
+</script>
+
+</body>
+</html>

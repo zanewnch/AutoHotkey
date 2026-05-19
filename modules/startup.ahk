@@ -74,16 +74,16 @@ LaunchDevelopmentMode() {
     apps.Push({name: "Microsoft Edge", exe: "msedge.exe", path: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk", checkPath: true})
 
     ; VSCode
-    apps.Push({name: "Visual Studio Code", exe: "Code.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk", checkPath: true})
+    apps.Push({name: "Visual Studio Code", exe: "Code.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk", checkPath: true})
 
     ; Claude (Store app，不需驗證路徑)
     apps.Push({name: "Claude", exe: "Claude.exe", path: "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude", checkPath: false})
 
     ; LINE
-    apps.Push({name: "LINE", exe: "LINE.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\LINE\LINE.lnk", checkPath: true})
+    apps.Push({name: "LINE", exe: "LINE.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\LINE\LINE.lnk", checkPath: true})
 
     ; Notion
-    apps.Push({name: "Notion", exe: "Notion.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk", checkPath: true})
+    apps.Push({name: "Notion", exe: "Notion.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Notion.lnk", checkPath: true})
 
     StartupLaunchQueue := []
 
@@ -93,10 +93,10 @@ LaunchDevelopmentMode() {
     }
 
     ; Google Calendar (Chrome PWA - 用標題判斷是否已開啟)
-    StartupLaunchQueue.Push({type: "pwa", name: "Google 日曆", titleMatch: "Google 日曆", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk"})
+    StartupLaunchQueue.Push({type: "pwa", name: "Google 日曆", titleMatch: "Google 日曆", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk"})
 
     ; Google Chat (Chrome PWA - 用標題判斷是否已開啟)
-    StartupLaunchQueue.Push({type: "pwa", name: "Google Chat", titleMatch: "Google Chat", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk"})
+    StartupLaunchQueue.Push({type: "pwa", name: "Google Chat", titleMatch: "Google Chat", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk"})
 
     SetTimer(LaunchNextStartupItem, -1)
 }
