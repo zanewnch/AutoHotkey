@@ -1,0 +1,10 @@
+# Python cache and build output
+__pycache__/
+*.py[cod]
+python/__pycache__/
+python/build/
+python/dist/
+
+# Local logs
+*.log
+AHK_DebugLog.txt

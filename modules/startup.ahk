@@ -56,47 +56,27 @@ StartupPrompt() {
             MsgBox("無效的模式: " selectedMode, "Startup 警告", "Icon!")
     }
 }
-
 ; ============================================================
 ; Development Mode - 啟動所有開發用 app
 ; ============================================================
 LaunchDevelopmentMode() {
     global StartupLaunchQueue
-    apps := []
-
-    ; Microsoft Copilot (protocol 啟動，不需驗證路徑)
-    apps.Push({name: "Microsoft Copilot", exe: "Copilot.exe", path: "ms-copilot:", checkPath: false})
-
-    ; Google Chrome
-    apps.Push({name: "Google Chrome", exe: "Chrome.exe", path: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk", checkPath: true})
-
-    ; Microsoft Edge
-    apps.Push({name: "Microsoft Edge", exe: "msedge.exe", path: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk", checkPath: true})
-
-    ; VSCode
-    apps.Push({name: "Visual Studio Code", exe: "Code.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk", checkPath: true})
-
-    ; Claude (Store app，不需驗證路徑)
-    apps.Push({name: "Claude", exe: "Claude.exe", path: "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude", checkPath: false})
-
-    ; LINE
-    apps.Push({name: "LINE", exe: "LINE.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\LINE\LINE.lnk", checkPath: true})
-
-    ; Notion
-    apps.Push({name: "Notion", exe: "Notion.exe", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Notion.lnk", checkPath: true})
+    startupApps := [
+        "copilot",
+        "chrome",
+        "edge",
+        "vscode",
+        "claude",
+        "line",
+        "notion",
+        "googleCalendar",
+        "googleChat"
+    ]
 
     StartupLaunchQueue := []
 
-    ; 啟動獨立 exe 的 app
-    for app in apps {
-        StartupLaunchQueue.Push({type: "app", app: app})
-    }
-
-    ; Google Calendar (Chrome PWA - 用標題判斷是否已開啟)
-    StartupLaunchQueue.Push({type: "pwa", name: "Google 日曆", titleMatch: "Google 日曆", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk"})
-
-    ; Google Chat (Chrome PWA - 用標題判斷是否已開啟)
-    StartupLaunchQueue.Push({type: "pwa", name: "Google Chat", titleMatch: "Google Chat", path: A_AppData "\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk"})
+    for appKey in startupApps
+        StartupLaunchQueue.Push(appKey)
 
     SetTimer(LaunchNextStartupItem, -1)
 }
@@ -111,62 +91,10 @@ LaunchNextStartupItem() {
         return
     }
 
-    item := StartupLaunchQueue.RemoveAt(1)
-
-    if (item.type = "app") {
-        app := item.app
-        LaunchApp(app.name, app.exe, app.path, app.checkPath)
-    } else if (item.type = "pwa") {
-        LaunchPWA(item.name, item.titleMatch, item.path)
-    }
+    appKey := StartupLaunchQueue.RemoveAt(1)
+    EnsureAppRunning(appKey)
 
     ; 不用 Sleep 卡住 AHK 主執行緒，讓 hotkeys/hook 在 startup 期間仍可回應。
     InstallKeybdHook(true, true)
     SetTimer(LaunchNextStartupItem, -1500)
-}
-
-; ============================================================
-; 啟動單一應用程式（獨立 exe）
-; ============================================================
-LaunchApp(name, exe, path, checkPath) {
-    ; 檢查是否已在執行
-    if WinExist("ahk_exe " exe) {
-        return  ; 已開啟，跳過
-    }
-
-    ; 驗證路徑是否存在
-    if checkPath && !FileExist(path) {
-        MsgBox("找不到 " name " 的啟動路徑:`n" path, "Startup 警告", "Icon!")
-        return
-    }
-
-    ; 啟動應用程式
-    try {
-        Run(path)
-    } catch as err {
-        MsgBox("啟動 " name " 失敗:`n" err.Message, "Startup 錯誤", "Icon!")
-    }
-}
-
-; ============================================================
-; 啟動 Chrome PWA（用視窗標題判斷是否已開啟）
-; ============================================================
-LaunchPWA(name, titleMatch, path) {
-    ; 用標題搜尋是否已開啟
-    if WinExist(titleMatch) {
-        return  ; 已開啟，跳過
-    }
-
-    ; 驗證路徑是否存在
-    if !FileExist(path) {
-        MsgBox("找不到 " name " 的啟動路徑:`n" path, "Startup 警告", "Icon!")
-        return
-    }
-
-    ; 啟動 PWA
-    try {
-        Run(path)
-    } catch as err {
-        MsgBox("啟動 " name " 失敗:`n" err.Message, "Startup 錯誤", "Icon!")
-    }
 }
