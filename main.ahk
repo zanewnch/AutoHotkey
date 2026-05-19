@@ -19,10 +19,9 @@
 ; 預設層級是 0，設為 1 可以讓這些熱鍵觸發其他層級 0 的熱鍵
 #InputLevel 1
 
-; #UseHook false - 不使用鍵盤鉤子來實現熱鍵
-; false = 使用 RegisterHotkey() 方法（較輕量）
-; true = 使用鍵盤鉤子（可以攔截更多按鍵，但較耗資源）
-#UseHook false
+; #UseHook true - 統一使用鍵盤鉤子註冊熱鍵
+; 這比 RegisterHotkey() 穩定，尤其是 <! / RCtrl & 這類需要區分左右修飾鍵的快捷鍵
+#UseHook true
 
 ; SendMode("Input") - 設定按鍵發送模式為 "Input"
 ; Input 模式是最快速、最可靠的按鍵模擬方式
@@ -50,21 +49,13 @@ SetTimer(CheckHypervisorPlatform, -5000)
 
 #Include modules/config.ahk           ; 全域設定（螢幕尺寸、滑鼠位置等變數）
 #Include modules/utils.ahk            ; 工具函數（MoveCursorWorkbenchToPercentage 等）
-#Include modules/app_launcher.ahk     ; 應用程式快捷啟動（啟動/切換各種程式）
-#Include modules/key_remapping.ahk    ; 按鍵重映射（Alt→Ctrl、導航鍵等）
-#Include modules/mouse_simulation.ahk ; 滑鼠模擬（點擊、滾輪控制）
-#Include modules/app_specific.ahk     ; 應用程式專屬快捷鍵（僅在特定程式中生效）
 #Include modules/startup.ahk          ; 開機程序（自動啟動常用應用程式）
 
 ; ============================================================
 ; 修復標準 Ctrl 組合鍵（Fix for Standard Ctrl Key Combinations）
 ; ============================================================
-; 問題：因為上面設定了 #InputLevel 1，可能會影響到標準的 Ctrl 組合鍵
-; 解決：將這些熱鍵設為 #InputLevel 0，並使用 ~ 前綴讓原本功能穿透
-;
-; #InputLevel 0 - 降低以下熱鍵的層級到 0
-; ~ 前綴 - 不阻止按鍵的原本功能
-; Return - 什麼都不做，只是確保熱鍵被註冊但不干擾原本行為
+; 先完成所有非熱鍵初始化，再註冊這些穿透熱鍵，最後才載入會攔截 Ctrl/Alt 的功能模組。
+; #InputLevel 0 讓它們只處理實體按鍵；~ 前綴讓原本功能照常傳給目前視窗。
 #InputLevel 0
 ~^a::Return  ; 穿透 Ctrl+A（全選）
 ~^c::Return  ; 穿透 Ctrl+C（複製）
@@ -74,7 +65,12 @@ SetTimer(CheckHypervisorPlatform, -5000)
 ~^y::Return  ; 穿透 Ctrl+Y（重做）
 ~^f::Return  ; 穿透 Ctrl+F（尋找）
 ~^s::Return  ; 穿透 Ctrl+S（儲存）
-#InputLevel 1  ; 恢復輸入層級為 1
+#InputLevel 1  ; 功能熱鍵用較高層級，避免被 Send() 產生的按鍵誤觸發
+
+#Include modules/app_launcher.ahk     ; 應用程式快捷啟動（啟動/切換各種程式）
+#Include modules/key_remapping.ahk    ; 按鍵重映射（Alt→Ctrl、導航鍵等）
+#Include modules/mouse_simulation.ahk ; 滑鼠模擬（點擊、滾輪控制）
+#Include modules/app_specific.ahk     ; 應用程式專屬快捷鍵（僅在特定程式中生效）
 
 ; ============================================================
 ; 滑鼠模擬快捷鍵（Mouse Simulation Shortcuts）

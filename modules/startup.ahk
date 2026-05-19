@@ -10,6 +10,8 @@
 ; 用 SetTimer 延遲執行，確保 auto-execute section 先完成，hotkeys 先註冊好
 SetTimer(StartupPrompt, -1)
 
+global StartupLaunchQueue := []
+
 ; ============================================================
 ; 啟動提示 - 讓使用者選擇模式
 ; ============================================================
@@ -59,6 +61,7 @@ StartupPrompt() {
 ; Development Mode - 啟動所有開發用 app
 ; ============================================================
 LaunchDevelopmentMode() {
+    global StartupLaunchQueue
     apps := []
 
     ; Microsoft Copilot (protocol 啟動，不需驗證路徑)
@@ -82,23 +85,44 @@ LaunchDevelopmentMode() {
     ; Notion
     apps.Push({name: "Notion", exe: "Notion.exe", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Notion.lnk", checkPath: true})
 
+    StartupLaunchQueue := []
+
     ; 啟動獨立 exe 的 app
     for app in apps {
-        LaunchApp(app.name, app.exe, app.path, app.checkPath)
-        Sleep(1500)
+        StartupLaunchQueue.Push({type: "app", app: app})
     }
 
     ; Google Calendar (Chrome PWA - 用標題判斷是否已開啟)
-    LaunchPWA("Google 日曆", "Google 日曆", "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk")
-    Sleep(1500)
+    StartupLaunchQueue.Push({type: "pwa", name: "Google 日曆", titleMatch: "Google 日曆", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\Google 日曆.lnk"})
 
     ; Google Chat (Chrome PWA - 用標題判斷是否已開啟)
-    LaunchPWA("Google Chat", "Google Chat", "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk")
+    StartupLaunchQueue.Push({type: "pwa", name: "Google Chat", titleMatch: "Google Chat", path: "C:\Users\zanew\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome 應用程式\Google Chat.lnk"})
 
-    ; 強制重新安裝 keyboard hook
-    ; 開機啟動大量 app 時，Windows 可能因 LowLevelHooksTimeout 靜默移除 hook
-    ; 導致所有依賴 hook 的 hotkeys（<!、RCtrl &、#UseHook 等）失效
+    SetTimer(LaunchNextStartupItem, -1)
+}
+
+LaunchNextStartupItem() {
+    global StartupLaunchQueue
+
+    if (StartupLaunchQueue.Length = 0) {
+        ; 啟動流程結束後強制重新安裝 keyboard hook。
+        ; 大量 app 啟動期間 Windows 可能因 LowLevelHooksTimeout 靜默移除 hook。
+        InstallKeybdHook(true, true)
+        return
+    }
+
+    item := StartupLaunchQueue.RemoveAt(1)
+
+    if (item.type = "app") {
+        app := item.app
+        LaunchApp(app.name, app.exe, app.path, app.checkPath)
+    } else if (item.type = "pwa") {
+        LaunchPWA(item.name, item.titleMatch, item.path)
+    }
+
+    ; 不用 Sleep 卡住 AHK 主執行緒，讓 hotkeys/hook 在 startup 期間仍可回應。
     InstallKeybdHook(true, true)
+    SetTimer(LaunchNextStartupItem, -1500)
 }
 
 ; ============================================================

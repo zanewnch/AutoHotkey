@@ -41,10 +41,7 @@
 ; ============================================================
 ; 導航快捷鍵（用左 Alt+方向鍵 快速移動游標）
 ; ============================================================
-; HINT: main.ahk 設定了 #UseHook false，使 AHK 預設用 RegisterHotkey() 處理熱鍵
-;       但 RegisterHotkey() 不支援左右修飾鍵區分（如 <!），導致方向鍵熱鍵不穩定
-;       這裡切換為 #UseHook true，強制用鍵盤鉤子攔截，才能正確識別 <! (左Alt)
-#UseHook true
+; main.ahk 已統一使用 #UseHook true，才能穩定識別 <! (左Alt)。
 <!Left::Send("{Home}")   ; 左Alt+左鍵 = 跳到行首
 <!Right::Send("{End}")   ; 左Alt+右鍵 = 跳到行尾
 <!Up::Send("{Home}")     ; 左Alt+上鍵 = 跳到行首
@@ -57,5 +54,3 @@
 <!+Right::Send("+{End}")   ; 左Alt+Shift+右鍵 = 選取游標右邊到行尾的所有文字
 <!+Up::Send("+{Up}")       ; 左Alt+Shift+上鍵 = 向上選取一行
 <!+Down::Send("+{Down}")   ; 左Alt+Shift+下鍵 = 向下選取一行
-; HINT: 恢復為 false，避免後續模組的熱鍵都被迫使用鉤子（較耗資源）
-#UseHook false
