@@ -1,4 +1,5 @@
 #Requires AutoHotkey v2.0+  ; 指定需要 AutoHotkey v2.0 或更高版本才能執行此腳本
+#SingleInstance Force
 
 ; ============================================================
 ; 主程式入口點 - AutoHotkey 腳本的核心設定檔
@@ -34,6 +35,9 @@ SetTitleMatchMode(2)
 ; SetWorkingDir(A_ScriptDir) - 設定工作目錄為腳本所在資料夾
 ; 確保 #Include 指令和檔案操作都基於腳本位置
 SetWorkingDir(A_ScriptDir)
+
+; Windows 可能在腳本忙碌時靜默移除 low-level keyboard hook；定期補裝。
+SetTimer(RefreshKeyboardHook, -1000)
 
 ; ============================================================
 ; 開機檢查（Startup Checks）
@@ -113,4 +117,9 @@ CheckHypervisorPlatform() {
     } catch {
         ; 任何錯誤都不中斷 AHK 啟動
     }
+}
+
+RefreshKeyboardHook() {
+    InstallKeybdHook(true, true)
+    SetTimer(RefreshKeyboardHook, 30000)
 }
