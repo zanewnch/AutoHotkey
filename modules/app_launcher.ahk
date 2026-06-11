@@ -10,6 +10,30 @@
 ; Direct app keys
 ; ============================================================
 
+F1::ActivateOrRunApp("copilot")
+
+F2::ActivateOrRunApp("line")
+
+F3::ActivateOrRunApp("comet")
+
+F4::ActivateOrRunApp("chrome", ["Google Chat", "Google 日曆"])
+
+F5::ActivateOrRunApp("edge", ["YouTube Music"])
+
+F6::ActivateOrRunApp("vscode")
+
+F7::ActivateOrRunApp("vscodeInsider")
+
+F8::ActivateOrRunApp("chatgpt")
+
+F9::ActivateOrRunApp("codex")
+
+F10::ActivateOrRunApp("visualStudio")
+
+F11::ActivateOrRunApp("googleCalendar")
+
+F12::ActivateOrRunApp("googleChat")
+
 Home::ActivateOrRunApp("brave")
 
 End::ActivateOrRunApp("edge")
@@ -53,8 +77,8 @@ RCtrl & Down::ActivateOrRunApp("claude")
 ; ============================================================
 
 !Space:: {
-    if WinExist("ahk_exe Copilot.exe") {
-        if WinActive("ahk_exe Copilot.exe")
+    if WinExist("ahk_exe mscopilot.exe") {
+        if WinActive("ahk_exe mscopilot.exe")
             WinMinimize()
         else
             WinActivate()

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AHK App Launcher Shortcuts"
+  short_description: "Maintain AutoHotkey app launcher shortcuts."
+  default_prompt: "Update AutoHotkey app launcher shortcuts using verified exe names and stable launch paths."
