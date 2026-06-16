@@ -90,8 +90,11 @@ RCtrl & Down::ActivateOrRunApp("claude")
 ; ============================================================
 ; Maintenance hotkeys
 ; ============================================================
+; Ctrl+Alt+F10: show resolved app launch candidates.
 ; Ctrl+Alt+F11: reinstall keyboard hook without reloading the whole script.
 ; Ctrl+Alt+F12: reload the script after editing.
+
+^!F10::ShowAppLaunchDiagnostics()
 
 ^!F11::ResetKeyboardHook()
 

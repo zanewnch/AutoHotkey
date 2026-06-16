@@ -12,14 +12,83 @@ Windows 開機自動啟動的 AutoHotkey v2 腳本，提供快捷鍵、應用程
 ```
 AutoHotkey/
 ├── main.ahk                    # 入口點：載入所有模組、執行開機檢查
+├── tests/
+│   └── ahk_static_checks.ps1    # 靜態檢查：確認啟動與快捷鍵合約
 └── modules/
     ├── config.ahk              # 全域設定（螢幕尺寸、滑鼠位置等變數）
     ├── utils.ahk               # 工具函數
+    ├── app_registry.ahk        # App 設定、啟動路徑、視窗偵測規則
+    ├── startup.ahk             # 開機 profile 選擇與批次啟動流程
     ├── app_launcher.ahk        # 應用程式快捷啟動
     ├── key_remapping.ahk       # 按鍵重映射
     ├── mouse_simulation.ahk    # 滑鼠模擬
     └── app_specific.ahk        # 應用程式專屬快捷鍵
 ```
+
+---
+
+## 架構設計思路
+
+### 啟動流程
+
+開機啟動由 `main.ahk` 載入 `modules/startup.ahk` 後自動執行。
+
+設計上分成三層：
+
+1. 裝置判斷：`GetStartupProfileForDevice()` 讀取 `A_ComputerName`。
+2. Profile 選擇：已知裝置直接回傳 startup profile，未知裝置回到 GUI 選單。
+3. App 清單：`GetStartupProfileApps()` 依 profile 回傳要啟動的 app key。
+
+目前規則：
+
+| 裝置名稱 | Profile | 行為 |
+|----------|---------|------|
+| `ZANEWANG-PC` | `development` | 直接啟動 F1-F12 對應的全部 app |
+| 其他裝置 | `prompt` | 顯示 Startup 模式選擇視窗 |
+
+這樣做的目的：
+
+- 不同電腦可以有不同開機行為。
+- 未登記的新裝置不會自動開一堆 app。
+- 原本的手動選單保留，作為 fallback。
+- 開機清單只存 app key，不直接寫路徑，避免和快捷鍵邏輯分裂。
+
+### App 啟動資料來源
+
+`modules/app_registry.ahk` 是 app 啟動資料的唯一來源，包含：
+
+- app key，例如 `chrome`、`vscode`、`googleChat`
+- 視窗偵測規則，例如 `exe` 或 PWA 標題
+- 啟動候選路徑，例如 Start Menu shortcut、exe、URI、AppId
+
+`modules/app_launcher.ahk` 只負責快捷鍵對應，例如 `F1::ActivateOrRunApp("copilot")`。
+`modules/startup.ahk` 只負責批次啟動，例如 `LaunchStartupProfile("development")`。
+兩者都透過 app key 呼叫 registry helper，避免同一個 app 的路徑和偵測規則散落在多個檔案。
+
+### F1-F12 與 Development Profile
+
+`development` profile 刻意和 F1-F12 保持同一組 app、同一個順序：
+
+| 快捷鍵 | App key |
+|--------|---------|
+| `F1` | `copilot` |
+| `F2` | `line` |
+| `F3` | `comet` |
+| `F4` | `chrome` |
+| `F5` | `edge` |
+| `F6` | `vscode` |
+| `F7` | `vscodeInsider` |
+| `F8` | `chatgpt` |
+| `F9` | `codex` |
+| `F10` | `visualStudio` |
+| `F11` | `googleCalendar` |
+| `F12` | `googleChat` |
+
+如果要新增裝置：
+
+1. 在 `GetStartupProfileForDevice()` 加上電腦名稱。
+2. 在 `GetStartupProfileApps()` 新增或重用 profile。
+3. 執行 `tests/ahk_static_checks.ps1` 確認合約仍通過。
 
 ---
 
@@ -75,10 +144,24 @@ AutoHotkey/
 
 | 快捷鍵 | 應用程式 |
 |--------|----------|
+| `F1` | Microsoft Copilot |
+| `F2` | LINE |
+| `F3` | Comet |
+| `F4` | Google Chrome（排除 Google Chat / Google 日曆視窗） |
+| `F5` | Microsoft Edge（排除 YouTube Music 視窗） |
+| `F6` | Visual Studio Code |
+| `F7` | Visual Studio Code Insiders |
+| `F8` | ChatGPT |
+| `F9` | Codex |
+| `F10` | Visual Studio |
+| `F11` | Google Calendar |
+| `F12` | Google Chat |
 | `Home` | Brave 瀏覽器 |
 | `End` | Microsoft Edge |
 | `Insert` | Cursor 編輯器 |
-| `RCtrl` | IntelliJ IDEA |
+| `RCtrl + ←` | Visual Studio Code |
+| `RCtrl + ↑` | Google Chrome（排除 Google Chat / Google 日曆視窗） |
+| `RCtrl + ↓` | Claude |
 | `Ctrl + Backspace` | Android Studio |
 | `Ctrl + ←` | Cursor 編輯器（並調整視窗位置） |
 | `Ctrl + →` | Microsoft Edge（排除 YouTube Music 視窗） |

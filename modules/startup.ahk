@@ -3,14 +3,38 @@
 ; ============================================================
 ; 開機程序模組 (Startup)
 ; ============================================================
-; 開機時跳出 InputBox 選擇模式，自動啟動對應的應用程式
+; 開機時依照裝置名稱選擇模式，自動啟動對應的應用程式
+; 未知裝置才跳出 InputBox 讓使用者選擇模式
 ; 如果 app 已在執行則跳過，啟動前驗證路徑是否存在
 ; ============================================================
 
 ; 用 SetTimer 延遲執行，確保 auto-execute section 先完成，hotkeys 先註冊好
-SetTimer(StartupPrompt, -1)
+SetTimer(StartupAutoSelect, -1)
 
 global StartupLaunchQueue := []
+
+StartupAutoSelect() {
+    profile := GetStartupProfileForDevice()
+
+    if (profile = "prompt") {
+        StartupPrompt()
+        return
+    }
+
+    LaunchStartupProfile(profile)
+}
+
+GetStartupProfileForDevice(deviceName := "") {
+    if (deviceName = "")
+        deviceName := A_ComputerName
+
+    switch deviceName {
+        case "ZANEWANG-PC":
+            return "development"
+        default:
+            return "prompt"
+    }
+}
 
 ; ============================================================
 ; 啟動提示 - 讓使用者選擇模式
@@ -49,7 +73,7 @@ StartupPrompt() {
     ; 處理選擇結果
     switch selectedMode {
         case "1":
-            LaunchDevelopmentMode()
+            LaunchStartupProfile("development")
         case "0", "":
             return
         default:
@@ -60,18 +84,15 @@ StartupPrompt() {
 ; Development Mode - 啟動所有開發用 app
 ; ============================================================
 LaunchDevelopmentMode() {
+    LaunchStartupProfile("development")
+}
+
+LaunchStartupProfile(profile) {
     global StartupLaunchQueue
-    startupApps := [
-        "copilot",
-        "chrome",
-        "edge",
-        "vscode",
-        "claude",
-        "line",
-        "notion",
-        "googleCalendar",
-        "googleChat"
-    ]
+    startupApps := GetStartupProfileApps(profile)
+
+    if (startupApps.Length = 0)
+        return
 
     StartupLaunchQueue := []
 
@@ -79,6 +100,28 @@ LaunchDevelopmentMode() {
         StartupLaunchQueue.Push(appKey)
 
     SetTimer(LaunchNextStartupItem, -1)
+}
+
+GetStartupProfileApps(profile) {
+    switch profile {
+        case "development":
+            return [
+                "copilot",
+                "line",
+                "comet",
+                "chrome",
+                "edge",
+                "vscode",
+                "vscodeInsider",
+                "chatgpt",
+                "codex",
+                "visualStudio",
+                "googleCalendar",
+                "googleChat"
+            ]
+        default:
+            return []
+    }
 }
 
 LaunchNextStartupItem() {

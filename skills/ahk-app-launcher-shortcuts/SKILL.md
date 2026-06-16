@@ -12,7 +12,7 @@ description: Maintain this AutoHotkey repo's app launcher shortcuts. Use when ad
    - Running exe: `Get-Process | Where-Object { $_.ProcessName -match '<name>' } | Select ProcessName,Path`
    - Start menu app IDs: `Get-StartApps | Where-Object { $_.Name -match '<name>' }`
    - Shortcuts: inspect `.lnk` targets with `WScript.Shell.CreateShortcut()`.
-3. In `AppRegistry`, keep each app as `{type, name, exe, path}`.
+3. In `AppRegistry`, keep each app as `{type, name, exe, launch}`.
 4. In `app_launcher.ahk`, keep hotkeys thin: `F1::ActivateOrRunApp("key")`.
 5. Validate with:
    - `powershell -ExecutionPolicy Bypass -File tests\ahk_static_checks.ps1`
@@ -21,7 +21,7 @@ description: Maintain this AutoHotkey repo's app launcher shortcuts. Use when ad
 
 ## Path Strategy
 
-Use `exe` for activation and `path` only for launch fallback.
+Use `exe` for activation and `launch` only for launch fallback.
 
 Prefer stable launch paths in this order:
 
@@ -30,6 +30,7 @@ Prefer stable launch paths in this order:
 3. Direct `.exe` path only when no stable shortcut or AppID exists.
 
 Avoid `C:\Program Files\WindowsApps\...\app.exe` for Store/AppX apps because versioned package folders change.
+`RunRegisteredApp()` should try every resolved launch target in order, because an AppID or URI can exist syntactically but fail at runtime on one device.
 
 ## Current F-Key Map
 
@@ -48,13 +49,22 @@ F11 googleCalendar
 F12 googleChat
 ```
 
-## Known Stable Entries
+## Registry Pattern
 
 ```ahk
-"copilot", {type: "app", name: "Microsoft Copilot", exe: "mscopilot.exe", path: "shell:AppsFolder\Microsoft.Copilot_8wekyb3d8bbwe!App", checkPath: false}
-"chatgpt", {type: "app", name: "ChatGPT", exe: "ChatGPT.exe", path: "shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT", checkPath: false}
-"codex", {type: "app", name: "Codex", exe: "Codex.exe", path: "shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App", checkPath: false}
-"comet", {type: "app", name: "Comet", exe: "comet.exe", path: UserProgramsPath("Comet.lnk")}
-"vscodeInsider", {type: "app", name: "Visual Studio Code Insiders", exe: "Code - Insiders.exe", path: UserProgramsPath("Visual Studio Code - Insiders\Visual Studio Code - Insiders.lnk")}
-"visualStudio", {type: "app", name: "Visual Studio", exe: "devenv.exe", path: CommonProgramsPath("Visual Studio.lnk")}
+"copilot", {type: "app", name: "Microsoft Copilot", exe: ["mscopilot.exe", "Copilot.exe"], launch: [
+    {kind: "appId", path: "shell:AppsFolder\Microsoft.Copilot_8wekyb3d8bbwe!App"},
+    {kind: "uri", path: "ms-copilot:"}
+]}
+
+"comet", {type: "app", name: "Comet", exe: "comet.exe", launch: [
+    {kind: "lnk", path: UserProgramsPath("Comet.lnk")},
+    {kind: "exe", path: LocalAppDataPath("Perplexity\Comet\Application\comet.exe")}
+]}
 ```
+
+Launch candidate kinds:
+
+- `lnk` and `exe`: require `FileExist()`.
+- `appId` and `uri`: run directly without filesystem checks.
+- `legacy`: only for old `path` entries kept during migration.
