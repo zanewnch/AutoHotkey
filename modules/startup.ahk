@@ -135,7 +135,7 @@ LaunchNextStartupItem() {
     }
 
     appKey := StartupLaunchQueue.RemoveAt(1)
-    EnsureAppRunning(appKey)
+    ActivateOrRunStartupApp(appKey)
 
     ; 不用 Sleep 卡住 AHK 主執行緒，讓 hotkeys/hook 在 startup 期間仍可回應。
     InstallKeybdHook(true, true)

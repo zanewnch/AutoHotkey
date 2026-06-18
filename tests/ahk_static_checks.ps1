@@ -54,6 +54,14 @@ if ($registry -notmatch 'GetAppExeList\(app\)') {
     throw "app_registry.ahk must support multiple exe names per app"
 }
 
+if ($registry -notmatch 'ActivateOrRunStartupApp\(key') {
+    throw "app_registry.ahk must expose non-toggle startup app activation"
+}
+
+if ($startup -notmatch 'ActivateOrRunStartupApp\(appKey\)') {
+    throw "startup.ahk must activate F1-F12 apps during startup"
+}
+
 $requiredLaunchFallbacks = @(
     'Chrome Apps\Google 日曆.lnk',
     'Chrome 應用程式\Google 日曆.lnk',

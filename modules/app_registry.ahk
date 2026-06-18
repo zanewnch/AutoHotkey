@@ -133,8 +133,32 @@ ActivateOrRunApp(key, excludeTitles := "") {
         return false
 
     if (app.type = "pwa") {
-        if FindExistingPwaWindow(app) {
-            WinActivate()
+        hwnd := FindExistingPwaHwnd(app)
+        if hwnd {
+            ToggleAppWindow(hwnd)
+            return true
+        }
+        return RunRegisteredApp(app)
+    }
+
+    hwnd := FindExistingAppWindowHwnd(app, excludeTitles)
+    if hwnd {
+        ToggleAppWindow(hwnd)
+        return true
+    }
+
+    return RunRegisteredApp(app)
+}
+
+ActivateOrRunStartupApp(key, excludeTitles := "") {
+    app := GetRegisteredApp(key)
+    if !IsObject(app)
+        return false
+
+    if (app.type = "pwa") {
+        hwnd := FindExistingPwaHwnd(app)
+        if hwnd {
+            WinActivate(hwnd)
             return true
         }
         return RunRegisteredApp(app)
@@ -161,15 +185,28 @@ GetAppTitleList(app) {
 }
 
 FindExistingPwaWindow(app) {
+    return !!FindExistingPwaHwnd(app)
+}
+
+FindExistingPwaHwnd(app) {
     for title in GetAppTitleList(app) {
         if WinExist(title)
-            return true
+            return WinGetID(title)
     }
 
-    return false
+    return 0
 }
 
 ActivateExistingAppWindow(app, excludeTitles := "") {
+    hwnd := FindExistingAppWindowHwnd(app, excludeTitles)
+    if !hwnd
+        return false
+
+    WinActivate(hwnd)
+    return true
+}
+
+FindExistingAppWindowHwnd(app, excludeTitles := "") {
     for exe in GetAppExeList(app) {
         winTitle := "ahk_exe " exe
 
@@ -177,8 +214,7 @@ ActivateExistingAppWindow(app, excludeTitles := "") {
             continue
 
         if !IsObject(excludeTitles) || excludeTitles.Length = 0 {
-            WinActivate()
-            return true
+            return WinGetID(winTitle)
         }
 
         for hwnd in WinGetList(winTitle) {
@@ -193,13 +229,19 @@ ActivateExistingAppWindow(app, excludeTitles := "") {
             }
 
             if !excluded {
-                WinActivate(hwnd)
-                return true
+                return hwnd
             }
         }
     }
 
-    return false
+    return 0
+}
+
+ToggleAppWindow(hwnd) {
+    if WinActive("ahk_id " hwnd)
+        WinMinimize(hwnd)
+    else
+        WinActivate(hwnd)
 }
 
 RunRegisteredApp(app) {
