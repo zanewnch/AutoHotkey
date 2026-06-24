@@ -31,3 +31,72 @@ Removing device:          HID\VID_1038&PID_2038&MI_01&Col02\3&31e7735c&0&0001
 Device removed successfully.
 
 2026-06-24 14:56:59 remove_builtin_keyboard result: removed
+2026-06-24 14:59:37 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL01\3&31E7735C&0&0000
+Microsoft PnP Utility
+
+Removing device:          HID\VID_1038&PID_2038&MI_01&Col01\3&31e7735c&0&0000
+Device removed successfully.
+
+2026-06-24 14:59:37 remove_builtin_keyboard result: removed
+2026-06-24 14:59:40 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL03\3&31E7735C&0&0002
+Microsoft PnP Utility
+
+Removing device:          HID\VID_1038&PID_2038&MI_01&Col03\3&31e7735c&0&0002
+Device removed successfully.
+
+2026-06-24 14:59:40 remove_builtin_keyboard result: removed
+2026-06-24 14:59:42 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_00\3&1A23E717&0&0000
+Microsoft PnP Utility
+
+Removing device:          HID\VID_1038&PID_2038&MI_00\3&1a23e717&0&0000
+Device removed successfully.
+
+2026-06-24 14:59:42 remove_builtin_keyboard result: removed
+2026-06-24 14:59:44 RemoveBuiltinKeyboard failed for USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000: Failed attempt to launch program or document:
+Action: <powershell.exe>
+Verb: <RunAs>
+Params: <-NoProfile -ExecutionPolicy Bypass -File "C:\Users\zanew\Documents\GitHub\AutoHotkey\scripts\remove_builtin_keyboard.ps1" -DeviceId "USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000" -LogPath "C:\Users\zanew\Documents\GitHub\AutoHotkey\AHK_DebugLog.txt">
+2026-06-24 14:59:49 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_01\2&336DA45B&0&0001
+Microsoft PnP Utility
+
+Removing device:          USB\VID_1038&PID_2038&MI_01\2&336da45b&0&0001
+Device removed successfully.
+
+2026-06-24 14:59:49 remove_builtin_keyboard result: removed
+2026-06-24 14:59:51 remove_builtin_keyboard start: USB\VID_1038&PID_2038\1&79F5D87&4&4869
+Microsoft PnP Utility
+
+Removing device:          USB\VID_1038&PID_2038\1&79f5d87&4&4869
+Device removed successfully.
+
+2026-06-24 14:59:51 remove_builtin_keyboard result: removed
+2026-06-24 14:59:54 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
+Microsoft PnP Utility
+
+Removing device:          {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\ssps2\5&88e1cd&0&01
+Device removed successfully.
+
+2026-06-24 14:59:54 remove_builtin_keyboard result: removed
+2026-06-24 15:01:45 remove_builtin_keyboard start: ACPI\MSI0007\4&10CC4C72&0
+2026-06-24 15:01:45 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:46 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001
+2026-06-24 15:01:46 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:46 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL01\3&31E7735C&0&0000
+2026-06-24 15:01:46 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:46 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL03\3&31E7735C&0&0002
+2026-06-24 15:01:46 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:46 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_00\3&1A23E717&0&0000
+2026-06-24 15:01:46 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:47 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000
+Microsoft PnP Utility
+
+Removing device:          USB\VID_1038&PID_2038&MI_00\2&336da45b&0&0000
+Device removed successfully.
+
+2026-06-24 15:01:47 remove_builtin_keyboard result: removed
+2026-06-24 15:01:47 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_01\2&336DA45B&0&0001
+2026-06-24 15:01:47 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:47 remove_builtin_keyboard start: USB\VID_1038&PID_2038\1&79F5D87&4&4869
+2026-06-24 15:01:47 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:01:48 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
+2026-06-24 15:01:48 remove_builtin_keyboard skipped: device not found
