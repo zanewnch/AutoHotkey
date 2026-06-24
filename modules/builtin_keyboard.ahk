@@ -5,19 +5,24 @@
 ; Removing it requires elevation and may be restored by Windows after reboot.
 
 RemoveBuiltinKeyboard() {
-    deviceId := "ACPI\MSI0007\4&10CC4C72&0"
+    deviceIds := [
+        "ACPI\MSI0007\4&10CC4C72&0",
+        "HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001"
+    ]
     logPath := A_ScriptDir "\AHK_DebugLog.txt"
     scriptPath := A_ScriptDir "\scripts\remove_builtin_keyboard.ps1"
 
-    if (!BuiltinKeyboardIsPresent(deviceId)) {
-        return
-    }
+    for deviceId in deviceIds {
+        if (!BuiltinKeyboardIsPresent(deviceId)) {
+            continue
+        }
 
-    try {
-        Run('*RunAs powershell.exe -NoProfile -ExecutionPolicy Bypass -File "' scriptPath '" -DeviceId "' deviceId '" -LogPath "' logPath '"', , "Hide")
-    } catch as err {
         try {
-            FileAppend(FormatTime(, "yyyy-MM-dd HH:mm:ss") " RemoveBuiltinKeyboard failed: " err.Message "`n", logPath, "UTF-8")
+            Run('*RunAs powershell.exe -NoProfile -ExecutionPolicy Bypass -File "' scriptPath '" -DeviceId "' deviceId '" -LogPath "' logPath '"', , "Hide")
+        } catch as err {
+            try {
+                FileAppend(FormatTime(, "yyyy-MM-dd HH:mm:ss") " RemoveBuiltinKeyboard failed for " deviceId ": " err.Message "`n", logPath, "UTF-8")
+            }
         }
     }
 }
