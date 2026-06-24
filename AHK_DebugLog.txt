@@ -17,3 +17,17 @@
 [2024-12-13 05:04:58] Perplexity - Checking window: Perplexity - §x´b --- Perplexity
 [2024-12-13 05:04:58] Perplexity - Found window: Perplexity - §x´b --- Perplexity
 [2024-12-13 05:04:58] Perplexity - Window Activated: Perplexity - §x´b --- Perplexity
+2026-06-24 14:54:21 remove_builtin_keyboard start: ACPI\MSI0007\4&10CC4C72&0
+Microsoft PnP Utility
+
+Removing device:          ACPI\MSI0007\4&10cc4c72&0
+System reboot is needed to complete configuration operations!
+
+2026-06-24 14:54:21 remove_builtin_keyboard result: removed
+2026-06-24 14:56:59 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001
+Microsoft PnP Utility
+
+Removing device:          HID\VID_1038&PID_2038&MI_01&Col02\3&31e7735c&0&0001
+Device removed successfully.
+
+2026-06-24 14:56:59 remove_builtin_keyboard result: removed
