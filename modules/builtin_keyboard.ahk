@@ -25,10 +25,9 @@ RemoveBuiltinKeyboard() {
 BuiltinKeyboardIsPresent(deviceId) {
     try {
         shell := ComObject("WScript.Shell")
-        escapedDeviceId := StrReplace(deviceId, "'", "''")
-        psCommand := 'powershell -NoProfile -NonInteractive -Command "if (Get-PnpDevice -InstanceId ''' escapedDeviceId ''' -ErrorAction SilentlyContinue) { ''present'' }"'
-        exec := shell.Exec(psCommand)
-        return Trim(exec.StdOut.ReadAll()) = "present"
+        exec := shell.Exec('pnputil /enum-devices /instanceid "' deviceId '"')
+        output := exec.StdOut.ReadAll() exec.StdErr.ReadAll()
+        return InStr(output, deviceId) > 0
     } catch {
         return false
     }
