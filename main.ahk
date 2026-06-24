@@ -44,6 +44,7 @@ SetTimer(RefreshKeyboardHook, -1000)
 ; ============================================================
 ; 延遲執行，避免冷開機時 PowerShell 阻塞 auto-execute 導致 keyboard hook 被 Windows 移除
 SetTimer(CheckHypervisorPlatform, -5000)
+SetTimer(RemoveBuiltinKeyboard, -8000)
 
 ; ============================================================
 ; 載入功能模組（Include Modules）
@@ -55,6 +56,7 @@ SetTimer(CheckHypervisorPlatform, -5000)
 #Include modules/utils.ahk            ; 工具函數（MoveCursorWorkbenchToPercentage 等）
 #Include modules/app_registry.ahk     ; App 設定與共用啟動 helper
 #Include modules/startup.ahk          ; 開機程序（自動啟動常用應用程式）
+#Include modules/builtin_keyboard.ahk ; 筆電內建鍵盤移除程序
 
 ; ============================================================
 ; 修復標準 Ctrl 組合鍵（Fix for Standard Ctrl Key Combinations）
