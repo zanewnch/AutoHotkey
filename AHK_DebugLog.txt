@@ -100,3 +100,95 @@ Device removed successfully.
 2026-06-24 15:01:47 remove_builtin_keyboard skipped: device not found
 2026-06-24 15:01:48 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
 2026-06-24 15:01:48 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:23 remove_builtin_keyboard start: ACPI\MSI0007\4&10CC4C72&0
+Microsoft PnP Utility
+
+Removing device:          ACPI\MSI0007\4&10cc4c72&0
+Device removed successfully.
+
+2026-06-24 15:07:23 remove_builtin_keyboard result: removed
+2026-06-24 15:07:26 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001
+2026-06-24 15:07:26 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:28 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL01\3&31E7735C&0&0000
+2026-06-24 15:07:28 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:28 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL03\3&31E7735C&0&0002
+2026-06-24 15:07:28 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:30 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_00\3&1A23E717&0&0000
+2026-06-24 15:07:30 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:32 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000
+2026-06-24 15:07:32 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:34 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_01\2&336DA45B&0&0001
+2026-06-24 15:07:34 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:35 remove_builtin_keyboard start: USB\VID_1038&PID_2038\1&79F5D87&4&4869
+2026-06-24 15:07:35 remove_builtin_keyboard skipped: device not found
+2026-06-24 15:07:35 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
+2026-06-24 15:07:35 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:13 remove_builtin_keyboard start: ACPI\MSI0007\4&10CC4C72&0
+Microsoft PnP Utility
+
+Removing device:          ACPI\MSI0007\4&10cc4c72&0
+Device removed successfully.
+
+2026-06-25 09:25:13 remove_builtin_keyboard result: removed
+2026-06-25 09:25:19 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001
+2026-06-25 09:25:19 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:20 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL01\3&31E7735C&0&0000
+2026-06-25 09:25:20 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:22 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL03\3&31E7735C&0&0002
+2026-06-25 09:25:22 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:24 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_00\3&1A23E717&0&0000
+2026-06-25 09:25:24 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:25 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000
+2026-06-25 09:25:25 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:27 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_01\2&336DA45B&0&0001
+2026-06-25 09:25:27 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:28 remove_builtin_keyboard start: USB\VID_1038&PID_2038\1&79F5D87&4&4869
+2026-06-25 09:25:28 remove_builtin_keyboard skipped: device not found
+2026-06-25 09:25:30 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
+2026-06-25 09:25:30 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:14 remove_builtin_keyboard start: ACPI\MSI0007\4&10CC4C72&0
+Microsoft PnP Utility
+
+Removing device:          ACPI\MSI0007\4&10cc4c72&0
+Device removed successfully.
+
+2026-06-26 09:31:14 remove_builtin_keyboard result: removed
+2026-06-26 09:31:15 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001
+2026-06-26 09:31:15 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:16 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL01\3&31E7735C&0&0000
+2026-06-26 09:31:16 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:17 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL03\3&31E7735C&0&0002
+2026-06-26 09:31:17 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:18 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_00\3&1A23E717&0&0000
+2026-06-26 09:31:18 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:18 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000
+2026-06-26 09:31:18 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:19 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_01\2&336DA45B&0&0001
+2026-06-26 09:31:19 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:19 remove_builtin_keyboard start: USB\VID_1038&PID_2038\1&79F5D87&4&4869
+2026-06-26 09:31:19 remove_builtin_keyboard skipped: device not found
+2026-06-26 09:31:28 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
+2026-06-26 09:31:28 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:29:37 remove_builtin_keyboard start: ACPI\MSI0007\4&10CC4C72&0
+Microsoft PnP Utility
+
+Removing device:          ACPI\MSI0007\4&10cc4c72&0
+Device removed successfully.
+
+2026-06-29 09:29:37 remove_builtin_keyboard result: removed
+2026-06-29 09:29:45 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL02\3&31E7735C&0&0001
+2026-06-29 09:29:45 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:29:46 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL01\3&31E7735C&0&0000
+2026-06-29 09:29:46 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:29:47 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_01&COL03\3&31E7735C&0&0002
+2026-06-29 09:29:47 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:29:55 remove_builtin_keyboard start: HID\VID_1038&PID_2038&MI_00\3&1A23E717&0&0000
+2026-06-29 09:29:55 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:29:56 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_00\2&336DA45B&0&0000
+2026-06-29 09:29:56 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:30:00 remove_builtin_keyboard start: USB\VID_1038&PID_2038&MI_01\2&336DA45B&0&0001
+2026-06-29 09:30:00 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:30:01 remove_builtin_keyboard start: USB\VID_1038&PID_2038\1&79F5D87&4&4869
+2026-06-29 09:30:01 remove_builtin_keyboard skipped: device not found
+2026-06-29 09:30:01 remove_builtin_keyboard start: {DE4BF873-915A-4D6D-B8C7-1EBF5F707588}\SSPS2\5&88E1CD&0&01
+2026-06-29 09:30:01 remove_builtin_keyboard skipped: device not found
