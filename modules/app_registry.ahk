@@ -16,21 +16,29 @@ BuildAppRegistry() {
             {kind: "lnk", path: CommonProgramsPath("Brave.lnk")},
             {kind: "exe", path: "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"}
         ]},
-        "chrome", {type: "app", name: "Google Chrome", exe: "Chrome.exe", launch: [
+        "chrome", {type: "app", name: "Google Chrome", exe: "Chrome.exe", install: [
+            {kind: "winget", id: "Google.Chrome", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: CommonProgramsPath("Google Chrome.lnk")},
             {kind: "exe", path: "C:\Program Files\Google\Chrome\Application\chrome.exe"}
         ]},
         "claude", {type: "app", name: "Claude", exe: "Claude.exe", launch: [
             {kind: "appId", path: "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude"}
         ]},
-        "codex", {type: "app", name: "Codex", exe: "Codex.exe", launch: [
+        "codex", {type: "app", name: "Codex", exe: "Codex.exe", install: [
+            {kind: "winget", id: "9PLM9XGG6VKS", source: "msstore"}
+        ], launch: [
             {kind: "appId", path: "shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App"}
         ]},
-        "comet", {type: "app", name: "Comet", exe: "comet.exe", launch: [
+        "comet", {type: "app", name: "Comet", exe: "comet.exe", install: [
+            {kind: "winget", id: "Perplexity.Comet", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Comet.lnk")},
             {kind: "exe", path: LocalAppDataPath("Perplexity\Comet\Application\comet.exe")}
         ]},
-        "copilot", {type: "app", name: "Microsoft Copilot", exe: ["mscopilot.exe", "Copilot.exe"], launch: [
+        "copilot", {type: "app", name: "Microsoft Copilot", exe: ["mscopilot.exe", "Copilot.exe"], install: [
+            {kind: "winget", id: "XP9CXNGPPJ97XX", source: "msstore"}
+        ], launch: [
             {kind: "appId", path: "shell:AppsFolder\Microsoft.Copilot_8wekyb3d8bbwe!App"},
             {kind: "uri", path: "ms-copilot:"}
         ]},
@@ -39,18 +47,26 @@ BuildAppRegistry() {
             {kind: "lnk", path: CommonProgramsPath("Cursor\Cursor.lnk")},
             {kind: "exe", path: LocalAppDataPath("Programs\cursor\Cursor.exe")}
         ]},
-        "edge", {type: "app", name: "Microsoft Edge", exe: "msedge.exe", launch: [
+        "edge", {type: "app", name: "Microsoft Edge", exe: "msedge.exe", install: [
+            {kind: "winget", id: "Microsoft.Edge", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: CommonProgramsPath("Microsoft Edge.lnk")},
             {kind: "exe", path: "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"}
         ]},
-        "chatgpt", {type: "app", name: "ChatGPT", exe: "ChatGPT.exe", launch: [
+        "chatgpt", {type: "app", name: "ChatGPT", exe: "ChatGPT.exe", install: [
+            {kind: "winget", id: "9NT1R1C2HH7J", source: "msstore"}
+        ], launch: [
             {kind: "appId", path: "shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT"}
         ]},
-        "line", {type: "app", name: "LINE", exe: "LINE.exe", launch: [
+        "line", {type: "app", name: "LINE", exe: "LINE.exe", install: [
+            {kind: "winget", id: "XPFCC4CD725961", source: "msstore"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("LINE\LINE.lnk")},
             {kind: "exe", path: LocalAppDataPath("LINE\bin\LineLauncher.exe")}
         ]},
-        "notion", {type: "app", name: "Notion", exe: "Notion.exe", launch: [
+        "notion", {type: "app", name: "Notion", exe: "Notion.exe", install: [
+            {kind: "winget", id: "Notion.Notion", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Notion.lnk")}
         ]},
         "visualStudio", {type: "app", name: "Visual Studio", exe: "devenv.exe", launch: [
@@ -60,25 +76,33 @@ BuildAppRegistry() {
             {kind: "exe", path: "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\devenv.exe"},
             {kind: "exe", path: "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.exe"}
         ]},
-        "vscode", {type: "app", name: "Visual Studio Code", exe: "Code.exe", launch: [
+        "vscode", {type: "app", name: "Visual Studio Code", exe: "Code.exe", install: [
+            {kind: "winget", id: "Microsoft.VisualStudioCode", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Visual Studio Code\Visual Studio Code.lnk")},
             {kind: "exe", path: LocalAppDataPath("Programs\Microsoft VS Code\Code.exe")}
         ]},
-        "vscodeInsider", {type: "app", name: "Visual Studio Code Insiders", exe: "Code - Insiders.exe", launch: [
+        "vscodeInsider", {type: "app", name: "Visual Studio Code Insiders", exe: "Code - Insiders.exe", install: [
+            {kind: "winget", id: "Microsoft.VisualStudioCode.Insiders", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Visual Studio Code - Insiders\Visual Studio Code - Insiders.lnk")},
             {kind: "exe", path: LocalAppDataPath("Programs\Microsoft VS Code Insiders\Code - Insiders.exe")}
         ]},
         "webstorm", {type: "app", name: "WebStorm", exe: "WebStorm.exe", launch: [
             {kind: "lnk", path: UserProgramsPath("JetBrains Toolbox\WebStorm.lnk")}
         ]},
-        "googleCalendar", {type: "pwa", name: "Google Calendar", titleMatch: ["Google 日曆", "Google Calendar"], launch: [
+        "googleCalendar", {type: "pwa", name: "Google Calendar", titleMatch: ["Google 日曆", "Google Calendar"], install: [
+            {kind: "winget", id: "Google.Chrome", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Chrome Apps\Google 日曆.lnk")},
             {kind: "lnk", path: UserProgramsPath("Chrome 應用程式\Google 日曆.lnk")},
             {kind: "lnk", path: UserProgramsPath("Chrome Apps\Google Calendar.lnk")},
             {kind: "lnk", path: UserProgramsPath("Chrome 應用程式\Google Calendar.lnk")},
             {kind: "uri", path: "https://calendar.google.com/calendar/u/0/r"}
         ]},
-        "googleChat", {type: "pwa", name: "Google Chat", titleMatch: "Google Chat", launch: [
+        "googleChat", {type: "pwa", name: "Google Chat", titleMatch: "Google Chat", install: [
+            {kind: "winget", id: "Google.Chrome", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Chrome Apps\Google Chat.lnk")},
             {kind: "lnk", path: UserProgramsPath("Chrome 應用程式\Google Chat.lnk")},
             {kind: "uri", path: "https://chat.google.com"}
@@ -244,12 +268,11 @@ ToggleAppWindow(hwnd) {
         WinActivate(hwnd)
 }
 
-RunRegisteredApp(app) {
+RunRegisteredApp(app, allowInstall := true) {
     targets := ResolveLaunchTargets(app)
 
     if (targets.Length = 0) {
-        MsgBox("找不到 " app.name " 可用的啟動路徑。", "App 啟動警告", "Icon!")
-        return false
+        return PromptInstallRegisteredApp(app, allowInstall, "找不到可用的啟動路徑。")
     }
 
     lastError := ""
@@ -261,6 +284,9 @@ RunRegisteredApp(app) {
             lastError := err.Message
         }
     }
+
+    if PromptInstallRegisteredApp(app, allowInstall, "啟動失敗:`n" lastError)
+        return true
 
     MsgBox("啟動 " app.name " 失敗:`n" lastError, "App 啟動錯誤", "Icon!")
     return false
@@ -316,6 +342,90 @@ ShouldCheckLaunchPath(candidate) {
     return candidate.kind = "lnk" || candidate.kind = "exe" || candidate.kind = "legacy"
 }
 
+PromptInstallRegisteredApp(app, allowInstall, reason) {
+    if !allowInstall || !HasInstallCandidates(app)
+        return false
+
+    result := MsgBox(reason "`n`n要用 winget 安裝 " app.name " 嗎？", "App 安裝確認", "YesNo Icon?")
+    if (result != "Yes")
+        return false
+
+    if !InstallRegisteredApp(app)
+        return false
+
+    return RunRegisteredApp(app, false)
+}
+
+HasInstallCandidates(app) {
+    return GetInstallCandidates(app).Length > 0
+}
+
+GetInstallCandidates(app) {
+    if !app.HasProp("install")
+        return []
+
+    return IsArrayLike(app.install) ? app.install : [app.install]
+}
+
+IsArrayLike(value) {
+    return IsObject(value) && value.HasProp("Length")
+}
+
+InstallRegisteredApp(app) {
+    if !WingetIsAvailable() {
+        MsgBox("找不到 winget，無法自動安裝 " app.name "。", "App 安裝警告", "Icon!")
+        return false
+    }
+
+    lastError := ""
+    for candidate in GetInstallCandidates(app) {
+        command := BuildInstallCommand(candidate)
+        if (command = "")
+            continue
+
+        exitCode := RunWait(command, , "Min")
+        if (exitCode = 0)
+            return true
+
+        lastError := "winget exit code: " exitCode
+    }
+
+    MsgBox("安裝 " app.name " 失敗。`n" lastError, "App 安裝錯誤", "Icon!")
+    return false
+}
+
+WingetIsAvailable() {
+    try {
+        RunWait('winget --version', , "Hide")
+        return true
+    } catch {
+        return false
+    }
+}
+
+BuildInstallCommand(candidate) {
+    if !candidate.HasProp("kind") || candidate.kind != "winget"
+        return ""
+
+    command := "winget install --exact --accept-package-agreements --accept-source-agreements"
+
+    if candidate.HasProp("source")
+        command .= " --source " ShellArg(candidate.source)
+
+    if candidate.HasProp("id")
+        command .= " --id " ShellArg(candidate.id)
+    else if candidate.HasProp("name")
+        command .= " --name " ShellArg(candidate.name)
+    else
+        return ""
+
+    return command
+}
+
+ShellArg(value) {
+    return "`"" value "`""
+}
+
 ShowAppLaunchDiagnostics() {
     global AppRegistry
 
@@ -323,7 +433,8 @@ ShowAppLaunchDiagnostics() {
     for key, app in AppRegistry {
         target := ResolveLaunchTarget(app)
         status := target = "" ? "missing" : target
-        report .= key " -> " status "`n"
+        installStatus := HasInstallCandidates(app) ? "installable" : "no installer"
+        report .= key " -> " status " (" installStatus ")`n"
     }
 
     MsgBox(report, "App Launch Diagnostics")
