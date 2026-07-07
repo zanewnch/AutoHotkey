@@ -60,10 +60,13 @@ AutoHotkey/
 - app key，例如 `chrome`、`vscode`、`googleChat`
 - 視窗偵測規則，例如 `exe` 或 PWA 標題
 - 啟動候選路徑，例如 Start Menu shortcut、exe、URI、AppId
+- 安裝候選來源，例如 `winget` 或 Microsoft Store package id
 
 `modules/app_launcher.ahk` 只負責快捷鍵對應，例如 `F1::ActivateOrRunApp("copilot")`。
 `modules/startup.ahk` 只負責批次啟動，例如 `LaunchStartupProfile("development")`。
 兩者都透過 app key 呼叫 registry helper，避免同一個 app 的路徑和偵測規則散落在多個檔案。
+
+如果 app 無法啟動或找不到可用啟動路徑，registry helper 會先跳出確認視窗，再透過 `winget install` 安裝對應 app。
 
 ### F1-F12 與 Development Profile
 
@@ -80,7 +83,7 @@ AutoHotkey/
 | `F7` | `vscodeInsider` |
 | `F8` | `chatgpt` |
 | `F9` | `codex` |
-| `F10` | `visualStudio` |
+| `F10` | `notion` |
 | `F11` | `googleCalendar` |
 | `F12` | `googleChat` |
 
@@ -153,7 +156,7 @@ AutoHotkey/
 | `F7` | Visual Studio Code Insiders |
 | `F8` | ChatGPT |
 | `F9` | Codex |
-| `F10` | Visual Studio |
+| `F10` | Notion |
 | `F11` | Google Calendar |
 | `F12` | Google Chat |
 | `Home` | Brave 瀏覽器 |

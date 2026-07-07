@@ -28,7 +28,7 @@ F8::ActivateOrRunApp("chatgpt")
 
 F9::ActivateOrRunApp("codex")
 
-F10::ActivateOrRunApp("visualStudio")
+F10::ActivateOrRunApp("notion")
 
 F11::ActivateOrRunApp("googleCalendar")
 

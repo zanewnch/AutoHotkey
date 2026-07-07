@@ -58,6 +58,14 @@ if ($registry -notmatch 'ActivateOrRunStartupApp\(key') {
     throw "app_registry.ahk must expose non-toggle startup app activation"
 }
 
+if ($registry -notmatch 'PromptInstallRegisteredApp\(app,\s*allowInstall,\s*reason\)') {
+    throw "app_registry.ahk must prompt before installing missing apps"
+}
+
+if ($registry -notmatch 'winget install --exact --accept-package-agreements --accept-source-agreements') {
+    throw "app_registry.ahk must install missing apps through winget"
+}
+
 if ($startup -notmatch 'ActivateOrRunStartupApp\(appKey\)') {
     throw "startup.ahk must activate F1-F12 apps during startup"
 }
@@ -85,7 +93,7 @@ $functionKeyApps = [ordered]@{
     F7 = "vscodeInsider"
     F8 = "chatgpt"
     F9 = "codex"
-    F10 = "visualStudio"
+    F10 = "notion"
     F11 = "googleCalendar"
     F12 = "googleChat"
 }
@@ -106,6 +114,10 @@ foreach ($entry in $functionKeyApps.GetEnumerator()) {
 
     if ($startupIndex -lt $lastStartupIndex) {
         throw "Startup Development Mode app order must match F1-F12"
+    }
+
+    if ($registry -notmatch "`"$app`",\s*\{[\s\S]*?install:\s*\[") {
+        throw "$app must declare install candidates"
     }
 
     $lastStartupIndex = $startupIndex

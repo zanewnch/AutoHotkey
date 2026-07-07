@@ -115,7 +115,7 @@ GetStartupProfileApps(profile) {
                 "vscodeInsider",
                 "chatgpt",
                 "codex",
-                "visualStudio",
+                "notion",
                 "googleCalendar",
                 "googleChat"
             ]
