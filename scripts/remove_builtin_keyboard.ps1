@@ -1,10 +1,4 @@
-param(
-    [Parameter(Mandatory = $true)]
-    [string]$LogPath
-)
-
 $ErrorActionPreference = "Continue"
-$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 
 $deviceIds = @(
     "ACPI\MSI0007\4&10CC4C72&0",
@@ -19,21 +13,10 @@ $deviceIds = @(
 )
 
 foreach ($deviceId in $deviceIds) {
-    $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    Add-Content -Path $LogPath -Value "$now remove_builtin_keyboard start: $deviceId"
-
     $device = Get-PnpDevice -InstanceId $deviceId -ErrorAction SilentlyContinue
     if (-not $device) {
-        Add-Content -Path $LogPath -Value "$now remove_builtin_keyboard skipped: device not found"
         continue
     }
 
-    & pnputil /remove-device $deviceId 2>&1 | Add-Content -Path $LogPath
-
-    $after = Get-PnpDevice -InstanceId $deviceId -ErrorAction SilentlyContinue
-    if ($after) {
-        Add-Content -Path $LogPath -Value "$now remove_builtin_keyboard result: still present, status=$($after.Status)"
-    } else {
-        Add-Content -Path $LogPath -Value "$now remove_builtin_keyboard result: removed"
-    }
+    & pnputil /remove-device $deviceId *> $null
 }

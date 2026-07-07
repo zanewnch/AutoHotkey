@@ -5,7 +5,6 @@
 ; Removing it requires elevation and may be restored by Windows after reboot.
 
 RemoveBuiltinKeyboard() {
-    logPath := A_ScriptDir "\AHK_DebugLog.txt"
     scriptPath := A_ScriptDir "\scripts\remove_builtin_keyboard.ps1"
 
     if (!BuiltinKeyboardMayBePresent()) {
@@ -13,11 +12,8 @@ RemoveBuiltinKeyboard() {
     }
 
     try {
-        Run('*RunAs powershell.exe -NoProfile -ExecutionPolicy Bypass -File "' scriptPath '" -LogPath "' logPath '"', , "Hide")
-    } catch as err {
-        try {
-            FileAppend(FormatTime(, "yyyy-MM-dd HH:mm:ss") " RemoveBuiltinKeyboard failed: " err.Message "`n", logPath, "UTF-8")
-        }
+        Run('*RunAs powershell.exe -NoProfile -ExecutionPolicy Bypass -File "' scriptPath '"', , "Hide")
+    } catch {
     }
 }
 
