@@ -43,7 +43,7 @@ AutoHotkey/
 
 | 裝置名稱 | Profile | 行為 |
 |----------|---------|------|
-| `ZANEWANG-PC` | `development` | 直接啟動 F1-F12 對應的全部 app |
+| `ZANEWANG-PC`、`ZANE` | `development` | 直接啟動 F1-F12 對應的全部 app |
 | 其他裝置 | `prompt` | 顯示 Startup 模式選擇視窗 |
 
 這樣做的目的：
@@ -81,8 +81,8 @@ AutoHotkey/
 | `F5` | `edge` |
 | `F6` | `vscode` |
 | `F7` | `vscodeInsider` |
-| `F8` | `chatgpt` |
-| `F9` | `codex` |
+| `F8` | `chatgptClassic` |
+| `F9` | `chatgpt` |
 | `F10` | `notion` |
 | `F11` | `googleCalendar` |
 | `F12` | `googleChat` |
@@ -154,8 +154,8 @@ AutoHotkey/
 | `F5` | Microsoft Edge（排除 YouTube Music 視窗） |
 | `F6` | Visual Studio Code |
 | `F7` | Visual Studio Code Insiders |
-| `F8` | ChatGPT |
-| `F9` | Codex |
+| `F8` | ChatGPT Classic |
+| `F9` | ChatGPT |
 | `F10` | Notion |
 | `F11` | Google Calendar |
 | `F12` | Google Chat |

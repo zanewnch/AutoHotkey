@@ -29,7 +29,7 @@ GetStartupProfileForDevice(deviceName := "") {
         deviceName := A_ComputerName
 
     switch deviceName {
-        case "ZANEWANG-PC":
+        case "ZANEWANG-PC", "ZANE":
             return "development"
         default:
             return "prompt"
@@ -113,8 +113,8 @@ GetStartupProfileApps(profile) {
                 "edge",
                 "vscode",
                 "vscodeInsider",
+                "chatgptClassic",
                 "chatgpt",
-                "codex",
                 "notion",
                 "googleCalendar",
                 "googleChat"

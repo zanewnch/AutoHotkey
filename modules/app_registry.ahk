@@ -19,13 +19,18 @@ BuildAppRegistry() {
         "chrome", {type: "app", name: "Google Chrome", exe: "Chrome.exe", install: [
             {kind: "winget", id: "Google.Chrome", source: "winget"}
         ], launch: [
+            ; Chrome profiles are not separate apps; chrome.exe uses --profile-directory to select one.
+            ; Profiles on this device: Default = richitech.com.tw (last used), Profile 1 = zane.
+            ; F4 targets richitech.com.tw by opening Default. Every device has its own first profile
+            ; named Default, so richitech.com.tw must remain that device's first Chrome profile.
+            {kind: "exe", path: "C:\Program Files\Google\Chrome\Application\chrome.exe", args: '--profile-directory="Default"'},
             {kind: "lnk", path: CommonProgramsPath("Google Chrome.lnk")},
             {kind: "exe", path: "C:\Program Files\Google\Chrome\Application\chrome.exe"}
         ]},
         "claude", {type: "app", name: "Claude", exe: "Claude.exe", launch: [
             {kind: "appId", path: "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude"}
         ]},
-        "codex", {type: "app", name: "Codex", exe: "Codex.exe", install: [
+        "chatgpt", {type: "app", name: "ChatGPT", exe: "Codex.exe", install: [
             {kind: "winget", id: "9PLM9XGG6VKS", source: "msstore"}
         ], launch: [
             {kind: "appId", path: "shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App"}
@@ -53,7 +58,7 @@ BuildAppRegistry() {
             {kind: "lnk", path: CommonProgramsPath("Microsoft Edge.lnk")},
             {kind: "exe", path: "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"}
         ]},
-        "chatgpt", {type: "app", name: "ChatGPT", exe: "ChatGPT.exe", install: [
+        "chatgptClassic", {type: "app", name: "ChatGPT Classic", exe: "ChatGPT.exe", install: [
             {kind: "winget", id: "9NT1R1C2HH7J", source: "msstore"}
         ], launch: [
             {kind: "appId", path: "shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT"}
@@ -328,6 +333,9 @@ ResolveLaunchCandidate(candidate) {
     checkPath := ShouldCheckLaunchPath(candidate)
     if checkPath && !FileExist(candidate.path)
         return ""
+
+    if candidate.HasProp("args") && (candidate.args != "")
+        return ShellArg(candidate.path) " " candidate.args
 
     return candidate.path
 }

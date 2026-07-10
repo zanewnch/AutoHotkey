@@ -24,9 +24,9 @@ F6::ActivateOrRunApp("vscode")
 
 F7::ActivateOrRunApp("vscodeInsider")
 
-F8::ActivateOrRunApp("chatgpt")
+F8::ActivateOrRunApp("chatgptClassic")
 
-F9::ActivateOrRunApp("codex")
+F9::ActivateOrRunApp("chatgpt")
 
 F10::ActivateOrRunApp("notion")
 

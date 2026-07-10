@@ -30,8 +30,12 @@ if ($startup -notmatch 'GetStartupProfileForDevice\(deviceName\s*:=\s*""\)') {
     throw "startup.ahk must resolve startup profile by device name"
 }
 
-if ($startup -notmatch 'case\s+"ZANEWANG-PC":[\s\S]*?return\s+"development"') {
+if ($startup -notmatch 'case\s+"ZANEWANG-PC"(?:,\s*"ZANE")?:[\s\S]*?return\s+"development"') {
     throw "ZANEWANG-PC must use the development startup profile"
+}
+
+if ($startup -notmatch 'case\s+"ZANEWANG-PC",\s*"ZANE":[\s\S]*?return\s+"development"') {
+    throw "ZANE must use the development startup profile"
 }
 
 if ($startup -notmatch 'default:\s*return\s+"prompt"') {
@@ -91,8 +95,8 @@ $functionKeyApps = [ordered]@{
     F5 = "edge"
     F6 = "vscode"
     F7 = "vscodeInsider"
-    F8 = "chatgpt"
-    F9 = "codex"
+    F8 = "chatgptClassic"
+    F9 = "chatgpt"
     F10 = "notion"
     F11 = "googleCalendar"
     F12 = "googleChat"

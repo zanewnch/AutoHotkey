@@ -42,8 +42,8 @@ F4  chrome
 F5  edge
 F6  vscode
 F7  vscodeInsider
-F8  chatgpt
-F9  codex
+F8  chatgptClassic
+F9  chatgpt
 F10 visualStudio
 F11 googleCalendar
 F12 googleChat
