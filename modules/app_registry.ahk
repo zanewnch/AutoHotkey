@@ -30,7 +30,7 @@ BuildAppRegistry() {
         "claude", {type: "app", name: "Claude", exe: "Claude.exe", launch: [
             {kind: "appId", path: "shell:AppsFolder\Claude_pzs8sxrjxfjjc!Claude"}
         ]},
-        "chatgpt", {type: "app", name: "ChatGPT", exe: "Codex.exe", install: [
+        "chatgpt", {type: "app", name: "ChatGPT", exe: "ChatGPT.exe", install: [
             {kind: "winget", id: "9PLM9XGG6VKS", source: "msstore"}
         ], launch: [
             {kind: "appId", path: "shell:AppsFolder\OpenAI.Codex_2p2nqsd0c76g0!App"}
@@ -58,7 +58,7 @@ BuildAppRegistry() {
             {kind: "lnk", path: CommonProgramsPath("Microsoft Edge.lnk")},
             {kind: "exe", path: "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"}
         ]},
-        "chatgptClassic", {type: "app", name: "ChatGPT Classic", exe: "ChatGPT.exe", install: [
+        "chatgptClassic", {type: "app", name: "ChatGPT Classic", exe: "ChatGPT Classic.exe", install: [
             {kind: "winget", id: "9NT1R1C2HH7J", source: "msstore"}
         ], launch: [
             {kind: "appId", path: "shell:AppsFolder\OpenAI.ChatGPT-Desktop_2p2nqsd0c76g0!ChatGPT"}
