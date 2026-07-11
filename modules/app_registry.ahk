@@ -38,6 +38,8 @@ BuildAppRegistry() {
         "comet", {type: "app", name: "Comet", exe: "comet.exe", install: [
             {kind: "winget", id: "Perplexity.Comet", source: "winget"}
         ], launch: [
+            {kind: "lnk", path: CommonProgramsPath("Comet.lnk")},
+            {kind: "exe", path: ProgramFilesPath("Perplexity\Comet\Application\comet.exe")},
             {kind: "lnk", path: UserProgramsPath("Comet.lnk")},
             {kind: "exe", path: LocalAppDataPath("Perplexity\Comet\Application\comet.exe")}
         ]},
@@ -125,6 +127,10 @@ UserProgramsPath(relativePath) {
 
 LocalAppDataPath(relativePath) {
     return EnvGet("LOCALAPPDATA") "\" relativePath
+}
+
+ProgramFilesPath(relativePath) {
+    return EnvGet("ProgramFiles") "\" relativePath
 }
 
 GetRegisteredApp(key) {

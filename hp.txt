@@ -1,0 +1,27 @@
+﻿筆電估價資訊
+==============================
+品牌：HP
+型號：HP OmniBook Ultra Flip Laptop 14-fh0xxx
+序號：5CD6022PHZ
+
+CPU：Intel(R) Core(TM) Ultra 7 258V
+記憶體：32 GB LPDDR5 (8533 MT/s)
+
+硬碟：
+SK hynix PC801 HFS001TEJ9X101N / 954 GB / SSD NVMe / Health: Healthy
+
+顯示卡：
+Intel(R) Arc(TM) 140V GPU (16GB)
+
+螢幕：SDC 41AA / 14 inch
+
+作業系統：Microsoft Windows 11 Home
+Windows 啟用：已啟用
+BIOS 日期：2026-04-13
+
+電池：
+電池設計容量：64006 mWh
+目前充滿容量：64855 mWh
+電池健康度：約 101.3 %
+電池循環次數：4
+==============================

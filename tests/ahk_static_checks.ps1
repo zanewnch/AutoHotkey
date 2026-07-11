@@ -87,6 +87,19 @@ foreach ($fallback in $requiredLaunchFallbacks) {
     }
 }
 
+$requiredCometPaths = @(
+    'CommonProgramsPath("Comet.lnk")',
+    'ProgramFilesPath("Perplexity\Comet\Application\comet.exe")',
+    'UserProgramsPath("Comet.lnk")',
+    'LocalAppDataPath("Perplexity\Comet\Application\comet.exe")'
+)
+
+foreach ($path in $requiredCometPaths) {
+    if (-not $registry.Contains($path)) {
+        throw "Missing Comet system/user install fallback: $path"
+    }
+}
+
 $functionKeyApps = [ordered]@{
     F1 = "copilot"
     F2 = "line"
