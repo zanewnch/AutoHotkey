@@ -55,7 +55,7 @@ SetTimer(RemoveBuiltinKeyboard, -8000)
 #Include modules/config.ahk           ; 全域設定（螢幕尺寸、滑鼠位置等變數）
 #Include modules/utils.ahk            ; 工具函數（MoveCursorWorkbenchToPercentage 等）
 #Include modules/app_registry.ahk     ; App 設定與共用啟動 helper
-#Include modules/startup.ahk          ; 開機程序（自動啟動常用應用程式）
+; #Include modules/startup.ahk        ; 暫停自動啟動應用程式，保留下方 app_launcher 快捷鍵。
 #Include modules/builtin_keyboard.ahk ; 筆電內建鍵盤移除程序
 
 ; ============================================================
