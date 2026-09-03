@@ -24,7 +24,9 @@ F6::ActivateOrRunApp("vscode")
 
 F7::ActivateOrRunApp("vscodeInsider")
 
-F8::ActivateOrRunApp("chatgptClassic")
+; 原本：F8 = ChatGPT Classic
+; F8::ActivateOrRunApp("chatgptClassic")
+F8::ActivateOrRunApp("cursor")
 
 F9::ActivateOrRunApp("chatgpt")
 
@@ -76,16 +78,17 @@ RCtrl & Down::ActivateOrRunApp("claude")
 ; Copilot toggle
 ; ============================================================
 
-!Space:: {
-    if WinExist("ahk_exe mscopilot.exe") {
-        if WinActive("ahk_exe mscopilot.exe")
-            WinMinimize()
-        else
-            WinActivate()
-    } else {
-        ActivateOrRunApp("copilot")
-    }
-}
+; 暫時停用：Alt + Space = Copilot toggle
+; !Space:: {
+;     if WinExist("ahk_exe mscopilot.exe") {
+;         if WinActive("ahk_exe mscopilot.exe")
+;             WinMinimize()
+;         else
+;             WinActivate()
+;     } else {
+;         ActivateOrRunApp("copilot")
+;     }
+; }
 
 ; ============================================================
 ; Maintenance hotkeys

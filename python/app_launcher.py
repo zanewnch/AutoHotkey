@@ -43,7 +43,8 @@ ENTRIES: list[HotkeyEntry] = [
     HotkeyEntry("ctrl+shift+left", "WebStorm", "webstorm.exe",
                 r"C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\JetBrains Toolbox\WebStorm.lnk"),
     HotkeyEntry("ctrl+shift+down", "Copilot", "copilot.exe", "ms-copilot:"),
-    HotkeyEntry("alt+space", "Copilot", "copilot.exe", "ms-copilot:"),
+    # 暫時停用：Alt + Space = Copilot
+    # HotkeyEntry("alt+space", "Copilot", "copilot.exe", "ms-copilot:"),
 ]
 
 
