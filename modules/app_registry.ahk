@@ -49,7 +49,9 @@ BuildAppRegistry() {
             {kind: "appId", path: "shell:AppsFolder\Microsoft.Copilot_8wekyb3d8bbwe!App"},
             {kind: "uri", path: "ms-copilot:"}
         ]},
-        "cursor", {type: "app", name: "Cursor", exe: "cursor.exe", launch: [
+        "cursor", {type: "app", name: "Cursor", exe: "cursor.exe", install: [
+            {kind: "winget", id: "Anysphere.Cursor", source: "winget"}
+        ], launch: [
             {kind: "lnk", path: UserProgramsPath("Cursor\Cursor.lnk")},
             {kind: "lnk", path: CommonProgramsPath("Cursor\Cursor.lnk")},
             {kind: "exe", path: LocalAppDataPath("Programs\cursor\Cursor.exe")}
@@ -75,6 +77,13 @@ BuildAppRegistry() {
             {kind: "winget", id: "Notion.Notion", source: "winget"}
         ], launch: [
             {kind: "lnk", path: UserProgramsPath("Notion.lnk")}
+        ]},
+        "powershell", {type: "app", name: "Windows PowerShell", exe: "powershell.exe", install: [
+            {kind: "winget", id: "Microsoft.PowerShell", source: "winget"}
+        ], launch: [
+            {kind: "lnk", path: UserProgramsPath("Windows PowerShell\Windows PowerShell.lnk")},
+            {kind: "lnk", path: CommonProgramsPath("Windows PowerShell\Windows PowerShell.lnk")},
+            {kind: "exe", path: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"}
         ]},
         "visualStudio", {type: "app", name: "Visual Studio", exe: "devenv.exe", launch: [
             {kind: "lnk", path: CommonProgramsPath("Visual Studio.lnk")},

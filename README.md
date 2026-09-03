@@ -79,13 +79,13 @@ AutoHotkey/
 | `F3` | `comet` |
 | `F4` | `chrome` |
 | `F5` | `edge` |
-| `F6` | `vscode` |
-| `F7` | `vscodeInsider` |
-| `F8` | `chatgptClassic` |
+| `F6` | `cursor` |
+| `F7` | `vscode` |
+| `F8` | `powershell` |
 | `F9` | `chatgpt` |
 | `F10` | `notion` |
-| `F11` | `googleCalendar` |
-| `F12` | `googleChat` |
+| `F11` | `googleChat` |
+| `F12` | `googleCalendar` |
 
 如果要新增裝置：
 
@@ -152,13 +152,13 @@ AutoHotkey/
 | `F3` | Comet |
 | `F4` | Google Chrome（排除 Google Chat / Google 日曆視窗） |
 | `F5` | Microsoft Edge（排除 YouTube Music 視窗） |
-| `F6` | Visual Studio Code |
-| `F7` | Visual Studio Code Insiders |
-| `F8` | ChatGPT Classic |
+| `F6` | Cursor 編輯器 |
+| `F7` | Visual Studio Code |
+| `F8` | Windows PowerShell |
 | `F9` | ChatGPT |
 | `F10` | Notion |
-| `F11` | Google Calendar |
-| `F12` | Google Chat |
+| `F11` | Google Chat |
+| `F12` | Google Calendar |
 | `Home` | Brave 瀏覽器 |
 | `End` | Microsoft Edge |
 | `Insert` | Cursor 編輯器 |
@@ -172,7 +172,7 @@ AutoHotkey/
 | `Ctrl + ↓` | Google Chrome |
 | `Ctrl + Shift + ←` | WebStorm |
 | `Ctrl + Shift + ↓` | Microsoft Copilot |
-| `Alt + Space` | Microsoft Copilot |
+| `RAlt` | Microsoft Copilot |
 
 ---
 

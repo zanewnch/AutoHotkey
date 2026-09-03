@@ -106,13 +106,13 @@ $functionKeyApps = [ordered]@{
     F3 = "comet"
     F4 = "chrome"
     F5 = "edge"
-    F6 = "vscode"
-    F7 = "vscodeInsider"
-    F8 = "chatgptClassic"
+    F6 = "cursor"
+    F7 = "vscode"
+    F8 = "powershell"
     F9 = "chatgpt"
     F10 = "notion"
-    F11 = "googleCalendar"
-    F12 = "googleChat"
+    F11 = "googleChat"
+    F12 = "googleCalendar"
 }
 
 $lastStartupIndex = -1

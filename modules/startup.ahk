@@ -111,13 +111,13 @@ GetStartupProfileApps(profile) {
                 "comet",
                 "chrome",
                 "edge",
+                "cursor",
                 "vscode",
-                "vscodeInsider",
-                "chatgptClassic",
+                "powershell",
                 "chatgpt",
                 "notion",
-                "googleCalendar",
-                "googleChat"
+                "googleChat",
+                "googleCalendar"
             ]
         default:
             return []

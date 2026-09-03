@@ -20,21 +20,31 @@ F4::ActivateOrRunApp("chrome", ["Google Chat", "Google 日曆"])
 
 F5::ActivateOrRunApp("edge", ["YouTube Music"])
 
-F6::ActivateOrRunApp("vscode")
+; 原本：F6 = vscode
+; F6::ActivateOrRunApp("vscode")
+F6::ActivateOrRunApp("cursor")
 
-F7::ActivateOrRunApp("vscodeInsider")
+; 原本：F7 = vscodeInsider
+; F7::ActivateOrRunApp("vscodeInsider")
+F7::ActivateOrRunApp("vscode")
 
 ; 原本：F8 = ChatGPT Classic
 ; F8::ActivateOrRunApp("chatgptClassic")
-F8::ActivateOrRunApp("cursor")
+; 原本：F8 = cursor
+; F8::ActivateOrRunApp("cursor")
+F8::ActivateOrRunApp("powershell")
 
 F9::ActivateOrRunApp("chatgpt")
 
 F10::ActivateOrRunApp("notion")
 
-F11::ActivateOrRunApp("googleCalendar")
+; 原本：F11 = googleCalendar
+; F11::ActivateOrRunApp("googleCalendar")
+F11::ActivateOrRunApp("googleChat")
 
-F12::ActivateOrRunApp("googleChat")
+; 原本：F12 = googleChat
+; F12::ActivateOrRunApp("googleChat")
+F12::ActivateOrRunApp("googleCalendar")
 
 Home::ActivateOrRunApp("brave")
 
@@ -77,6 +87,15 @@ RCtrl & Down::ActivateOrRunApp("claude")
 ; ============================================================
 ; Copilot toggle
 ; ============================================================
+
+; 點一下右 Alt：開啟 / 切換 Microsoft Copilot。
+; 等放開才觸發，避免按住右 Alt 再按其他鍵時立刻跳出 Copilot。
+; 左 Alt 仍走 key_remapping.ahk 的 Ctrl 風格映射。
+RAlt:: {
+    KeyWait("RAlt")
+    if (A_PriorKey = "RAlt")
+        ActivateOrRunApp("copilot")
+}
 
 ; 暫時停用：Alt + Space = Copilot toggle
 ; !Space:: {
