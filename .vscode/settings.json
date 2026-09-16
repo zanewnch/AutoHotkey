@@ -1,3 +1,512 @@
 {
-  "editor.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'Courier New', monospace"
+  // ============================================================================
+  // 📝 EDITOR - 編輯器
+  // ============================================================================
+
+  // --- 格式化 (Formatting) ---
+  "editor.formatOnSave": true, // 全局啟用儲存時自動格式化
+  "editor.formatOnSaveMode": "modificationsIfAvailable", // 只格式化自己改過的行，避免舊檔超大 diff
+  "editor.formatOnPaste": true, // 啟用貼上時自動格式化
+  "editor.formatOnType": true, // 打字時格式化，維持程式碼格式一致
+  "prettier.enable": true,
+  "prettier.requireConfig": true, // 只在專案有 .prettierrc 才啟用 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
+  },
+  "javascript.format.semicolons": "insert",
+
+  // --- 縮排 (Indentation) ---
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  // --- 外觀 (Appearance) ---
+  "editor.fontSize": 18,
+  "editor.fontWeight": "normal",
+  "editor.fontFamily": "JetBrains Mono, Cascadia Mono, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": false, // 關閉連字，<!-- --> 等保持原始字元
+  "editor.lineHeight": 1.2,
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 8, // 跳定義時上下留 8 行，不要貼在畫面頂端
+  "editor.cursorSurroundingLinesStyle": "all",
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all", // 或 "boundary" / "selection" / "trailing"
+  "editor.scrollBeyondLastLine": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.occurrencesHighlight": "multiFile",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.accessibilitySupport": "off",
+
+  // --- Minimap ---
+  "editor.minimap.enabled": true,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": true,
+  "editor.minimap.maxColumn": 120,
+
+  // --- 摺疊 (Folding) ---
+  "editor.folding": true,
+  "editor.foldingImportsByDefault": true, // 開檔時自動摺 import / using
+  "editor.showFoldingControls": "always", // 摺疊箭頭一直顯示，不必 hover
+
+  // --- 行為 (Behavior) ---
+  "editor.stickyTabStops": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.multiCursorPaste": "full",
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.hover.delay": 300,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.parameterHints.cycle": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "strings": true,
+    "comments": false
+  },
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true, // 自動完成清單下方顯示更多說明
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.suppressSuggestions": false,
+
+  // ============================================================================
+  // 🗃️ FILES - 檔案管理
+  // ============================================================================
+
+  // --- 行尾與空白 (EOL & Whitespace) ---
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true, // 與 .editorconfig 一致：存檔刪行尾空白
+  "files.insertFinalNewline": true, // 與 .editorconfig 一致：檔尾補一個換行
+  "files.trimFinalNewlines": true, // 檔尾只留一個換行，拿掉多餘空行
+
+  // --- 自動儲存 (Auto Save) ---
+  "files.autoSave": "onFocusChange",
+  "files.autoGuessEncoding": true, // 舊檔 Big5 / UTF-8 混用時較不容易亂碼
+
+  // --- 關聯與排除 (Associations & Exclusions) ---
+  "files.associations": {
+    "*.env.*": "dotenv"
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vite/**": true,
+    "**/coverage/**": true,
+    "**/bin/**": true,
+    "**/obj/**": true,
+    "**/artifacts/**": true,
+    "**/Log/**": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.vite": true,
+    "**/coverage": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/artifacts": true,
+    "**/Log": true,
+    "**/.vs": true,
+    "**/.vscode": false
+  },
+
+  // ============================================================================
+  // 🖥️ WORKBENCH - 工作區
+  // ============================================================================
+
+  // --- 主題 (Theme) ---
+  "workbench.colorTheme": "Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {},
+
+  // --- 視窗 (Window) ---
+  "window.commandCenter": true,
+  "window.restoreWindows": "all",
+  "workbench.startupEditor": "none",
+  "workbench.reduceMotion": "off",
+  "workbench.activityBar.location": "top", // Activity Bar 放上方，不要在左側
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.auxiliaryActivityBar.location": "default",
+
+  // --- 編輯器分頁 (Editor Tabs) ---
+  "workbench.editor.enablePreview": false, // 點檔不要變成斜體預覽分頁
+  "workbench.editor.highlightModifiedTabs": true, // 未存檔分頁比較顯眼
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.labelFormat": "medium", // 同名檔顯示上層資料夾，例如 map/Index.vue
+
+  // --- 導航 (Navigation) ---
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolPath": "on",
+  "workbench.list.smoothScrolling": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": true,
+  "explorer.compactFolders": false, // 不要把單層路徑壓成 a/b/c
+  "explorer.sortOrder": "type",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock",
+    "vite.config.*": "vitest.config.*, tsconfig*.json",
+    "*.vue": "$(capture).spec.js, $(capture).test.js",
+    "*.js": "$(capture).spec.js, $(capture).test.js"
+  },
+
+  // --- Diff & Problems ---
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true, // 自動摺疊 diff 沒改的區塊
+  "diffEditor.experimental.showMoves": true, // diff 辨識搬家，不是刪了又貼
+  "diffEditor.renderSideBySide": true,
+  "problems.autoReveal": false,
+
+  // ============================================================================
+  // 💻 TERMINAL - 終端機
+  // ============================================================================
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": [
+        "-NoExit",
+        "-Command",
+        "chcp 65001 | Out-Null; [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8"
+      ]
+    }
+  },
+  "terminal.integrated.fontFamily": "JetBrains Mono, Consolas, monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.rightClickBehavior": "paste",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.scrollOnOutput": false,
+  "terminal.integrated.suggest.enabled": true, // 終端機指令自動完成
+  "terminal.integrated.sendKeybindingsToShell": true,
+
+  // ============================================================================
+  // 🌿 GIT - 版本控制
+  // ============================================================================
+
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.blame.editorDecoration.enabled": true, // 行尾顯示誰改的
+  "git.autoStash": true, // 切 branch 有未提交變更時先 stash
+  "git.pullBeforeCheckout": true, // 切過去前先 pull
+  "git.openRepositoryInParentFolders": "always",
+  "git.untrackedChanges": "separate",
+  "git.ignoredRepositories": [
+    "c:\\Users\\zanew\\.claude\\plugins\\marketplaces\\claude-plugins-official"
+  ],
+  "scm.defaultViewMode": "tree",
+  "githubPullRequests.pullBranch": "never",
+
+  // ============================================================================
+  // 🔍 SEARCH - 搜尋
+  // ============================================================================
+
+  "search.seedWithNearestWord": true,
+  "search.followSymlinks": false,
+  "search.maxResults": 5000,
+  "search.quickOpen.includeSymbols": true, // Ctrl+P 同時搜檔名與 function / class，不必加 #
+  "search.smartCase": true, // 全小寫不區分大小寫；有大寫才變精確
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.vite": true,
+    "**/coverage": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/artifacts": true,
+    "**/Log": true,
+    "**/*.log": true,
+    "**/package-lock.json": true
+  },
+
+  // ============================================================================
+  // 🔧 LANGUAGES - 語言設定
+  // ============================================================================
+
+  // --- JavaScript ---
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.paths": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.completeFunctionCalls": true, // 選 function 時連 () 一起插入
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+
+  // --- TypeScript ---
+  "typescript.suggest.paths": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
+  // --- C# / .NET ---
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForTypes": true,
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true, // 補全未 import 的型別並自動加 using
+
+  // --- Vue ---
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "vue.inlayHints.missingProps": true, // 必填 prop 沒傳時在 template 提示
+  "vue.complete.casing.tags": "pascal",
+  "vue.complete.casing.props": "camel",
+  "emmet.includeLanguages": {
+    "vue": "html",
+    "javascript": "javascriptreact"
+  },
+
+  // ============================================================================
+  // 🐛 DEBUG - 除錯
+  // ============================================================================
+
+  "debug.console.fontSize": 14,
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.inlineValues": "on", // 除錯時變數值直接寫在行尾
+
+  // ============================================================================
+  // ✅ LINTING - 程式碼品質
+  // ============================================================================
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.workingDirectories": [
+    {
+      "directory": "IA.Client",
+      "changeProcessCWD": true
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".vue"]
+  },
+  "stylelint.validate": ["css", "scss", "vue"],
+
+  // ============================================================================
+  // 🔌 EXTENSIONS - 擴充套件
+  // ============================================================================
+
+  // --- 通用 (General) ---
+  "extensions.autoUpdate": "off",
+
+  // --- Claude Code ---
+  "claudeCode.useCtrlEnterToSend": false,
+  "claudeCode.preferredLocation": "sidebar",
+  "claude.input.submitKey": "Enter",
+  "claudeCode.selectedModel": "default",
+
+  // --- Code Runner ---
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "csharp": "cd $dir && dotnet run"
+  },
+
+  // --- Database Client ---
+  "database-client.autoSync": true,
+
+  // --- GitHub Copilot ---
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "vue": true,
+    "csharp": true
+  },
+
+  // --- Cursor ---
+  "cursor.cpp.enablePartialAccepts": true,
+  "cursor.chat.enableCodeContext": true,
+  "cursor.cmdk.useThemedDiffBackground": true,
+  "cursor.cpp.disabledLanguages": ["plaintext", "scminput"],
+
+  // --- GitLens ---
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+
+  // --- Gemini Code Assist ---
+  "geminicodeassist.displayInlineContextHint": false,
+  "geminicodeassist.inlineSuggestions.enableAuto": true,
+  "geminicodeassist.project": "zany-unity-bfgnf",
+  "geminicodeassist.rules": "\n# Antigravity Agent Rules\n\nThis file defines the behavior, coding standards, and safety protocols for the Antigravity agent.\n\n## 1. Coding Standards\n(Source: [.claude/coding-standards.md](cci:7://file:///d:/GitHub/gateway/.claude/coding-standards.md:0:0-0:0))\n\nRespond in **Traditional Chinese** by default, unless specified otherwise.\n\n### JSDoc Strategy\n- **Function-level JSDoc (Required)**: Must include `@description`, `@param`, `@returns`, and `@example` (for complex functions).\n- **Key Logic Blocks**: Add comments explaining \"Why\" for complex logic or side effects.\n- **Inline Comments**: Use sparingly, only for magic numbers or platform-specific hacks.\n\n### Code Quality Indicators\nRefactor if:\n- Function needs >10 lines of comments to explain.\n- Variable names are unclear.\n\n### Documentation Principles\n- **Direct Technical Explanation**: Avoid analogies. Use technical terms.\n- **Concise**: Bullet points, 2-3 lines of code examples.\n\n---\n\n## 2. Git Flow & Safety Standards\n(Source: [.claude/git-flow-standards.md](cci:7://file:///d:/GitHub/gateway/.claude/git-flow-standards.md:0:0-0:0))\n\n### ⚠️ Critical Safety Rules\nBefore `git push`, `git commit`, or `git checkout`, you **MUST**:\n1.  **Verify Branch Name**: Ensure local and remote branch names match 100%.\n2.  **Config Check**: Ensure no `.claude/` or `notes/` files are in PR branches (branches with `-pr` suffix).\n3.  **Triple Confirmation**:\n    - Check Branch (Local vs Remote).\n    - Check Content (Status, Diff).\n    - **Wait for User Confirmation** before pushing.\n\n### Dual Branch Strategy\n- **Development Branch** (e.g., `feature/user-auth`): Can contain `.claude/`, `notes/`.\n- **PR Branch** (e.g., `v1/user-auth-zane-pr`): **MUST NOT** contain `.claude/` or `notes/`. Pure code only.\n\n### Prohibited Actions\n- `git push --force`\n- Pushing sensitive files (`.env`, `credentials.json`)\n- Direct push to `main` or `master`\n\n---\n\n## 3. Logger Standards\n(Source: [.claude/logger-standards.md](cci:7://file:///d:/GitHub/gateway/.claude/logger-standards.md:0:0-0:0))\n\n- **Use `utils/logger.js`**, NOT `console.log`.\n- **Module Tag**: `domain.filename.functionName` (e.g., `gw.mqtt.handleConnect`).\n- **Metadata**: Put structured data in metadata, not in the message string.\n- **Variable Naming**: Use `ForLogger` suffix for logger-only variables (e.g., `countForLogger`).\n\n---\n\n## 4. Response Standards\n(Source: [.claude/response-standards.md](cci:7://file:///d:/GitHub/gateway/.claude/response-standards.md:0:0-0:0))\n\n- **Concise**: 3-5 lines for core concepts.\n- **Code Snippets**: Key lines only, no full files unless requested.\n- **Iterative**: Don't dump everything at once. Wait for follow-up.\n\n---\n\n## 5. Type Definitions (JSDoc)\n(Source: [.claude/types-standards.md](cci:7://file:///d:/GitHub/gateway/.claude/types-standards.md:0:0-0:0))\n\n- **Format**: Pure JSDoc in `.js` files.\n- **Location**: `types/domain/DomainDataStage.js` (e.g., `types/em/EMDataRaw.js`).\n- **Required Tags**: `@fileoverview`, `@description`, `@typedef`, `@property`.\n- **Units**: Must specify units for numeric fields (e.g., `(V)`, `(A)`, `(ms)`).\n\n\n",
+
+  // --- Docker ---
+  "docker.extension.enableComposeLanguageServer": false,
+
+  // --- IntelliCode ---
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+
+  // --- Console Ninja ---
+  "console-ninja.featureSet": "Community",
+
+  // --- MSSQL ---
+  "mssql.connectionGroups": [
+    {
+      "name": "ROOT",
+      "id": "ROOT",
+      "parentId": "ROOT"
+    }
+  ],
+  "mssql.autoDisableNonTSqlLanguageService": true,
+
+  // --- AI Toolkit (Chat) ---
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true
+  },
+  "chat.checkpoints.showFileChanges": true,
+  "chat.agent.sandbox.enabledWindows": "on",
+  "inlineChat.affordance": "editor",
+  "chat.sessionSync.enabled": true,
+
+  // --- Grok ---
+  "grok.summarizeRepliesAloud": false,
+  "grok.defaultEffort": "medium",
+  "grok.steerByDefault": false,
+  "grok.defaultMode": "yolo",
+  "grok.showThinking": true,
+  "grok.expandCommandOutputs": false,
+
+  // --- Rainbow Tags ---
+  "rainbowTags.colors": [
+    "#E8B661",
+    "#6CB6FF",
+    "#C792EA",
+    "#F78C6C",
+    "#7FDBCA",
+    "#FF5370"
+  ],
+  "RainbowBrackets.depreciation-notice": false,
+
+  // --- cSpell ---
+  "cSpell.language": "en,en-US,zh-TW",
+  "cSpell.userWords": [
+    "ALFKI",
+    "arcgis",
+    "axios",
+    "basemap",
+    "CUST",
+    "ellps",
+    "emid",
+    "EPSG",
+    "Facilityfor",
+    "kbars",
+    "mday",
+    "Modbus",
+    "Northwind",
+    "nvarchar",
+    "Proccess",
+    "sarea",
+    "sublayer",
+    "towgs",
+    "Xunit",
+    "Youbike"
+  ],
+  "cSpell.words": ["Carto", "cartodb", "Elec"],
+
+  // --- Security ---
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // --- Red Hat ---
+  "redhat.telemetry.enabled": true,
+
+  // --- ReSharper ---
+  "resharper.region.region": "Asia",
+  "resharper.dataSharing.allowDataSharing": true,
+  "dotnet.defaultSolution": "IA.sln",
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal",
+    "kilo-code.new.agentManager.previousTerminal",
+    "kilo-code.new.agentManager.nextTerminal"
+  ],
+  "kilo-code.new.agentWorkStyle": "skipped",
+  "kilo-code.new.autocomplete.enableSmartInlineTaskKeybinding": true,
+  "kilo-code.new.autocomplete.enableChatAutocomplete": true,
+  "chat.viewSessions.orientation": "stacked",
+  "github.copilot.nextEditSuggestions.eagerness": "high",
+  "chat.requestQueuing.defaultAction": "queue",
+  "chat.agent.sandbox.enabled": "on",
+  "chat.editing.explainChanges.enabled": true,
+  "chat.unifiedAgentsBar.enabled": true,
+  "chat.viewProgressBadge.enabled": true,
+  "chat.tools.compressOutput.enabled": true,
+  "chat.tools.global.autoApprove": true,
+  "chat.tools.terminal.outputCompaction": true,
+  "chat.tools.terminal.outputDeltas": true,
+  "chat.mcp.collisionBehavior": "suffix",
+  "chat.mcp.gallery.enabled": true,
+  "chat.mcp.assisted.nuget.enabled": true,
+  "chat.includeReferencedInstructions": true,
+  "chat.experimental.useSkillAdherencePrompt": true,
+  "chat.useNestedAgentsMdFiles": true,
+  "chat.editor.preferCopilotHarness": true,
+  "inlineChat.defaultModel": "GPT-5.6 Luna (copilot)",
+  "inlineChat.notebookAgent": true,
+  "github.copilot.chat.claudeAgent.enabled": true,
+  "chat.inlineChat.agentHost.enabled": true,
+  "chat.terminal.agentHost.enabled": true,
+  "chat.defaultToCopilotHarness": true,
+  "chat.agentSessions.migrateLegacyCopilotCli": true,
+  "chat.assistedPermissions.enabled": true,
+  "chat.customizations.locationsMigration.enabled": true,
+  "chat.customizations.userDataMigration.enabled": true,
+  "chat.agentHost.codexAgent.enabled": true,
+  "chat.editor.codex.preferAgentHost": true,
+  "claudeCode.hideOnboarding": true
 }

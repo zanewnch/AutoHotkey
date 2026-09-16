@@ -21,14 +21,14 @@ F4::ActivateOrRunApp("chrome", ["Google Chat", "Google 日曆"])
 F5::ActivateOrRunApp("edge", ["YouTube Music"])
 
 ; 原本：F6 = vscode
-; F6::ActivateOrRunApp("vscode")
-; F6::ActivateOrRunApp("cursor")
 F6::ActivateOrRunApp("vscode")
+; F6::ActivateOrRunApp("cursor")
+; F6::ActivateOrRunApp("cursor")
 
 ; 原本：F7 = vscodeInsider
-; F7::ActivateOrRunApp("vscodeInsider")
-; F7::ActivateOrRunApp("vscode")
 F7::ActivateOrRunApp("vscodeInsider")
+; F7::ActivateOrRunApp("vscode")
+; F7::ActivateOrRunApp("vscode")
 
 ; 原本：F8 = ChatGPT Classic
 ; F8::ActivateOrRunApp("chatgptClassic")
