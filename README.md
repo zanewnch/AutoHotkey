@@ -148,17 +148,16 @@ AutoHotkey/
 | 快捷鍵 | 應用程式 |
 |--------|----------|
 | `F1` | Microsoft Copilot |
+| `左 Alt + F1` | Visual Studio Code |
+| `左 Alt + F2` | Visual Studio Code Insiders |
+| `左 Alt + F3` | ChatGPT |
+| `左 Alt + F4` | Windows PowerShell |
+| `左 Alt + F5` | Cursor 編輯器 |
+| `Ctrl + F1` | Google Chat |
+| `Ctrl + F2` | Google Calendar |
 | `Win + F1` | Google Chrome |
-| `左 Alt + 1` | Visual Studio Code |
-| `左 Alt + 2` | Visual Studio Code Insiders |
-| `左 Alt + 3` | ChatGPT |
-| `左 Alt + 4` | Windows PowerShell |
-| `左 Alt + 5` | Cursor 編輯器 |
-| `Ctrl + 1` | Google Chat |
-| `Ctrl + 2` | Google Calendar |
-| `Win + 1` | Google Chrome |
-| `Win + 2` | Microsoft Edge |
-| `Win + 3` | Comet 瀏覽器 |
+| `Win + F2` | Microsoft Edge |
+| `Win + F3` | Comet 瀏覽器 |
 | `F2` | LINE |
 | `F3` | Comet |
 | `F4` | Google Chrome（排除 Google Chat / Google 日曆視窗） |

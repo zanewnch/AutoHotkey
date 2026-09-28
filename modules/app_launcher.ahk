@@ -10,23 +10,21 @@
 ; Direct app keys
 ; ============================================================
 
+; Left Alt + F1-F5: launch the requested apps.
+<!F1::ActivateOrRunApp("vscode")
+<!F2::ActivateOrRunApp("vscodeInsider")
+<!F3::ActivateOrRunApp("chatgpt")
+<!F4::ActivateOrRunApp("powershell")
+<!F5::ActivateOrRunApp("cursor")
+
+; Ctrl + F1-F2: launch Google communication apps.
+^F1::ActivateOrRunApp("googleChat")
+^F2::ActivateOrRunApp("googleCalendar")
+
+; Win + F1-F3: launch the browsers.
 #F1::ActivateOrRunApp("chrome")
-
-; Left Alt + 1-2: launch the IDEs; 3-5: launch utility apps.
-<!1::ActivateOrRunApp("vscode")
-<!2::ActivateOrRunApp("vscodeInsider")
-<!3::ActivateOrRunApp("chatgpt")
-<!4::ActivateOrRunApp("powershell")
-<!5::ActivateOrRunApp("cursor")
-
-; Ctrl + 1-2: launch Google communication apps.
-^1::ActivateOrRunApp("googleChat")
-^2::ActivateOrRunApp("googleCalendar")
-
-; Win + 1-3: launch the browsers.
-#1::ActivateOrRunApp("chrome")
-#2::ActivateOrRunApp("edge")
-#3::ActivateOrRunApp("comet")
+#F2::ActivateOrRunApp("edge")
+#F3::ActivateOrRunApp("comet")
 
 F1::ActivateOrRunApp("copilot")
 
