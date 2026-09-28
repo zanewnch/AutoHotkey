@@ -22,7 +22,7 @@
 ^F2::ActivateOrRunApp("googleCalendar")
 
 ; Win + F1-F3: launch the browsers.
-#F1::ActivateOrRunApp("chrome", ["Google Chat", "Google æ—¥æ›†"])
+#F1::ActivateOrRunApp("chrome", ["Google Chat", "Google 日曆"])
 #F2::ActivateOrRunApp("edge")
 #F3::ActivateOrRunApp("comet")
 
