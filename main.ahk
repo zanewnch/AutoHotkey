@@ -43,8 +43,9 @@ SetTimer(RefreshKeyboardHook, -1000)
 ; 開機檢查（Startup Checks）
 ; ============================================================
 ; 延遲執行，避免冷開機時 PowerShell 阻塞 auto-execute 導致 keyboard hook 被 Windows 移除
-SetTimer(CheckHypervisorPlatform, -5000)
-SetTimer(RemoveBuiltinKeyboard, -8000)
+; 目前暫停開機檢查，需要恢復時再取消註解。
+; SetTimer(CheckHypervisorPlatform, -5000)
+; SetTimer(RemoveBuiltinKeyboard, -8000)
 
 ; ============================================================
 ; 載入功能模組（Include Modules）
