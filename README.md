@@ -155,7 +155,7 @@ AutoHotkey/
 | `左 Alt + F5` | Cursor 編輯器 |
 | `Ctrl + F1` | Google Chat |
 | `Ctrl + F2` | Google Calendar |
-| `Win + F1` | Google Chrome |
+| `Win + F1` | Google Chrome（排除 Google Chat / Google 日曆視窗） |
 | `Win + F2` | Microsoft Edge |
 | `Win + F3` | Comet 瀏覽器 |
 | `F2` | LINE |
