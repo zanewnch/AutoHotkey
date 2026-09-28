@@ -10,6 +10,24 @@
 ; Direct app keys
 ; ============================================================
 
+#F1::ActivateOrRunApp("chrome")
+
+; Left Alt + 1-2: launch the IDEs; 3-5: launch utility apps.
+<!1::ActivateOrRunApp("vscode")
+<!2::ActivateOrRunApp("vscodeInsider")
+<!3::ActivateOrRunApp("chatgpt")
+<!4::ActivateOrRunApp("powershell")
+<!5::ActivateOrRunApp("cursor")
+
+; Ctrl + 1-2: launch Google communication apps.
+^1::ActivateOrRunApp("googleChat")
+^2::ActivateOrRunApp("googleCalendar")
+
+; Win + 1-3: launch the browsers.
+#1::ActivateOrRunApp("chrome")
+#2::ActivateOrRunApp("edge")
+#3::ActivateOrRunApp("comet")
+
 F1::ActivateOrRunApp("copilot")
 
 F2::ActivateOrRunApp("line")
@@ -21,14 +39,14 @@ F4::ActivateOrRunApp("chrome", ["Google Chat", "Google 日曆"])
 F5::ActivateOrRunApp("edge", ["YouTube Music"])
 
 ; 原本：F6 = vscode
-F6::ActivateOrRunApp("vscode")
-; F6::ActivateOrRunApp("cursor")
-; F6::ActivateOrRunApp("cursor")
+; F6::ActivateOrRunApp("vscode")
+F6::ActivateOrRunApp("cursor")
+
 
 ; 原本：F7 = vscodeInsider
-F7::ActivateOrRunApp("vscodeInsider")
-; F7::ActivateOrRunApp("vscode")
-; F7::ActivateOrRunApp("vscode")
+; F7::ActivateOrRunApp("vscodeInsider")
+F7::ActivateOrRunApp("vscode")
+
 
 ; 原本：F8 = ChatGPT Classic
 ; F8::ActivateOrRunApp("chatgptClassic")
