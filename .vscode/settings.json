@@ -503,7 +503,6 @@
   "chat.terminal.agentHost.enabled": true,
   "chat.defaultToCopilotHarness": true,
   "chat.agentSessions.migrateLegacyCopilotCli": true,
-  "chat.assistedPermissions.enabled": true,
   "chat.customizations.locationsMigration.enabled": true,
   "chat.customizations.userDataMigration.enabled": true,
   "chat.agentHost.codexAgent.enabled": true,
