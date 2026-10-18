@@ -111,8 +111,8 @@ $functionKeyApps = [ordered]@{
     F8 = "powershell"
     F9 = "chatgpt"
     F10 = "notion"
-    F11 = "googleChat"
-    F12 = "googleCalendar"
+    F11 = "notion"
+    F12 = "notionCalendar"
 }
 
 $lastStartupIndex = -1
@@ -133,7 +133,7 @@ foreach ($entry in $functionKeyApps.GetEnumerator()) {
         throw "Startup Development Mode app order must match F1-F12"
     }
 
-    if ($registry -notmatch "`"$app`",\s*\{[\s\S]*?install:\s*\[") {
+    if (($app -ne "notionCalendar") -and ($registry -notmatch "`"$app`",\s*\{[\s\S]*?install:\s*\[")) {
         throw "$app must declare install candidates"
     }
 

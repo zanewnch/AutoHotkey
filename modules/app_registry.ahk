@@ -20,10 +20,9 @@ BuildAppRegistry() {
             {kind: "winget", id: "Google.Chrome", source: "winget"}
         ], launch: [
             ; Chrome profiles are not separate apps; chrome.exe uses --profile-directory to select one.
-            ; Profiles on this device: Default = richitech.com.tw (last used), Profile 1 = zane.
-            ; F4 targets richitech.com.tw by opening Default. Every device has its own first profile
-            ; named Default, so richitech.com.tw must remain that device's first Chrome profile.
-            {kind: "exe", path: "C:\Program Files\Google\Chrome\Application\chrome.exe", args: '--profile-directory="Default"'},
+            ; On this device, Profile 3 belongs to zanewnch@gmail.com.
+            ; Chrome launcher shortcuts use this profile when opening a new window.
+            {kind: "exe", path: "C:\Program Files\Google\Chrome\Application\chrome.exe", args: '--profile-directory="Profile 3"'},
             {kind: "lnk", path: CommonProgramsPath("Google Chrome.lnk")},
             {kind: "exe", path: "C:\Program Files\Google\Chrome\Application\chrome.exe"}
         ]},
@@ -78,7 +77,10 @@ BuildAppRegistry() {
         ], launch: [
             {kind: "lnk", path: UserProgramsPath("Notion.lnk")}
         ]},
-        "powershell", {type: "app", name: "Windows PowerShell", exe: "powershell.exe", install: [
+        "notionCalendar", {type: "app", name: "Notion Calendar", exe: "Notion Calendar.exe", launch: [
+            {kind: "lnk", path: UserProgramsPath("Notion Calendar.lnk")}
+        ]},
+        "powershell", {type: "app", name: "Windows PowerShell", exe: "powershell.exe", workingDir: EnvGet("USERPROFILE") "\Documents\GitHub", install: [
             {kind: "winget", id: "Microsoft.PowerShell", source: "winget"}
         ], launch: [
             {kind: "lnk", path: UserProgramsPath("Windows PowerShell\Windows PowerShell.lnk")},
@@ -298,7 +300,7 @@ RunRegisteredApp(app, allowInstall := true) {
     lastError := ""
     for target in targets {
         try {
-            Run(target)
+            Run(target, app.HasOwnProp("workingDir") ? app.workingDir : "")
             return true
         } catch as err {
             lastError := err.Message

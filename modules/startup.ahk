@@ -116,8 +116,8 @@ GetStartupProfileApps(profile) {
                 "powershell",
                 "chatgpt",
                 "notion",
-                "googleChat",
-                "googleCalendar"
+                "notion",
+                "notionCalendar"
             ]
         default:
             return []

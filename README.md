@@ -148,9 +148,9 @@ AutoHotkey/
 | 快捷鍵 | 應用程式 |
 |--------|----------|
 | `F1` | Microsoft Copilot |
-| `左 Alt + F1` | Visual Studio Code |
-| `左 Alt + F2` | Visual Studio Code Insiders |
-| `左 Alt + F3` | ChatGPT |
+| `左 Alt + F1` | Codex（ChatGPT 桌面版） |
+| `左 Alt + F2` | Visual Studio Code |
+| `左 Alt + F3` | Visual Studio Code Insiders |
 | `左 Alt + F4` | Windows PowerShell |
 | `左 Alt + F5` | Cursor 編輯器 |
 | `Ctrl + F1` | Google Chat |

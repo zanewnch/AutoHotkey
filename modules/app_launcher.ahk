@@ -11,9 +11,9 @@
 ; ============================================================
 
 ; Left Alt + F1-F5: launch the requested apps.
-<!F1::ActivateOrRunApp("vscode")
-<!F2::ActivateOrRunApp("vscodeInsider")
-<!F3::ActivateOrRunApp("chatgpt")
+<!F1::ActivateOrRunApp("chatgpt")
+<!F2::ActivateOrRunApp("vscode")
+<!F3::ActivateOrRunApp("vscodeInsider")
 <!F4::ActivateOrRunApp("powershell")
 <!F5::ActivateOrRunApp("cursor")
 
@@ -56,13 +56,11 @@ F9::ActivateOrRunApp("chatgpt")
 
 F10::ActivateOrRunApp("notion")
 
-; 原本：F11 = googleCalendar
-; F11::ActivateOrRunApp("googleCalendar")
-F11::ActivateOrRunApp("googleChat")
+; Reassigned from googleChat so F11 opens or toggles Notion.
+F11::ActivateOrRunApp("notion")
 
-; 原本：F12 = googleChat
-; F12::ActivateOrRunApp("googleChat")
-F12::ActivateOrRunApp("googleCalendar")
+; Reassigned from googleCalendar so F12 opens or toggles Notion Calendar.
+F12::ActivateOrRunApp("notionCalendar")
 
 Home::ActivateOrRunApp("brave")
 
