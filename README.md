@@ -66,6 +66,8 @@ AutoHotkey/
 `modules/startup.ahk` 只負責批次啟動，例如 `LaunchStartupProfile("development")`。
 兩者都透過 app key 呼叫 registry helper，避免同一個 app 的路徑和偵測規則散落在多個檔案。
 
+Copilot 優先直接啟動新版 `copilotapp.exe`，並辨識 `copilotapphost.exe` 視窗；保留舊版啟動入口供其他裝置使用，避免新版仍走 `ms-copilot:` 而跳出應用程式選擇視窗。
+
 如果 app 無法啟動或找不到可用啟動路徑，registry helper 會先跳出確認視窗，再透過 `winget install` 安裝對應 app。
 
 ### F1-F12 與 Development Profile
