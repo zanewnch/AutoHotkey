@@ -42,9 +42,13 @@ BuildAppRegistry() {
             {kind: "lnk", path: UserProgramsPath("Comet.lnk")},
             {kind: "exe", path: LocalAppDataPath("Perplexity\Comet\Application\comet.exe")}
         ]},
-        "copilot", {type: "app", name: "Microsoft Copilot", exe: ["mscopilot.exe", "Copilot.exe"], install: [
+        "copilot", {type: "app", name: "Microsoft Copilot", exe: ["copilotapp.exe", "copilotapphost.exe", "mscopilot.exe", "Copilot.exe"], install: [
             {kind: "winget", id: "XP9CXNGPPJ97XX", source: "msstore"}
         ], launch: [
+            ; 新版 Copilot 改用獨立桌面程式；直接啟動可避免 ms-copilot: 的應用程式選擇視窗。
+            {kind: "exe", path: EnvGet("ProgramFiles(x86)") "\Microsoft\Copilot\Application\copilotapp.exe"},
+            {kind: "exe", path: ProgramFilesPath("Microsoft\Copilot\Application\copilotapp.exe")},
+            {kind: "exe", path: LocalAppDataPath("Microsoft\Copilot\Application\copilotapp.exe")},
             {kind: "appId", path: "shell:AppsFolder\Microsoft.Copilot_8wekyb3d8bbwe!App"},
             {kind: "uri", path: "ms-copilot:"}
         ]},
